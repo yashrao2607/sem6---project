@@ -1,0 +1,65 @@
+{
+  "wedmegood": {
+    "base_url": "https://www.wedmegood.com/vendors/{city}/wedding-venues/",
+    "listing": {
+      "venue_cards": "div.vendor-card, div.search-card, article.vendor-listing",
+      "venue_name": "h2.vendor-name, h3.vendor-name, .card-title",
+      "venue_link": "a.vendor-link, a.card-link",
+      "price_preview": ".price-info, .starting-price, .vendor-price",
+      "rating": ".rating-value, .stars-value, span.rating",
+      "pagination_next": "a.pagination-next, li.next > a",
+      "total_pages": ".pagination li:last-child a, .total-pages"
+    },
+    "detail": {
+      "full_address": ".vendor-address, .location-info, address",
+      "price_range": ".price-range, .package-price, .pricing-info",
+      "capacity": ".capacity-info, .guest-count, .venue-capacity",
+      "venue_type": ".venue-type, .category-tag, .vendor-category",
+      "review_count": ".review-count, .total-reviews, span.reviews",
+      "description": ".vendor-description, .about-vendor, .description-text"
+    }
+  },
+  "venuelook": {
+    "base_url": "https://www.venuelook.com/wedding-venues/{city}/",
+    "listing": {
+      "venue_cards": "div.venue-card, div.listing-card, article.venue-item",
+      "venue_name": "h2.venue-name, h3.venue-name, .venue-title",
+      "venue_link": "a.venue-link, a.listing-link",
+      "price_per_plate": ".per-plate-price, .price-plate, .food-price",
+      "capacity": ".capacity, .guest-count, .max-guests",
+      "venue_type": ".venue-type, .category, .type-tag",
+      "pagination_next": "a.next-page, .pagination .next"
+    },
+    "detail": {
+      "full_address": ".venue-address, .location, address",
+      "amenities": ".amenity-list li, .features-list li",
+      "price_details": ".pricing-details, .price-breakdown",
+      "capacity_detail": ".capacity-details, .seating-capacity"
+    }
+  },
+  "shaadisaga": {
+    "base_url": "https://www.shaadisaga.com/wedding-vendors/{city}/wedding-venues",
+    "listing": {
+      "venue_cards": "div.vendor-card, div.listing-item, .venue-listing",
+      "venue_name": "h2, h3, .vendor-title, .listing-title",
+      "venue_link": "a[href*='wedding-venue'], a[href*='/venue/']",
+      "featured": ".featured-badge, .premium-tag, .featured-label",
+      "pricing": ".price, .cost, .starting-price"
+    },
+    "detail": {
+      "address": "address, .location, .venue-address",
+      "pricing": ".pricing, .package-details, .price-info",
+      "capacity": ".capacity, .guest-capacity"
+    }
+  },
+  "weddingwire": {
+    "base_url": "https://www.weddingwire.in/wedding-venues/{city}",
+    "listing": {
+      "venue_cards": "div.vendor-tile, article.supplier-card",
+      "venue_name": "h2.vendor-name, .supplier-name",
+      "venue_link": "a.vendor-link",
+      "review_count": ".review-count",
+      "price_estimate": ".budget-estimator, .price-estimate"
+    }
+  }
+}

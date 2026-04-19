@@ -1,0 +1,221 @@
+{
+  "_note": "wmg_slug = WedMeGood URL slug, vl_slug = VenueLook URL slug (null = not available on that source)",
+  "states": {
+    "Rajasthan": {
+      "cities": {
+        "udaipur": {
+          "display": "Udaipur",
+          "wmg_slug": "udaipur",
+          "vl_slug": "udaipur",
+          "areas": ["Lake Pichola", "City Palace area", "Fatehsagar", "Sajjangarh", "Badi Lake"]
+        },
+        "jaipur": {
+          "display": "Jaipur",
+          "wmg_slug": "jaipur",
+          "vl_slug": "jaipur",
+          "areas": ["Amer", "Nahargarh", "C-Scheme", "Bani Park", "Vaishali Nagar", "Mansarovar"]
+        },
+        "jodhpur": {
+          "display": "Jodhpur",
+          "wmg_slug": "jodhpur",
+          "vl_slug": "jodhpur",
+          "areas": ["Mehrangarh", "Umaid Bhawan", "Ratanada", "Paota", "Shastri Nagar"]
+        },
+        "jaisalmer": {
+          "display": "Jaisalmer",
+          "wmg_slug": "jaisalmer",
+          "vl_slug": "jaisalmer",
+          "areas": ["Sam Sand Dunes", "Khuri", "City area", "Gadisar Lake"]
+        },
+        "pushkar": {
+          "display": "Pushkar",
+          "wmg_slug": "pushkar",
+          "vl_slug": "pushkar",
+          "areas": ["Pushkar Lake", "Town area", "Tirtharaj area"]
+        }
+      }
+    },
+    "Goa": {
+      "cities": {
+        "goa": {
+          "display": "Goa",
+          "wmg_slug": "goa",
+          "vl_slug": "goa",
+          "areas": ["Candolim", "Calangute", "Vagator", "Anjuna", "Baga", "Sinquerim",
+                    "Cavelossim", "Colva", "Benaulim", "Majorda", "Palolem",
+                    "Dona Paula", "Miramar", "Campal", "Fontainhas"]
+        }
+      }
+    },
+    "Kerala": {
+      "cities": {
+        "kochi": {
+          "display": "Kochi",
+          "wmg_slug": "kochi",
+          "vl_slug": "kochi",
+          "areas": ["Fort Kochi", "Ernakulam", "Kakkanad", "Edapally", "Cherai Beach"]
+        },
+        "kovalam": {
+          "display": "Kovalam",
+          "wmg_slug": "kovalam",
+          "vl_slug": null,
+          "areas": ["Lighthouse Beach", "Hawa Beach", "Samudra Beach", "Poovar"]
+        }
+      }
+    },
+    "Maharashtra": {
+      "cities": {
+        "mumbai": {
+          "display": "Mumbai",
+          "wmg_slug": "mumbai",
+          "vl_slug": "mumbai",
+          "areas": ["Juhu", "Bandra", "Alibaug", "Powai", "Andheri", "Colaba", "Worli"]
+        },
+        "pune": {
+          "display": "Pune",
+          "wmg_slug": "pune",
+          "vl_slug": "pune",
+          "areas": ["Kharadi", "Koregaon Park", "Viman Nagar", "Lavasa", "Hinjewadi", "Wakad"]
+        },
+        "lonavala": {
+          "display": "Lonavala",
+          "wmg_slug": "lonavala",
+          "vl_slug": "lonavala",
+          "areas": ["Khandala", "Bushi Dam", "Bhushi Lake", "Della Adventure"]
+        },
+        "mahabaleshwar": {
+          "display": "Mahabaleshwar",
+          "wmg_slug": "mahabaleshwar",
+          "vl_slug": "mahabaleshwar",
+          "areas": ["Panchgani", "Venna Lake", "Mapro Garden", "Wilson Point"]
+        }
+      }
+    },
+    "Karnataka": {
+      "cities": {
+        "bangalore": {
+          "display": "Bangalore",
+          "wmg_slug": "bangalore",
+          "vl_slug": "bangalore",
+          "areas": ["Whitefield", "Palace Road", "Koramangala", "Electronic City", "Yelahanka", "Bannerghatta"]
+        },
+        "mysore": {
+          "display": "Mysore",
+          "wmg_slug": "mysore",
+          "vl_slug": "mysore",
+          "areas": ["Brindavan Gardens", "Chamundi Hills", "Palace area", "Jayalakshmipuram"]
+        },
+        "coorg": {
+          "display": "Coorg",
+          "wmg_slug": "coorg",
+          "vl_slug": null,
+          "areas": ["Madikeri", "Kabini", "Kushalnagar", "Virajpet", "Bylakuppe"]
+        }
+      }
+    },
+    "Uttarakhand": {
+      "cities": {
+        "dehradun": {
+          "display": "Dehradun",
+          "wmg_slug": "dehradun",
+          "vl_slug": "dehradun",
+          "areas": ["Rajpur Road", "Mussoorie Road", "Saharanpur Road", "Clement Town"]
+        },
+        "mussoorie": {
+          "display": "Mussoorie",
+          "wmg_slug": "mussoorie",
+          "vl_slug": "mussoorie",
+          "areas": ["Mall Road", "Landour", "Cloud End", "Camel's Back Road"]
+        },
+        "rishikesh": {
+          "display": "Rishikesh",
+          "wmg_slug": "rishikesh",
+          "vl_slug": "rishikesh",
+          "areas": ["Laxman Jhula area", "Ram Jhula", "Tapovan", "Swarg Ashram", "Triveni Ghat"]
+        },
+        "jim-corbett": {
+          "display": "Jim Corbett",
+          "wmg_slug": "jim-corbett",
+          "vl_slug": "jim-corbett",
+          "areas": ["Corbett National Park", "Dhikala", "Ramnagar", "Bijrani", "Jhirna"]
+        }
+      }
+    },
+    "Tamil Nadu": {
+      "cities": {
+        "chennai": {
+          "display": "Chennai",
+          "wmg_slug": "chennai",
+          "vl_slug": "chennai",
+          "areas": ["ECR Road", "Nungambakkam", "Anna Nagar", "OMR", "Adyar", "Velachery"]
+        },
+        "mahabalipuram": {
+          "display": "Mahabalipuram",
+          "wmg_slug": "mahabalipuram",
+          "vl_slug": null,
+          "areas": ["Shore Temple", "Five Rathas", "ECR stretch", "Kovalam", "Sadras"]
+        },
+        "pondicherry": {
+          "display": "Pondicherry",
+          "wmg_slug": "pondicherry",
+          "vl_slug": null,
+          "areas": ["White Town", "Auroville", "Promenade Beach", "Serenity Beach", "Chunnambar"]
+        }
+      }
+    },
+    "Himachal Pradesh": {
+      "cities": {
+        "shimla": {
+          "display": "Shimla",
+          "wmg_slug": "shimla",
+          "vl_slug": "shimla",
+          "areas": ["The Ridge", "Mall Road", "Kufri", "Mashobra", "Chail", "Jakhu"]
+        },
+        "manali": {
+          "display": "Manali",
+          "wmg_slug": "manali",
+          "vl_slug": null,
+          "areas": ["Old Manali", "Solang Valley", "Kullu", "Naggar", "Vashisht", "Rohtang"]
+        },
+        "dharamshala": {
+          "display": "Dharamshala",
+          "wmg_slug": "dharamshala",
+          "vl_slug": null,
+          "areas": ["McLeodganj", "Bhagsu Nag", "Naddi", "Dharamkot", "Palampur"]
+        }
+      }
+    },
+    "Delhi NCR": {
+      "cities": {
+        "gurgaon": {
+          "display": "Gurgaon",
+          "wmg_slug": "gurgaon",
+          "vl_slug": "gurgaon",
+          "areas": ["MG Road", "DLF Phase", "Golf Course Road", "Sohna Road", "Sector 29"]
+        },
+        "noida": {
+          "display": "Noida",
+          "wmg_slug": "noida",
+          "vl_slug": "noida",
+          "areas": ["Sector 18", "Sector 29", "Greater Noida", "Sector 62", "Film City"]
+        },
+        "delhi": {
+          "display": "Delhi",
+          "wmg_slug": null,
+          "vl_slug": "delhi",
+          "areas": ["Chattarpur", "Mehrauli", "Vasant Kunj", "Lutyens Delhi", "Dwarka", "Rohini"]
+        }
+      }
+    },
+    "West Bengal": {
+      "cities": {
+        "kolkata": {
+          "display": "Kolkata",
+          "wmg_slug": "kolkata",
+          "vl_slug": "kolkata",
+          "areas": ["Park Street", "Alipore", "Rajarhat", "New Town", "Salt Lake", "Ballygunge"]
+        }
+      }
+    }
+  }
+}

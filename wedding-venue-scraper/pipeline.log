@@ -1,0 +1,1808 @@
+09:58:21  INFO      pipeline — === Scraping source: wedmegood ===
+09:58:21  INFO      src.scrapers.wedmegood — [WedMeGood] Scraping city: Udaipur (Rajasthan)
+09:58:24  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/udaipur/wedding-venues/ → 0 venues
+09:58:24  INFO      src.scrapers.wedmegood — [WedMeGood] Udaipur → 0 total venues
+09:58:24  INFO      pipeline —   ✓ Rajasthan / Udaipur → 0 venues
+09:58:24  INFO      src.scrapers.wedmegood — [WedMeGood] Scraping city: Jaipur (Rajasthan)
+09:58:27  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jaipur/wedding-venues/ → 0 venues
+09:58:27  INFO      src.scrapers.wedmegood — [WedMeGood] Jaipur → 0 total venues
+09:58:27  INFO      pipeline —   ✓ Rajasthan / Jaipur → 0 venues
+09:58:27  INFO      src.scrapers.wedmegood — [WedMeGood] Scraping city: Jodhpur (Rajasthan)
+09:58:31  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jodhpur/wedding-venues/ → 0 venues
+09:58:33  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jodhpur/wedding-venues/?page=2 → 0 venues
+09:58:36  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jodhpur/wedding-venues/?page=3 → 0 venues
+09:58:40  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jodhpur/wedding-venues/?page=4 → 0 venues
+09:58:43  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jodhpur/wedding-venues/?page=5 → 0 venues
+09:58:46  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jodhpur/wedding-venues/?page=6 → 0 venues
+09:58:49  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jodhpur/wedding-venues/?page=7 → 0 venues
+09:58:53  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jodhpur/wedding-venues/?page=8 → 0 venues
+09:58:57  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jodhpur/wedding-venues/?page=9 → 0 venues
+09:59:01  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jodhpur/wedding-venues/?page=10 → 0 venues
+09:59:01  INFO      src.scrapers.wedmegood — [WedMeGood] Jodhpur → 0 total venues
+09:59:01  INFO      pipeline —   ✓ Rajasthan / Jodhpur → 0 venues
+09:59:01  INFO      src.scrapers.wedmegood — [WedMeGood] Scraping city: Jaisalmer (Rajasthan)
+09:59:05  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jaisalmer/wedding-venues/ → 0 venues
+09:59:09  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jaisalmer/wedding-venues/?page=2 → 0 venues
+09:59:13  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jaisalmer/wedding-venues/?page=3 → 0 venues
+09:59:17  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jaisalmer/wedding-venues/?page=4 → 0 venues
+09:59:20  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jaisalmer/wedding-venues/?page=5 → 0 venues
+09:59:24  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jaisalmer/wedding-venues/?page=6 → 0 venues
+09:59:26  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jaisalmer/wedding-venues/?page=7 → 0 venues
+09:59:30  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jaisalmer/wedding-venues/?page=8 → 0 venues
+09:59:34  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jaisalmer/wedding-venues/?page=9 → 0 venues
+09:59:36  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/jaisalmer/wedding-venues/?page=10 → 0 venues
+09:59:36  INFO      src.scrapers.wedmegood — [WedMeGood] Jaisalmer → 0 total venues
+09:59:36  INFO      pipeline —   ✓ Rajasthan / Jaisalmer → 0 venues
+09:59:36  INFO      src.scrapers.wedmegood — [WedMeGood] Scraping city: Pushkar (Rajasthan)
+09:59:39  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/pushkar/wedding-venues/ → 0 venues
+09:59:42  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/pushkar/wedding-venues/?page=2 → 0 venues
+09:59:46  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/pushkar/wedding-venues/?page=3 → 0 venues
+09:59:50  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/pushkar/wedding-venues/?page=4 → 0 venues
+09:59:53  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/pushkar/wedding-venues/?page=5 → 0 venues
+09:59:57  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/pushkar/wedding-venues/?page=6 → 0 venues
+10:00:01  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/pushkar/wedding-venues/?page=7 → 0 venues
+10:00:04  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/pushkar/wedding-venues/?page=8 → 0 venues
+10:00:08  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/pushkar/wedding-venues/?page=9 → 0 venues
+10:00:12  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/pushkar/wedding-venues/?page=10 → 0 venues
+10:00:12  INFO      src.scrapers.wedmegood — [WedMeGood] Pushkar → 0 total venues
+10:00:12  INFO      pipeline —   ✓ Rajasthan / Pushkar → 0 venues
+10:00:12  INFO      src.scrapers.wedmegood — [WedMeGood] Scraping city: North Goa (Goa)
+10:00:15  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/north-goa/wedding-venues/ → 0 venues
+10:00:15  INFO      src.scrapers.wedmegood — [WedMeGood] North Goa → 0 total venues
+10:00:15  INFO      pipeline —   ✓ Goa / North Goa → 0 venues
+10:00:15  INFO      src.scrapers.wedmegood — [WedMeGood] Scraping city: South Goa (Goa)
+10:00:20  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/south-goa/wedding-venues/ → 0 venues
+10:00:20  INFO      src.scrapers.wedmegood — [WedMeGood] South Goa → 0 total venues
+10:00:20  INFO      pipeline —   ✓ Goa / South Goa → 0 venues
+10:00:20  INFO      src.scrapers.wedmegood — [WedMeGood] Scraping city: Panjim (Goa)
+10:00:23  INFO      src.scrapers.wedmegood —   Page https://www.wedmegood.com/vendors/panjim/wedding-venues/ → 0 venues
+10:00:23  INFO      src.scrapers.wedmegood — [WedMeGood] Panjim → 0 total venues
+10:00:23  INFO      pipeline —   ✓ Goa / Panjim → 0 venues
+10:00:23  INFO      pipeline — Raw dump saved → D:\oe-2\wedding-venue-scraper\data\raw\wedmegood_raw.csv (0 records)
+10:00:23  INFO      pipeline — === Scraping source: venuelook ===
+10:00:23  INFO      src.scrapers.venuelook — [VenueLook] Scraping city: Udaipur (Rajasthan)
+10:00:27  INFO      src.scrapers.venuelook —   Page https://www.venuelook.com/wedding-venues/udaipur/ → 0 venues
+10:00:27  INFO      src.scrapers.venuelook — [VenueLook] Udaipur → 0 total venues
+10:00:27  INFO      pipeline —   ✓ Rajasthan / Udaipur → 0 venues
+10:00:27  INFO      src.scrapers.venuelook — [VenueLook] Scraping city: Jaipur (Rajasthan)
+10:00:30  INFO      src.scrapers.venuelook —   Page https://www.venuelook.com/wedding-venues/jaipur/ → 0 venues
+10:00:30  INFO      src.scrapers.venuelook — [VenueLook] Jaipur → 0 total venues
+10:00:30  INFO      pipeline —   ✓ Rajasthan / Jaipur → 0 venues
+10:00:30  INFO      src.scrapers.venuelook — [VenueLook] Scraping city: Jodhpur (Rajasthan)
+10:00:33  INFO      src.scrapers.venuelook —   Page https://www.venuelook.com/wedding-venues/jodhpur/ → 0 venues
+10:00:33  INFO      src.scrapers.venuelook — [VenueLook] Jodhpur → 0 total venues
+10:00:33  INFO      pipeline —   ✓ Rajasthan / Jodhpur → 0 venues
+10:00:33  INFO      src.scrapers.venuelook — [VenueLook] Scraping city: Jaisalmer (Rajasthan)
+10:00:35  INFO      src.scrapers.venuelook —   Page https://www.venuelook.com/wedding-venues/jaisalmer/ → 0 venues
+10:00:35  INFO      src.scrapers.venuelook — [VenueLook] Jaisalmer → 0 total venues
+10:00:35  INFO      pipeline —   ✓ Rajasthan / Jaisalmer → 0 venues
+10:00:35  INFO      src.scrapers.venuelook — [VenueLook] Scraping city: Pushkar (Rajasthan)
+10:00:38  INFO      src.scrapers.venuelook —   Page https://www.venuelook.com/wedding-venues/pushkar/ → 0 venues
+10:00:38  INFO      src.scrapers.venuelook — [VenueLook] Pushkar → 0 total venues
+10:00:38  INFO      pipeline —   ✓ Rajasthan / Pushkar → 0 venues
+10:00:38  INFO      src.scrapers.venuelook — [VenueLook] Scraping city: North Goa (Goa)
+10:00:41  INFO      src.scrapers.venuelook —   Page https://www.venuelook.com/wedding-venues/north-goa/ → 0 venues
+10:00:41  INFO      src.scrapers.venuelook — [VenueLook] North Goa → 0 total venues
+10:00:41  INFO      pipeline —   ✓ Goa / North Goa → 0 venues
+10:00:41  INFO      src.scrapers.venuelook — [VenueLook] Scraping city: South Goa (Goa)
+10:00:44  INFO      src.scrapers.venuelook —   Page https://www.venuelook.com/wedding-venues/south-goa/ → 0 venues
+10:00:44  INFO      src.scrapers.venuelook — [VenueLook] South Goa → 0 total venues
+10:00:44  INFO      pipeline —   ✓ Goa / South Goa → 0 venues
+10:00:44  INFO      src.scrapers.venuelook — [VenueLook] Scraping city: Panjim (Goa)
+10:00:47  INFO      src.scrapers.venuelook —   Page https://www.venuelook.com/wedding-venues/panjim/ → 0 venues
+10:00:47  INFO      src.scrapers.venuelook — [VenueLook] Panjim → 0 total venues
+10:00:47  INFO      pipeline —   ✓ Goa / Panjim → 0 venues
+10:00:47  INFO      pipeline — Raw dump saved → D:\oe-2\wedding-venue-scraper\data\raw\venuelook_raw.csv (0 records)
+10:00:47  ERROR     pipeline — No records scraped — check source availability and network access.
+10:35:16  INFO      pipeline - === Scraping source: wedmegood ===
+10:35:16  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Udaipur (Rajasthan)
+10:35:16  INFO      src.scrapers.wedmegood -   Udaipur: 470 total venues across 23 pages
+10:35:19  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+10:35:24  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+10:35:28  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+10:35:31  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+10:35:34  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+10:35:38  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+10:35:42  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+10:35:45  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+10:35:49  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+10:35:53  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+10:35:56  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+10:35:59  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+10:36:02  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+10:36:05  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+10:36:08  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+10:36:12  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+10:36:15  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+10:36:19  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+10:36:23  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+10:36:28  INFO      src.scrapers.wedmegood -   Page 21 -> 20 venues
+10:36:32  INFO      src.scrapers.wedmegood -   Page 22 -> 20 venues
+10:36:36  INFO      src.scrapers.wedmegood -   Page 23 -> 10 venues
+10:36:36  INFO      src.scrapers.wedmegood - [WedMeGood] Udaipur -> 450 total venues
+10:36:36  INFO      pipeline -   ✓ Rajasthan / Udaipur → 450 venues
+10:36:36  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Jaipur (Rajasthan)
+10:36:36  INFO      src.scrapers.wedmegood -   Jaipur: 1443 total venues across 70 pages
+10:36:40  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+10:36:45  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+10:36:50  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+10:36:55  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+10:36:58  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+10:37:01  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+10:37:04  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+10:37:08  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+10:37:12  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+10:37:16  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+10:37:19  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+10:37:23  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+10:37:26  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+10:37:30  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+10:37:33  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+10:37:37  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+10:37:41  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+10:37:44  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+10:37:48  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+10:37:51  INFO      src.scrapers.wedmegood -   Page 21 -> 20 venues
+10:37:54  INFO      src.scrapers.wedmegood -   Page 22 -> 20 venues
+10:37:58  INFO      src.scrapers.wedmegood -   Page 23 -> 20 venues
+10:38:02  INFO      src.scrapers.wedmegood -   Page 24 -> 20 venues
+10:38:07  INFO      src.scrapers.wedmegood -   Page 25 -> 20 venues
+10:38:11  INFO      src.scrapers.wedmegood -   Page 26 -> 20 venues
+10:38:15  INFO      src.scrapers.wedmegood -   Page 27 -> 20 venues
+10:38:18  INFO      src.scrapers.wedmegood -   Page 28 -> 20 venues
+10:38:22  INFO      src.scrapers.wedmegood -   Page 29 -> 20 venues
+10:38:25  INFO      src.scrapers.wedmegood -   Page 30 -> 20 venues
+10:38:29  INFO      src.scrapers.wedmegood -   Page 31 -> 20 venues
+10:38:33  INFO      src.scrapers.wedmegood -   Page 32 -> 20 venues
+10:38:38  INFO      src.scrapers.wedmegood -   Page 33 -> 20 venues
+10:38:41  INFO      src.scrapers.wedmegood -   Page 34 -> 20 venues
+10:38:44  INFO      src.scrapers.wedmegood -   Page 35 -> 20 venues
+10:38:47  INFO      src.scrapers.wedmegood -   Page 36 -> 20 venues
+10:38:50  INFO      src.scrapers.wedmegood -   Page 37 -> 20 venues
+10:38:53  INFO      src.scrapers.wedmegood -   Page 38 -> 20 venues
+10:38:57  INFO      src.scrapers.wedmegood -   Page 39 -> 20 venues
+10:39:00  INFO      src.scrapers.wedmegood -   Page 40 -> 20 venues
+10:39:04  INFO      src.scrapers.wedmegood -   Page 41 -> 20 venues
+10:39:09  INFO      src.scrapers.wedmegood -   Page 42 -> 20 venues
+10:39:13  INFO      src.scrapers.wedmegood -   Page 43 -> 20 venues
+10:39:17  INFO      src.scrapers.wedmegood -   Page 44 -> 20 venues
+10:39:20  INFO      src.scrapers.wedmegood -   Page 45 -> 20 venues
+10:39:24  INFO      src.scrapers.wedmegood -   Page 46 -> 20 venues
+10:39:29  INFO      src.scrapers.wedmegood -   Page 47 -> 20 venues
+10:39:33  INFO      src.scrapers.wedmegood -   Page 48 -> 20 venues
+10:39:35  INFO      src.scrapers.wedmegood -   Page 49 -> 20 venues
+10:39:40  INFO      src.scrapers.wedmegood -   Page 50 -> 20 venues
+10:39:43  INFO      src.scrapers.wedmegood -   Page 51 -> 20 venues
+10:39:46  INFO      src.scrapers.wedmegood -   Page 52 -> 20 venues
+10:39:50  INFO      src.scrapers.wedmegood -   Page 53 -> 20 venues
+10:39:54  INFO      src.scrapers.wedmegood -   Page 54 -> 20 venues
+10:39:56  INFO      src.scrapers.wedmegood -   Page 55 -> 20 venues
+10:39:59  INFO      src.scrapers.wedmegood -   Page 56 -> 20 venues
+10:40:03  INFO      src.scrapers.wedmegood -   Page 57 -> 20 venues
+10:40:06  INFO      src.scrapers.wedmegood -   Page 58 -> 20 venues
+10:40:09  INFO      src.scrapers.wedmegood -   Page 59 -> 20 venues
+10:40:13  INFO      src.scrapers.wedmegood -   Page 60 -> 20 venues
+10:40:17  INFO      src.scrapers.wedmegood -   Page 61 -> 20 venues
+10:40:21  INFO      src.scrapers.wedmegood -   Page 62 -> 20 venues
+10:40:24  INFO      src.scrapers.wedmegood -   Page 63 -> 20 venues
+10:40:29  INFO      src.scrapers.wedmegood -   Page 64 -> 20 venues
+10:40:33  INFO      src.scrapers.wedmegood -   Page 65 -> 20 venues
+10:40:40  INFO      src.scrapers.wedmegood -   Page 66 -> 20 venues
+10:40:43  INFO      src.scrapers.wedmegood -   Page 67 -> 20 venues
+10:40:47  INFO      src.scrapers.wedmegood -   Page 68 -> 20 venues
+10:40:50  INFO      src.scrapers.wedmegood -   Page 69 -> 20 venues
+10:40:54  INFO      src.scrapers.wedmegood -   Page 70 -> 3 venues
+10:40:54  INFO      src.scrapers.wedmegood - [WedMeGood] Jaipur -> 1383 total venues
+10:40:54  INFO      pipeline -   ✓ Rajasthan / Jaipur → 1383 venues
+10:40:54  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Jodhpur (Rajasthan)
+10:40:54  INFO      src.scrapers.wedmegood -   Jodhpur: 292 total venues across 15 pages
+10:40:54  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+10:40:54  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+10:40:54  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+10:40:54  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+10:40:54  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+10:40:54  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+10:40:54  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+10:40:54  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+10:40:54  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+10:40:58  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+10:41:01  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+10:41:05  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+10:41:09  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+10:41:13  INFO      src.scrapers.wedmegood -   Page 15 -> 12 venues
+10:41:13  INFO      src.scrapers.wedmegood - [WedMeGood] Jodhpur -> 292 total venues
+10:41:13  INFO      pipeline -   ✓ Rajasthan / Jodhpur → 292 venues
+10:41:13  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Jaisalmer (Rajasthan)
+10:41:13  INFO      src.scrapers.wedmegood -   Jaisalmer: 87 total venues across 5 pages
+10:41:13  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+10:41:13  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+10:41:13  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+10:41:13  INFO      src.scrapers.wedmegood -   Page 5 -> 7 venues
+10:41:13  INFO      src.scrapers.wedmegood - [WedMeGood] Jaisalmer -> 87 total venues
+10:41:13  INFO      pipeline -   ✓ Rajasthan / Jaisalmer → 87 venues
+10:41:13  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Pushkar (Rajasthan)
+10:41:13  INFO      src.scrapers.wedmegood -   Pushkar: 129 total venues across 7 pages
+10:41:13  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+10:41:13  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+10:41:13  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+10:41:13  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+10:41:13  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+10:41:13  INFO      src.scrapers.wedmegood -   Page 7 -> 9 venues
+10:41:13  INFO      src.scrapers.wedmegood - [WedMeGood] Pushkar -> 129 total venues
+10:41:13  INFO      pipeline -   ✓ Rajasthan / Pushkar → 129 venues
+10:41:13  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: North Goa (Goa)
+10:41:13  INFO      src.scrapers.wedmegood -   North Goa: 0 total venues across 1 pages
+10:41:13  INFO      src.scrapers.wedmegood - [WedMeGood] North Goa -> 0 total venues
+10:41:13  INFO      pipeline -   ✓ Goa / North Goa → 0 venues
+10:41:13  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: South Goa (Goa)
+10:41:13  INFO      src.scrapers.wedmegood -   South Goa: 0 total venues across 1 pages
+10:41:13  INFO      src.scrapers.wedmegood - [WedMeGood] South Goa -> 0 total venues
+10:41:13  INFO      pipeline -   ✓ Goa / South Goa → 0 venues
+10:41:13  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Panjim (Goa)
+10:41:13  INFO      src.scrapers.wedmegood -   Panjim: 0 total venues across 1 pages
+10:41:13  INFO      src.scrapers.wedmegood - [WedMeGood] Panjim -> 0 total venues
+10:41:13  INFO      pipeline -   ✓ Goa / Panjim → 0 venues
+10:41:13  INFO      pipeline - Raw dump saved → D:\oe-2\wedding-venue-scraper\data\raw\wedmegood_raw.csv (2341 records)
+10:41:13  INFO      pipeline - === Scraping source: venuelook ===
+10:41:13  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Udaipur (Rajasthan)
+10:41:17  INFO      src.scrapers.venuelook -   Udaipur: 5 pages
+10:41:21  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+10:41:23  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+10:41:26  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+10:41:30  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+10:41:30  INFO      src.scrapers.venuelook - [VenueLook] Udaipur -> 150 total venues
+10:41:30  INFO      pipeline -   ✓ Rajasthan / Udaipur → 150 venues
+10:41:30  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Jaipur (Rajasthan)
+10:41:33  INFO      src.scrapers.venuelook -   Jaipur: 25 pages
+10:41:36  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+10:41:40  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+10:41:43  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+10:41:46  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+10:41:49  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+10:41:52  INFO      src.scrapers.venuelook -   Page 7 -> 30 venues
+10:41:55  INFO      src.scrapers.venuelook -   Page 8 -> 30 venues
+10:41:58  INFO      src.scrapers.venuelook -   Page 9 -> 30 venues
+10:42:01  INFO      src.scrapers.venuelook -   Page 10 -> 30 venues
+10:42:03  INFO      src.scrapers.venuelook -   Page 11 -> 30 venues
+10:42:07  INFO      src.scrapers.venuelook -   Page 12 -> 30 venues
+10:42:11  INFO      src.scrapers.venuelook -   Page 13 -> 30 venues
+10:42:14  INFO      src.scrapers.venuelook -   Page 14 -> 30 venues
+10:42:18  INFO      src.scrapers.venuelook -   Page 15 -> 30 venues
+10:42:21  INFO      src.scrapers.venuelook -   Page 16 -> 30 venues
+10:42:24  INFO      src.scrapers.venuelook -   Page 17 -> 30 venues
+10:42:27  INFO      src.scrapers.venuelook -   Page 18 -> 30 venues
+10:42:31  INFO      src.scrapers.venuelook -   Page 19 -> 30 venues
+10:42:34  INFO      src.scrapers.venuelook -   Page 20 -> 30 venues
+10:42:38  INFO      src.scrapers.venuelook -   Page 21 -> 30 venues
+10:42:49  INFO      src.scrapers.venuelook -   Page 22 -> 30 venues
+10:43:01  INFO      src.scrapers.venuelook -   Page 23 -> 30 venues
+10:43:15  INFO      src.scrapers.venuelook -   Page 24 -> 30 venues
+10:43:20  INFO      src.scrapers.venuelook -   Page 25 -> 30 venues
+10:43:20  INFO      src.scrapers.venuelook - [VenueLook] Jaipur -> 750 total venues
+10:43:20  INFO      pipeline -   ✓ Rajasthan / Jaipur → 750 venues
+10:43:20  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Jodhpur (Rajasthan)
+10:43:31  INFO      src.scrapers.venuelook -   Jodhpur: 5 pages
+10:43:45  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+10:44:08  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+10:44:16  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+10:44:20  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+10:44:20  INFO      src.scrapers.venuelook - [VenueLook] Jodhpur -> 150 total venues
+10:44:20  INFO      pipeline -   ✓ Rajasthan / Jodhpur → 150 venues
+10:44:20  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Jaisalmer (Rajasthan)
+10:44:23  INFO      src.scrapers.venuelook -   Jaisalmer: 3 pages
+10:44:26  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+10:44:29  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+10:44:29  INFO      src.scrapers.venuelook - [VenueLook] Jaisalmer -> 90 total venues
+10:44:29  INFO      pipeline -   ✓ Rajasthan / Jaisalmer → 90 venues
+10:44:29  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Pushkar (Rajasthan)
+10:44:31  INFO      src.scrapers.venuelook -   Pushkar: 4 pages
+10:44:35  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+10:44:38  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+10:44:41  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+10:44:41  INFO      src.scrapers.venuelook - [VenueLook] Pushkar -> 120 total venues
+10:44:41  INFO      pipeline -   ✓ Rajasthan / Pushkar → 120 venues
+10:44:41  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: North Goa (Goa)
+10:44:43  ERROR     src.scrapers.base - Unexpected status 404 for https://www.venuelook.com/wedding-venues-in-north-goa
+10:44:43  WARNING   src.scrapers.venuelook - [VenueLook] No response for https://www.venuelook.com/wedding-venues-in-north-goa
+10:44:43  INFO      pipeline -   ✓ Goa / North Goa → 0 venues
+10:44:43  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: South Goa (Goa)
+10:44:46  ERROR     src.scrapers.base - Unexpected status 404 for https://www.venuelook.com/wedding-venues-in-south-goa
+10:44:46  WARNING   src.scrapers.venuelook - [VenueLook] No response for https://www.venuelook.com/wedding-venues-in-south-goa
+10:44:46  INFO      pipeline -   ✓ Goa / South Goa → 0 venues
+10:44:46  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Panjim (Goa)
+10:44:49  ERROR     src.scrapers.base - Unexpected status 404 for https://www.venuelook.com/wedding-venues-in-panjim
+10:44:49  WARNING   src.scrapers.venuelook - [VenueLook] No response for https://www.venuelook.com/wedding-venues-in-panjim
+10:44:49  INFO      pipeline -   ✓ Goa / Panjim → 0 venues
+10:44:49  INFO      pipeline - Raw dump saved → D:\oe-2\wedding-venue-scraper\data\raw\venuelook_raw.csv (3601 records)
+10:44:49  INFO      pipeline - Normalizing 3601 raw records…
+10:44:49  INFO      pipeline - After within-source dedup: 2433 records
+10:44:49  INFO      pipeline - Validation: 2433 valid, 0 flagged, 0 dropped
+10:46:42  INFO      src.cleaning.deduplicator - Deduplication: 2433 → 2036 records (removed 397, 16.3%)
+10:46:42  INFO      pipeline - Cross-source dedup: removed 397 duplicates (16.3%)
+10:46:42  INFO      pipeline - Cleaned dataset saved → D:\oe-2\wedding-venue-scraper\data\processed\venues_clean.csv (2036 records)
+10:46:42  INFO      pipeline - Final CSV → D:\oe-2\wedding-venue-scraper\output\dataset\wedding_venues_india.csv
+10:46:46  INFO      pipeline - Final Excel → D:\oe-2\wedding-venue-scraper\output\dataset\wedding_venues_india.xlsx
+10:46:46  INFO      pipeline - Dataset loaded: 2036 venues across 1 states
+10:46:46  INFO      pipeline - === Generating charts ===
+10:46:47  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\01_state_ranking.png
+10:46:47  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\02_city_heatmap.png
+10:46:48  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\03_cost_distribution.png
+10:46:48  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\04_venue_type_pie.png
+10:46:48  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\05_capacity_histogram.png
+10:46:49  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\06_price_vs_rating.png
+10:46:49  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\07_luxury_segmentation.png
+10:46:50  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\08_micro_hotspots.png
+10:46:50  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\09_cost_location_matrix.png
+10:46:50  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\10_source_coverage.png
+10:46:50  INFO      pipeline - Generated 10 / 10 charts
+10:46:50  INFO      pipeline - === Building interactive dashboard ===
+10:48:38  INFO      pipeline - Loading existing cleaned dataset from D:\oe-2\wedding-venue-scraper\data\processed\venues_clean.csv
+10:48:38  INFO      pipeline - Dataset loaded: 2036 venues across 1 states
+10:48:38  INFO      pipeline - === Generating charts ===
+10:48:38  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\01_state_ranking.png
+10:48:38  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\02_city_heatmap.png
+10:48:39  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\03_cost_distribution.png
+10:48:39  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\04_venue_type_pie.png
+10:48:39  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\05_capacity_histogram.png
+10:48:40  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\06_price_vs_rating.png
+10:48:40  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\07_luxury_segmentation.png
+10:48:40  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\08_micro_hotspots.png
+10:48:41  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\09_cost_location_matrix.png
+10:48:41  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\10_source_coverage.png
+10:48:41  INFO      pipeline - Generated 10 / 10 charts
+10:48:41  INFO      pipeline - === Building interactive dashboard ===
+10:49:13  INFO      pipeline - Loading existing cleaned dataset from D:\oe-2\wedding-venue-scraper\data\processed\venues_clean.csv
+10:49:13  INFO      pipeline - Dataset loaded: 2036 venues across 1 states
+10:49:13  INFO      pipeline - === Generating charts ===
+10:49:13  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\01_state_ranking.png
+10:49:14  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\02_city_heatmap.png
+10:49:14  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\03_cost_distribution.png
+10:49:14  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\04_venue_type_pie.png
+10:49:15  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\05_capacity_histogram.png
+10:49:15  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\06_price_vs_rating.png
+10:49:15  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\07_luxury_segmentation.png
+10:49:16  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\08_micro_hotspots.png
+10:49:16  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\09_cost_location_matrix.png
+10:49:16  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\10_source_coverage.png
+10:49:16  INFO      pipeline - Generated 10 / 10 charts
+10:49:16  INFO      pipeline - === Building interactive dashboard ===
+10:49:18  INFO      src.analytics.dashboard - Dashboard saved → D:\oe-2\wedding-venue-scraper\output\dashboard\wedding_venues_dashboard.html
+10:49:18  INFO      pipeline - Dashboard → D:\oe-2\wedding-venue-scraper\output\dashboard\wedding_venues_dashboard.html
+10:49:18  INFO      pipeline - === Generating summary report ===
+10:49:18  INFO      src.analytics.report - Summary report saved → D:\oe-2\wedding-venue-scraper\output\report\wedding_venues_summary.md
+10:49:18  INFO      pipeline - Report → D:\oe-2\wedding-venue-scraper\output\report\wedding_venues_summary.md
+10:49:18  INFO      pipeline - Pipeline complete.
+14:33:47  INFO      pipeline - === Scraping source: wedmegood ===
+14:33:47  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Udaipur (Rajasthan)
+14:33:47  INFO      src.scrapers.wedmegood -   Udaipur: 470 total venues across 23 pages
+14:33:47  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+14:33:47  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+14:33:47  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+14:33:47  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+14:33:47  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+14:33:47  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 21 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 22 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 23 -> 10 venues
+14:33:48  INFO      src.scrapers.wedmegood - [WedMeGood] Udaipur -> 450 total venues
+14:33:48  INFO      pipeline -   OK Rajasthan / Udaipur -> 450 venues
+14:33:48  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Jaipur (Rajasthan)
+14:33:48  INFO      src.scrapers.wedmegood -   Jaipur: 1443 total venues across 70 pages
+14:33:48  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+14:33:48  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 21 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 22 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 23 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 24 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 25 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 26 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 27 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 28 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 29 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 30 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 31 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 32 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 33 -> 20 venues
+14:33:49  INFO      src.scrapers.wedmegood -   Page 34 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 35 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 36 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 37 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 38 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 39 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 40 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 41 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 42 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 43 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 44 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 45 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 46 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 47 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 48 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 49 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 50 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 51 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 52 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 53 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 54 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 55 -> 20 venues
+14:33:50  INFO      src.scrapers.wedmegood -   Page 56 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 57 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 58 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 59 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 60 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 61 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 62 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 63 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 64 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 65 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 66 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 67 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 68 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 69 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 70 -> 3 venues
+14:33:51  INFO      src.scrapers.wedmegood - [WedMeGood] Jaipur -> 1383 total venues
+14:33:51  INFO      pipeline -   OK Rajasthan / Jaipur -> 1383 venues
+14:33:51  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Jodhpur (Rajasthan)
+14:33:51  INFO      src.scrapers.wedmegood -   Jodhpur: 292 total venues across 15 pages
+14:33:51  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+14:33:51  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+14:33:52  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+14:33:52  INFO      src.scrapers.wedmegood -   Page 15 -> 12 venues
+14:33:52  INFO      src.scrapers.wedmegood - [WedMeGood] Jodhpur -> 292 total venues
+14:33:52  INFO      pipeline -   OK Rajasthan / Jodhpur -> 292 venues
+14:33:52  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Jaisalmer (Rajasthan)
+14:33:52  INFO      src.scrapers.wedmegood -   Jaisalmer: 87 total venues across 5 pages
+14:33:52  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+14:33:52  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+14:33:52  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+14:33:52  INFO      src.scrapers.wedmegood -   Page 5 -> 7 venues
+14:33:52  INFO      src.scrapers.wedmegood - [WedMeGood] Jaisalmer -> 87 total venues
+14:33:52  INFO      pipeline -   OK Rajasthan / Jaisalmer -> 87 venues
+14:33:52  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Pushkar (Rajasthan)
+14:33:52  INFO      src.scrapers.wedmegood -   Pushkar: 129 total venues across 7 pages
+14:33:52  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+14:33:52  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+14:33:52  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+14:33:52  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+14:33:52  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+14:33:52  INFO      src.scrapers.wedmegood -   Page 7 -> 9 venues
+14:33:52  INFO      src.scrapers.wedmegood - [WedMeGood] Pushkar -> 129 total venues
+14:33:52  INFO      pipeline -   OK Rajasthan / Pushkar -> 129 venues
+14:33:52  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Goa (Goa)
+14:33:54  INFO      src.scrapers.wedmegood -   Goa: 866 total venues across 42 pages
+14:33:58  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+14:34:01  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+14:34:05  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+14:34:08  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+14:34:13  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+14:34:17  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+14:34:20  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+14:34:24  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+14:34:27  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+14:34:30  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+14:34:33  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+14:34:37  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+14:34:39  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+14:34:42  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+14:34:45  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+14:34:49  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+14:34:53  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+14:34:56  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+14:34:59  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+14:35:03  INFO      src.scrapers.wedmegood -   Page 21 -> 20 venues
+14:35:06  INFO      src.scrapers.wedmegood -   Page 22 -> 20 venues
+14:35:11  INFO      src.scrapers.wedmegood -   Page 23 -> 20 venues
+14:35:15  INFO      src.scrapers.wedmegood -   Page 24 -> 20 venues
+14:35:20  INFO      src.scrapers.wedmegood -   Page 25 -> 20 venues
+14:35:26  INFO      src.scrapers.wedmegood -   Page 26 -> 20 venues
+14:35:30  INFO      src.scrapers.wedmegood -   Page 27 -> 20 venues
+14:35:35  INFO      src.scrapers.wedmegood -   Page 28 -> 20 venues
+14:35:40  INFO      src.scrapers.wedmegood -   Page 29 -> 20 venues
+14:35:44  INFO      src.scrapers.wedmegood -   Page 30 -> 20 venues
+14:35:48  INFO      src.scrapers.wedmegood -   Page 31 -> 20 venues
+14:35:51  INFO      src.scrapers.wedmegood -   Page 32 -> 20 venues
+14:35:55  INFO      src.scrapers.wedmegood -   Page 33 -> 20 venues
+14:36:00  INFO      src.scrapers.wedmegood -   Page 34 -> 20 venues
+14:36:04  INFO      src.scrapers.wedmegood -   Page 35 -> 20 venues
+14:36:07  INFO      src.scrapers.wedmegood -   Page 36 -> 20 venues
+14:36:11  INFO      src.scrapers.wedmegood -   Page 37 -> 20 venues
+14:36:14  INFO      src.scrapers.wedmegood -   Page 38 -> 20 venues
+14:36:17  INFO      src.scrapers.wedmegood -   Page 39 -> 20 venues
+14:36:20  INFO      src.scrapers.wedmegood -   Page 40 -> 20 venues
+14:36:24  INFO      src.scrapers.wedmegood -   Page 41 -> 20 venues
+14:36:29  INFO      src.scrapers.wedmegood -   Page 42 -> 6 venues
+14:36:29  INFO      src.scrapers.wedmegood - [WedMeGood] Goa -> 826 total venues
+14:36:29  INFO      pipeline -   OK Goa / Goa -> 826 venues
+14:36:29  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Kochi (Kerala)
+14:36:31  INFO      src.scrapers.wedmegood -   Kochi: 361 total venues across 19 pages
+14:36:35  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+14:36:39  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+14:36:42  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+14:36:46  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+14:36:49  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+14:36:52  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+14:36:56  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+14:36:59  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+14:37:03  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+14:37:05  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+14:37:09  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+14:37:13  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+14:37:16  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+14:37:19  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+14:37:23  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+14:37:27  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+14:37:31  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+14:37:35  INFO      src.scrapers.wedmegood -   Page 19 -> 1 venues
+14:37:35  INFO      src.scrapers.wedmegood - [WedMeGood] Kochi -> 361 total venues
+14:37:35  INFO      pipeline -   OK Kerala / Kochi -> 361 venues
+14:37:35  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Kovalam (Kerala)
+14:37:38  INFO      src.scrapers.wedmegood -   Kovalam: 15 total venues across 1 pages
+14:37:38  INFO      src.scrapers.wedmegood - [WedMeGood] Kovalam -> 15 total venues
+14:37:38  INFO      pipeline -   OK Kerala / Kovalam -> 15 venues
+14:37:38  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Mumbai (Maharashtra)
+14:37:41  INFO      src.scrapers.wedmegood -   Mumbai: 2609 total venues across 128 pages
+14:37:46  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+14:37:50  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+14:37:53  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+14:37:57  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+14:38:02  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+14:38:06  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+14:38:09  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+14:38:13  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+14:38:17  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+14:38:20  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+14:38:23  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+14:38:26  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+14:38:30  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+14:38:34  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+14:38:40  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+14:38:43  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+14:38:48  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+14:38:51  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+14:38:55  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+14:38:59  INFO      src.scrapers.wedmegood -   Page 21 -> 20 venues
+14:39:03  INFO      src.scrapers.wedmegood -   Page 22 -> 20 venues
+14:39:08  INFO      src.scrapers.wedmegood -   Page 23 -> 20 venues
+14:39:12  INFO      src.scrapers.wedmegood -   Page 24 -> 20 venues
+14:39:17  INFO      src.scrapers.wedmegood -   Page 25 -> 20 venues
+14:39:20  INFO      src.scrapers.wedmegood -   Page 26 -> 20 venues
+14:39:26  INFO      src.scrapers.wedmegood -   Page 27 -> 20 venues
+14:39:29  INFO      src.scrapers.wedmegood -   Page 28 -> 20 venues
+14:39:33  INFO      src.scrapers.wedmegood -   Page 29 -> 20 venues
+14:39:37  INFO      src.scrapers.wedmegood -   Page 30 -> 20 venues
+14:39:41  INFO      src.scrapers.wedmegood -   Page 31 -> 20 venues
+14:39:45  INFO      src.scrapers.wedmegood -   Page 32 -> 20 venues
+14:39:49  INFO      src.scrapers.wedmegood -   Page 33 -> 20 venues
+14:39:53  INFO      src.scrapers.wedmegood -   Page 34 -> 20 venues
+14:39:57  INFO      src.scrapers.wedmegood -   Page 35 -> 20 venues
+14:40:01  INFO      src.scrapers.wedmegood -   Page 36 -> 20 venues
+14:40:05  INFO      src.scrapers.wedmegood -   Page 37 -> 20 venues
+14:40:09  INFO      src.scrapers.wedmegood -   Page 38 -> 20 venues
+14:40:13  INFO      src.scrapers.wedmegood -   Page 39 -> 20 venues
+14:40:17  INFO      src.scrapers.wedmegood -   Page 40 -> 20 venues
+14:40:21  INFO      src.scrapers.wedmegood -   Page 41 -> 20 venues
+14:40:24  INFO      src.scrapers.wedmegood -   Page 42 -> 20 venues
+14:40:28  INFO      src.scrapers.wedmegood -   Page 43 -> 20 venues
+14:40:32  INFO      src.scrapers.wedmegood -   Page 44 -> 20 venues
+14:40:36  INFO      src.scrapers.wedmegood -   Page 45 -> 20 venues
+14:40:40  INFO      src.scrapers.wedmegood -   Page 46 -> 20 venues
+14:40:44  INFO      src.scrapers.wedmegood -   Page 47 -> 20 venues
+14:40:50  INFO      src.scrapers.wedmegood -   Page 48 -> 20 venues
+14:40:53  INFO      src.scrapers.wedmegood -   Page 49 -> 20 venues
+14:40:57  INFO      src.scrapers.wedmegood -   Page 50 -> 20 venues
+14:41:00  INFO      src.scrapers.wedmegood -   Page 51 -> 20 venues
+14:41:05  INFO      src.scrapers.wedmegood -   Page 52 -> 20 venues
+14:41:09  INFO      src.scrapers.wedmegood -   Page 53 -> 20 venues
+14:41:13  INFO      src.scrapers.wedmegood -   Page 54 -> 20 venues
+14:41:17  INFO      src.scrapers.wedmegood -   Page 55 -> 20 venues
+14:41:21  INFO      src.scrapers.wedmegood -   Page 56 -> 20 venues
+14:41:25  INFO      src.scrapers.wedmegood -   Page 57 -> 20 venues
+14:41:28  INFO      src.scrapers.wedmegood -   Page 58 -> 20 venues
+14:41:32  INFO      src.scrapers.wedmegood -   Page 59 -> 20 venues
+14:41:36  INFO      src.scrapers.wedmegood -   Page 60 -> 20 venues
+14:41:40  INFO      src.scrapers.wedmegood -   Page 61 -> 20 venues
+14:41:43  INFO      src.scrapers.wedmegood -   Page 62 -> 20 venues
+14:41:47  INFO      src.scrapers.wedmegood -   Page 63 -> 20 venues
+14:41:51  INFO      src.scrapers.wedmegood -   Page 64 -> 20 venues
+14:41:56  INFO      src.scrapers.wedmegood -   Page 65 -> 20 venues
+14:41:59  INFO      src.scrapers.wedmegood -   Page 66 -> 20 venues
+14:42:03  INFO      src.scrapers.wedmegood -   Page 67 -> 20 venues
+14:42:08  INFO      src.scrapers.wedmegood -   Page 68 -> 20 venues
+14:42:11  INFO      src.scrapers.wedmegood -   Page 69 -> 20 venues
+14:42:15  INFO      src.scrapers.wedmegood -   Page 70 -> 20 venues
+14:42:19  INFO      src.scrapers.wedmegood -   Page 71 -> 20 venues
+14:42:24  INFO      src.scrapers.wedmegood -   Page 72 -> 20 venues
+14:42:27  INFO      src.scrapers.wedmegood -   Page 73 -> 20 venues
+14:42:31  INFO      src.scrapers.wedmegood -   Page 74 -> 20 venues
+14:42:35  INFO      src.scrapers.wedmegood -   Page 75 -> 20 venues
+14:42:39  INFO      src.scrapers.wedmegood -   Page 76 -> 20 venues
+14:42:43  INFO      src.scrapers.wedmegood -   Page 77 -> 20 venues
+14:42:46  INFO      src.scrapers.wedmegood -   Page 78 -> 20 venues
+14:42:51  INFO      src.scrapers.wedmegood -   Page 79 -> 20 venues
+14:42:54  INFO      src.scrapers.wedmegood -   Page 80 -> 20 venues
+14:42:59  INFO      src.scrapers.wedmegood -   Page 81 -> 20 venues
+14:43:02  INFO      src.scrapers.wedmegood -   Page 82 -> 20 venues
+14:43:06  INFO      src.scrapers.wedmegood -   Page 83 -> 20 venues
+14:43:10  INFO      src.scrapers.wedmegood -   Page 84 -> 20 venues
+14:43:17  INFO      src.scrapers.wedmegood -   Page 85 -> 20 venues
+14:43:20  INFO      src.scrapers.wedmegood -   Page 86 -> 20 venues
+14:43:24  INFO      src.scrapers.wedmegood -   Page 87 -> 20 venues
+14:43:27  INFO      src.scrapers.wedmegood -   Page 88 -> 20 venues
+14:43:32  INFO      src.scrapers.wedmegood -   Page 89 -> 20 venues
+14:43:36  INFO      src.scrapers.wedmegood -   Page 90 -> 20 venues
+14:43:40  INFO      src.scrapers.wedmegood -   Page 91 -> 20 venues
+14:43:44  INFO      src.scrapers.wedmegood -   Page 92 -> 20 venues
+14:43:48  INFO      src.scrapers.wedmegood -   Page 93 -> 20 venues
+14:43:52  INFO      src.scrapers.wedmegood -   Page 94 -> 20 venues
+14:43:56  INFO      src.scrapers.wedmegood -   Page 95 -> 20 venues
+14:44:00  INFO      src.scrapers.wedmegood -   Page 96 -> 20 venues
+14:44:04  INFO      src.scrapers.wedmegood -   Page 97 -> 20 venues
+14:44:08  INFO      src.scrapers.wedmegood -   Page 98 -> 20 venues
+14:44:12  INFO      src.scrapers.wedmegood -   Page 99 -> 20 venues
+14:44:15  INFO      src.scrapers.wedmegood -   Page 100 -> 20 venues
+14:44:19  INFO      src.scrapers.wedmegood -   Page 101 -> 20 venues
+14:44:24  INFO      src.scrapers.wedmegood -   Page 102 -> 20 venues
+14:44:28  INFO      src.scrapers.wedmegood -   Page 103 -> 20 venues
+14:44:31  INFO      src.scrapers.wedmegood -   Page 104 -> 20 venues
+14:44:35  INFO      src.scrapers.wedmegood -   Page 105 -> 20 venues
+14:44:39  INFO      src.scrapers.wedmegood -   Page 106 -> 20 venues
+14:44:42  INFO      src.scrapers.wedmegood -   Page 107 -> 20 venues
+14:44:47  INFO      src.scrapers.wedmegood -   Page 108 -> 20 venues
+14:44:51  INFO      src.scrapers.wedmegood -   Page 109 -> 20 venues
+14:44:55  INFO      src.scrapers.wedmegood -   Page 110 -> 20 venues
+14:44:59  INFO      src.scrapers.wedmegood -   Page 111 -> 20 venues
+14:45:03  INFO      src.scrapers.wedmegood -   Page 112 -> 20 venues
+14:45:07  INFO      src.scrapers.wedmegood -   Page 113 -> 20 venues
+14:45:12  INFO      src.scrapers.wedmegood -   Page 114 -> 20 venues
+14:45:16  INFO      src.scrapers.wedmegood -   Page 115 -> 20 venues
+14:45:20  INFO      src.scrapers.wedmegood -   Page 116 -> 20 venues
+14:45:23  INFO      src.scrapers.wedmegood -   Page 117 -> 20 venues
+14:45:27  INFO      src.scrapers.wedmegood -   Page 118 -> 20 venues
+14:45:30  INFO      src.scrapers.wedmegood -   Page 119 -> 20 venues
+14:45:34  INFO      src.scrapers.wedmegood -   Page 120 -> 20 venues
+14:45:37  INFO      src.scrapers.wedmegood -   Page 121 -> 20 venues
+14:45:42  INFO      src.scrapers.wedmegood -   Page 122 -> 20 venues
+14:45:46  INFO      src.scrapers.wedmegood -   Page 123 -> 20 venues
+14:45:49  INFO      src.scrapers.wedmegood -   Page 124 -> 20 venues
+14:45:53  INFO      src.scrapers.wedmegood -   Page 125 -> 20 venues
+14:45:57  INFO      src.scrapers.wedmegood -   Page 126 -> 20 venues
+14:46:01  INFO      src.scrapers.wedmegood -   Page 127 -> 20 venues
+14:46:05  INFO      src.scrapers.wedmegood -   Page 128 -> 9 venues
+14:46:05  INFO      src.scrapers.wedmegood - [WedMeGood] Mumbai -> 2549 total venues
+14:46:05  INFO      pipeline -   OK Maharashtra / Mumbai -> 2549 venues
+14:46:05  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Pune (Maharashtra)
+14:46:08  INFO      src.scrapers.wedmegood -   Pune: 1478 total venues across 71 pages
+14:46:12  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+14:46:16  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+14:46:20  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+14:46:24  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+14:46:27  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+14:46:31  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+14:46:34  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+14:46:37  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+14:46:40  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+14:46:45  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+14:46:49  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+14:46:52  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+14:46:57  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+14:47:00  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+14:47:04  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+14:47:07  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+14:47:10  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+14:47:13  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+14:47:17  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+14:47:21  INFO      src.scrapers.wedmegood -   Page 21 -> 20 venues
+14:47:25  INFO      src.scrapers.wedmegood -   Page 22 -> 20 venues
+14:47:29  INFO      src.scrapers.wedmegood -   Page 23 -> 20 venues
+14:47:33  INFO      src.scrapers.wedmegood -   Page 24 -> 20 venues
+14:47:37  INFO      src.scrapers.wedmegood -   Page 25 -> 20 venues
+14:47:41  INFO      src.scrapers.wedmegood -   Page 26 -> 20 venues
+14:47:45  INFO      src.scrapers.wedmegood -   Page 27 -> 20 venues
+14:47:49  INFO      src.scrapers.wedmegood -   Page 28 -> 20 venues
+14:47:52  INFO      src.scrapers.wedmegood -   Page 29 -> 20 venues
+14:47:56  INFO      src.scrapers.wedmegood -   Page 30 -> 20 venues
+14:47:59  INFO      src.scrapers.wedmegood -   Page 31 -> 20 venues
+14:48:03  INFO      src.scrapers.wedmegood -   Page 32 -> 20 venues
+14:48:07  INFO      src.scrapers.wedmegood -   Page 33 -> 20 venues
+14:48:10  INFO      src.scrapers.wedmegood -   Page 34 -> 20 venues
+14:48:14  INFO      src.scrapers.wedmegood -   Page 35 -> 20 venues
+14:48:17  INFO      src.scrapers.wedmegood -   Page 36 -> 20 venues
+14:48:21  INFO      src.scrapers.wedmegood -   Page 37 -> 20 venues
+14:48:25  INFO      src.scrapers.wedmegood -   Page 38 -> 20 venues
+14:48:28  INFO      src.scrapers.wedmegood -   Page 39 -> 20 venues
+14:48:32  INFO      src.scrapers.wedmegood -   Page 40 -> 20 venues
+14:48:36  INFO      src.scrapers.wedmegood -   Page 41 -> 20 venues
+14:48:40  INFO      src.scrapers.wedmegood -   Page 42 -> 20 venues
+14:48:43  INFO      src.scrapers.wedmegood -   Page 43 -> 20 venues
+14:48:47  INFO      src.scrapers.wedmegood -   Page 44 -> 20 venues
+14:48:50  INFO      src.scrapers.wedmegood -   Page 45 -> 20 venues
+14:48:54  INFO      src.scrapers.wedmegood -   Page 46 -> 20 venues
+14:48:57  INFO      src.scrapers.wedmegood -   Page 47 -> 20 venues
+14:49:00  INFO      src.scrapers.wedmegood -   Page 48 -> 20 venues
+14:49:03  INFO      src.scrapers.wedmegood -   Page 49 -> 20 venues
+14:49:07  INFO      src.scrapers.wedmegood -   Page 50 -> 20 venues
+14:49:14  INFO      src.scrapers.wedmegood -   Page 51 -> 20 venues
+14:49:17  INFO      src.scrapers.wedmegood -   Page 52 -> 20 venues
+14:49:21  INFO      src.scrapers.wedmegood -   Page 53 -> 20 venues
+14:49:24  INFO      src.scrapers.wedmegood -   Page 54 -> 20 venues
+14:49:29  INFO      src.scrapers.wedmegood -   Page 55 -> 20 venues
+14:49:32  INFO      src.scrapers.wedmegood -   Page 56 -> 20 venues
+14:49:36  INFO      src.scrapers.wedmegood -   Page 57 -> 20 venues
+14:49:39  INFO      src.scrapers.wedmegood -   Page 58 -> 20 venues
+14:49:43  INFO      src.scrapers.wedmegood -   Page 59 -> 20 venues
+14:49:48  INFO      src.scrapers.wedmegood -   Page 60 -> 20 venues
+14:49:51  INFO      src.scrapers.wedmegood -   Page 61 -> 20 venues
+14:49:54  INFO      src.scrapers.wedmegood -   Page 62 -> 20 venues
+14:49:58  INFO      src.scrapers.wedmegood -   Page 63 -> 20 venues
+14:50:01  INFO      src.scrapers.wedmegood -   Page 64 -> 20 venues
+14:50:04  INFO      src.scrapers.wedmegood -   Page 65 -> 20 venues
+14:50:08  INFO      src.scrapers.wedmegood -   Page 66 -> 20 venues
+14:50:11  INFO      src.scrapers.wedmegood -   Page 67 -> 20 venues
+14:50:15  INFO      src.scrapers.wedmegood -   Page 68 -> 20 venues
+14:50:18  INFO      src.scrapers.wedmegood -   Page 69 -> 20 venues
+14:50:22  INFO      src.scrapers.wedmegood -   Page 70 -> 20 venues
+14:50:25  INFO      src.scrapers.wedmegood -   Page 71 -> 18 venues
+14:50:25  INFO      src.scrapers.wedmegood - [WedMeGood] Pune -> 1418 total venues
+14:50:25  INFO      pipeline -   OK Maharashtra / Pune -> 1418 venues
+14:50:25  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Lonavala (Maharashtra)
+14:50:28  INFO      src.scrapers.wedmegood -   Lonavala: 188 total venues across 10 pages
+14:50:32  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+14:50:35  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+14:50:39  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+14:50:42  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+14:50:45  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+14:50:49  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+14:50:53  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+14:50:55  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+14:50:58  INFO      src.scrapers.wedmegood -   Page 10 -> 8 venues
+14:50:58  INFO      src.scrapers.wedmegood - [WedMeGood] Lonavala -> 188 total venues
+14:50:58  INFO      pipeline -   OK Maharashtra / Lonavala -> 188 venues
+14:50:58  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Mahabaleshwar (Maharashtra)
+14:51:01  INFO      src.scrapers.wedmegood -   Mahabaleshwar: 108 total venues across 6 pages
+14:51:04  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+14:51:08  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+14:51:11  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+14:51:15  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+14:51:17  INFO      src.scrapers.wedmegood -   Page 6 -> 8 venues
+14:51:17  INFO      src.scrapers.wedmegood - [WedMeGood] Mahabaleshwar -> 108 total venues
+14:51:17  INFO      pipeline -   OK Maharashtra / Mahabaleshwar -> 108 venues
+14:51:17  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Bangalore (Karnataka)
+14:51:19  INFO      src.scrapers.wedmegood -   Bangalore: 2226 total venues across 108 pages
+14:51:24  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+14:51:29  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+14:51:34  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+14:51:38  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+14:51:41  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+14:51:45  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+14:51:49  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+14:51:53  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+14:51:57  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+14:52:01  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+14:52:04  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+14:52:08  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+14:52:13  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+14:52:17  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+14:52:20  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+14:52:24  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+14:52:28  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+14:52:32  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+14:52:36  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+14:52:40  INFO      src.scrapers.wedmegood -   Page 21 -> 20 venues
+14:52:43  INFO      src.scrapers.wedmegood -   Page 22 -> 20 venues
+14:52:47  INFO      src.scrapers.wedmegood -   Page 23 -> 20 venues
+14:52:52  INFO      src.scrapers.wedmegood -   Page 24 -> 20 venues
+14:52:55  INFO      src.scrapers.wedmegood -   Page 25 -> 20 venues
+14:52:59  INFO      src.scrapers.wedmegood -   Page 26 -> 20 venues
+14:53:02  INFO      src.scrapers.wedmegood -   Page 27 -> 20 venues
+14:53:07  INFO      src.scrapers.wedmegood -   Page 28 -> 20 venues
+14:53:11  INFO      src.scrapers.wedmegood -   Page 29 -> 20 venues
+14:53:15  INFO      src.scrapers.wedmegood -   Page 30 -> 20 venues
+14:53:19  INFO      src.scrapers.wedmegood -   Page 31 -> 20 venues
+14:53:22  INFO      src.scrapers.wedmegood -   Page 32 -> 20 venues
+14:53:27  INFO      src.scrapers.wedmegood -   Page 33 -> 20 venues
+14:53:31  INFO      src.scrapers.wedmegood -   Page 34 -> 20 venues
+14:53:35  INFO      src.scrapers.wedmegood -   Page 35 -> 20 venues
+14:53:40  INFO      src.scrapers.wedmegood -   Page 36 -> 20 venues
+14:53:45  INFO      src.scrapers.wedmegood -   Page 37 -> 20 venues
+14:53:48  INFO      src.scrapers.wedmegood -   Page 38 -> 20 venues
+14:53:53  INFO      src.scrapers.wedmegood -   Page 39 -> 20 venues
+14:53:57  INFO      src.scrapers.wedmegood -   Page 40 -> 20 venues
+14:54:01  INFO      src.scrapers.wedmegood -   Page 41 -> 20 venues
+14:54:05  INFO      src.scrapers.wedmegood -   Page 42 -> 20 venues
+14:54:08  INFO      src.scrapers.wedmegood -   Page 43 -> 20 venues
+14:54:12  INFO      src.scrapers.wedmegood -   Page 44 -> 20 venues
+14:54:15  INFO      src.scrapers.wedmegood -   Page 45 -> 20 venues
+14:54:19  INFO      src.scrapers.wedmegood -   Page 46 -> 20 venues
+14:54:24  INFO      src.scrapers.wedmegood -   Page 47 -> 20 venues
+14:54:28  INFO      src.scrapers.wedmegood -   Page 48 -> 20 venues
+14:54:32  INFO      src.scrapers.wedmegood -   Page 49 -> 20 venues
+14:54:36  INFO      src.scrapers.wedmegood -   Page 50 -> 20 venues
+14:54:40  INFO      src.scrapers.wedmegood -   Page 51 -> 20 venues
+14:54:43  INFO      src.scrapers.wedmegood -   Page 52 -> 20 venues
+14:54:48  INFO      src.scrapers.wedmegood -   Page 53 -> 20 venues
+14:54:51  INFO      src.scrapers.wedmegood -   Page 54 -> 20 venues
+14:54:56  INFO      src.scrapers.wedmegood -   Page 55 -> 20 venues
+14:54:59  INFO      src.scrapers.wedmegood -   Page 56 -> 20 venues
+14:55:03  INFO      src.scrapers.wedmegood -   Page 57 -> 20 venues
+14:55:07  INFO      src.scrapers.wedmegood -   Page 58 -> 20 venues
+14:55:11  INFO      src.scrapers.wedmegood -   Page 59 -> 20 venues
+14:55:15  INFO      src.scrapers.wedmegood -   Page 60 -> 20 venues
+14:55:19  INFO      src.scrapers.wedmegood -   Page 61 -> 20 venues
+14:55:22  INFO      src.scrapers.wedmegood -   Page 62 -> 20 venues
+14:55:25  INFO      src.scrapers.wedmegood -   Page 63 -> 20 venues
+14:55:29  INFO      src.scrapers.wedmegood -   Page 64 -> 20 venues
+14:55:32  INFO      src.scrapers.wedmegood -   Page 65 -> 20 venues
+14:55:36  INFO      src.scrapers.wedmegood -   Page 66 -> 20 venues
+14:55:40  INFO      src.scrapers.wedmegood -   Page 67 -> 20 venues
+14:55:44  INFO      src.scrapers.wedmegood -   Page 68 -> 20 venues
+14:55:47  INFO      src.scrapers.wedmegood -   Page 69 -> 20 venues
+14:55:51  INFO      src.scrapers.wedmegood -   Page 70 -> 20 venues
+14:55:55  INFO      src.scrapers.wedmegood -   Page 71 -> 20 venues
+14:55:59  INFO      src.scrapers.wedmegood -   Page 72 -> 20 venues
+14:56:03  INFO      src.scrapers.wedmegood -   Page 73 -> 20 venues
+14:56:08  INFO      src.scrapers.wedmegood -   Page 74 -> 20 venues
+14:56:12  INFO      src.scrapers.wedmegood -   Page 75 -> 20 venues
+14:56:16  INFO      src.scrapers.wedmegood -   Page 76 -> 20 venues
+14:56:20  INFO      src.scrapers.wedmegood -   Page 77 -> 20 venues
+14:56:24  INFO      src.scrapers.wedmegood -   Page 78 -> 20 venues
+14:56:29  INFO      src.scrapers.wedmegood -   Page 79 -> 20 venues
+14:56:32  INFO      src.scrapers.wedmegood -   Page 80 -> 20 venues
+14:56:36  INFO      src.scrapers.wedmegood -   Page 81 -> 20 venues
+14:56:41  INFO      src.scrapers.wedmegood -   Page 82 -> 20 venues
+14:56:46  INFO      src.scrapers.wedmegood -   Page 83 -> 20 venues
+14:56:50  INFO      src.scrapers.wedmegood -   Page 84 -> 20 venues
+14:56:54  INFO      src.scrapers.wedmegood -   Page 85 -> 20 venues
+14:56:58  INFO      src.scrapers.wedmegood -   Page 86 -> 20 venues
+15:12:30  ERROR     src.scrapers.base - Request failed for https://www.wedmegood.com/vendors/bangalore/wedding-venues/?page=87 (attempt 1): HTTPSConnectionPool(host='www.wedmegood.com', port=443): Max retries exceeded with url: /vendors/bangalore/wedding-venues/?page=87 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E53E8C0590>: Failed to resolve 'www.wedmegood.com' ([Errno 11001] getaddrinfo failed)"))
+15:13:02  INFO      src.scrapers.wedmegood -   Page 87 -> 20 venues
+15:13:07  INFO      src.scrapers.wedmegood -   Page 88 -> 20 venues
+15:13:10  INFO      src.scrapers.wedmegood -   Page 89 -> 20 venues
+15:13:13  INFO      src.scrapers.wedmegood -   Page 90 -> 20 venues
+15:13:18  INFO      src.scrapers.wedmegood -   Page 91 -> 20 venues
+15:13:23  INFO      src.scrapers.wedmegood -   Page 92 -> 20 venues
+15:13:27  INFO      src.scrapers.wedmegood -   Page 93 -> 20 venues
+15:13:31  INFO      src.scrapers.wedmegood -   Page 94 -> 20 venues
+15:13:35  INFO      src.scrapers.wedmegood -   Page 95 -> 20 venues
+15:13:39  INFO      src.scrapers.wedmegood -   Page 96 -> 20 venues
+15:13:41  INFO      src.scrapers.wedmegood -   Page 97 -> 20 venues
+15:13:44  INFO      src.scrapers.wedmegood -   Page 98 -> 20 venues
+15:13:47  INFO      src.scrapers.wedmegood -   Page 99 -> 20 venues
+15:13:50  INFO      src.scrapers.wedmegood -   Page 100 -> 20 venues
+15:13:54  INFO      src.scrapers.wedmegood -   Page 101 -> 20 venues
+15:13:59  INFO      src.scrapers.wedmegood -   Page 102 -> 20 venues
+15:14:03  INFO      src.scrapers.wedmegood -   Page 103 -> 20 venues
+15:14:07  INFO      src.scrapers.wedmegood -   Page 104 -> 20 venues
+15:14:10  INFO      src.scrapers.wedmegood -   Page 105 -> 20 venues
+15:14:13  INFO      src.scrapers.wedmegood -   Page 106 -> 20 venues
+15:14:17  INFO      src.scrapers.wedmegood -   Page 107 -> 20 venues
+15:14:21  INFO      src.scrapers.wedmegood -   Page 108 -> 6 venues
+15:14:21  INFO      src.scrapers.wedmegood - [WedMeGood] Bangalore -> 2146 total venues
+15:14:21  INFO      pipeline -   OK Karnataka / Bangalore -> 2146 venues
+15:14:21  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Mysore (Karnataka)
+15:14:25  INFO      src.scrapers.wedmegood -   Mysore: 160 total venues across 8 pages
+15:14:27  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:14:30  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+15:14:33  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+15:14:36  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+15:14:39  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+15:14:43  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+15:14:46  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+15:14:46  INFO      src.scrapers.wedmegood - [WedMeGood] Mysore -> 160 total venues
+15:14:46  INFO      pipeline -   OK Karnataka / Mysore -> 160 venues
+15:14:46  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Coorg (Karnataka)
+15:14:49  INFO      src.scrapers.wedmegood -   Coorg: 46 total venues across 3 pages
+15:14:52  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:14:54  INFO      src.scrapers.wedmegood -   Page 3 -> 6 venues
+15:14:54  INFO      src.scrapers.wedmegood - [WedMeGood] Coorg -> 46 total venues
+15:14:54  INFO      pipeline -   OK Karnataka / Coorg -> 46 venues
+15:14:54  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Dehradun (Uttarakhand)
+15:14:58  INFO      src.scrapers.wedmegood -   Dehradun: 609 total venues across 31 pages
+15:15:01  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:15:05  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+15:15:09  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+15:15:14  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+15:15:18  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+15:15:21  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+15:15:23  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+15:15:26  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+15:15:30  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+15:15:33  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+15:15:37  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+15:15:40  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+15:15:44  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+15:15:48  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+15:15:51  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+15:15:55  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+15:15:59  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+15:16:02  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+15:16:05  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+15:16:09  INFO      src.scrapers.wedmegood -   Page 21 -> 20 venues
+15:16:13  INFO      src.scrapers.wedmegood -   Page 22 -> 20 venues
+15:16:16  INFO      src.scrapers.wedmegood -   Page 23 -> 20 venues
+15:16:20  INFO      src.scrapers.wedmegood -   Page 24 -> 20 venues
+15:16:24  INFO      src.scrapers.wedmegood -   Page 25 -> 20 venues
+15:16:28  INFO      src.scrapers.wedmegood -   Page 26 -> 20 venues
+15:16:30  INFO      src.scrapers.wedmegood -   Page 27 -> 20 venues
+15:16:34  INFO      src.scrapers.wedmegood -   Page 28 -> 20 venues
+15:16:38  INFO      src.scrapers.wedmegood -   Page 29 -> 20 venues
+15:16:42  INFO      src.scrapers.wedmegood -   Page 30 -> 20 venues
+15:16:45  INFO      src.scrapers.wedmegood -   Page 31 -> 9 venues
+15:16:45  INFO      src.scrapers.wedmegood - [WedMeGood] Dehradun -> 609 total venues
+15:16:45  INFO      pipeline -   OK Uttarakhand / Dehradun -> 609 venues
+15:16:45  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Mussoorie (Uttarakhand)
+15:16:49  INFO      src.scrapers.wedmegood -   Mussoorie: 114 total venues across 6 pages
+15:16:51  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:16:54  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+15:16:58  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+15:17:01  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+15:17:04  INFO      src.scrapers.wedmegood -   Page 6 -> 14 venues
+15:17:04  INFO      src.scrapers.wedmegood - [WedMeGood] Mussoorie -> 114 total venues
+15:17:04  INFO      pipeline -   OK Uttarakhand / Mussoorie -> 114 venues
+15:17:04  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Rishikesh (Uttarakhand)
+15:17:07  INFO      src.scrapers.wedmegood -   Rishikesh: 287 total venues across 15 pages
+15:17:10  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:17:13  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+15:17:17  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+15:17:20  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+15:17:24  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+15:17:26  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+15:17:30  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+15:17:34  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+15:17:38  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+15:17:41  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+15:17:43  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+15:17:47  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+15:17:50  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+15:17:54  INFO      src.scrapers.wedmegood -   Page 15 -> 7 venues
+15:17:54  INFO      src.scrapers.wedmegood - [WedMeGood] Rishikesh -> 287 total venues
+15:17:54  INFO      pipeline -   OK Uttarakhand / Rishikesh -> 287 venues
+15:17:54  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Jim Corbett (Uttarakhand)
+15:17:56  INFO      src.scrapers.wedmegood -   Jim Corbett: 255 total venues across 12 pages
+15:17:59  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:18:03  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+15:18:07  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+15:18:12  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+15:18:15  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+15:18:19  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+15:18:22  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+15:18:25  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+15:18:28  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+15:18:31  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+15:18:35  INFO      src.scrapers.wedmegood -   Page 12 -> 15 venues
+15:18:35  INFO      src.scrapers.wedmegood - [WedMeGood] Jim Corbett -> 235 total venues
+15:18:35  INFO      pipeline -   OK Uttarakhand / Jim Corbett -> 235 venues
+15:18:35  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Chennai (Tamil Nadu)
+15:18:38  INFO      src.scrapers.wedmegood -   Chennai: 1617 total venues across 81 pages
+15:18:41  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:18:45  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+15:18:49  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+15:18:52  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+15:18:56  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+15:18:59  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+15:19:02  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+15:19:06  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+15:19:09  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+15:19:12  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+15:19:16  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+15:19:20  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+15:19:23  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+15:19:26  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+15:19:30  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+15:19:33  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+15:19:36  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+15:19:38  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+15:19:42  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+15:19:46  INFO      src.scrapers.wedmegood -   Page 21 -> 20 venues
+15:19:51  INFO      src.scrapers.wedmegood -   Page 22 -> 20 venues
+15:19:55  INFO      src.scrapers.wedmegood -   Page 23 -> 20 venues
+15:19:59  INFO      src.scrapers.wedmegood -   Page 24 -> 20 venues
+15:20:03  INFO      src.scrapers.wedmegood -   Page 25 -> 20 venues
+15:20:06  INFO      src.scrapers.wedmegood -   Page 26 -> 20 venues
+15:20:10  INFO      src.scrapers.wedmegood -   Page 27 -> 20 venues
+15:20:13  INFO      src.scrapers.wedmegood -   Page 28 -> 20 venues
+15:20:17  INFO      src.scrapers.wedmegood -   Page 29 -> 20 venues
+15:20:20  INFO      src.scrapers.wedmegood -   Page 30 -> 20 venues
+15:20:24  INFO      src.scrapers.wedmegood -   Page 31 -> 20 venues
+15:20:26  INFO      src.scrapers.wedmegood -   Page 32 -> 20 venues
+15:20:31  INFO      src.scrapers.wedmegood -   Page 33 -> 20 venues
+15:20:34  INFO      src.scrapers.wedmegood -   Page 34 -> 20 venues
+15:20:38  INFO      src.scrapers.wedmegood -   Page 35 -> 20 venues
+15:20:41  INFO      src.scrapers.wedmegood -   Page 36 -> 20 venues
+15:20:45  INFO      src.scrapers.wedmegood -   Page 37 -> 20 venues
+15:20:48  INFO      src.scrapers.wedmegood -   Page 38 -> 20 venues
+15:20:52  INFO      src.scrapers.wedmegood -   Page 39 -> 20 venues
+15:20:55  INFO      src.scrapers.wedmegood -   Page 40 -> 20 venues
+15:20:59  INFO      src.scrapers.wedmegood -   Page 41 -> 20 venues
+15:21:03  INFO      src.scrapers.wedmegood -   Page 42 -> 20 venues
+15:21:07  INFO      src.scrapers.wedmegood -   Page 43 -> 20 venues
+15:21:10  INFO      src.scrapers.wedmegood -   Page 44 -> 20 venues
+15:21:14  INFO      src.scrapers.wedmegood -   Page 45 -> 20 venues
+15:21:17  INFO      src.scrapers.wedmegood -   Page 46 -> 20 venues
+15:21:21  INFO      src.scrapers.wedmegood -   Page 47 -> 20 venues
+15:21:24  INFO      src.scrapers.wedmegood -   Page 48 -> 20 venues
+15:21:27  INFO      src.scrapers.wedmegood -   Page 49 -> 20 venues
+15:21:31  INFO      src.scrapers.wedmegood -   Page 50 -> 20 venues
+15:21:34  INFO      src.scrapers.wedmegood -   Page 51 -> 20 venues
+15:21:38  INFO      src.scrapers.wedmegood -   Page 52 -> 20 venues
+15:21:41  INFO      src.scrapers.wedmegood -   Page 53 -> 20 venues
+15:21:44  INFO      src.scrapers.wedmegood -   Page 54 -> 20 venues
+15:21:48  INFO      src.scrapers.wedmegood -   Page 55 -> 20 venues
+15:21:51  INFO      src.scrapers.wedmegood -   Page 56 -> 20 venues
+15:21:55  INFO      src.scrapers.wedmegood -   Page 57 -> 20 venues
+15:21:58  INFO      src.scrapers.wedmegood -   Page 58 -> 20 venues
+15:22:02  INFO      src.scrapers.wedmegood -   Page 59 -> 20 venues
+15:22:05  INFO      src.scrapers.wedmegood -   Page 60 -> 20 venues
+15:22:08  INFO      src.scrapers.wedmegood -   Page 61 -> 20 venues
+15:22:11  INFO      src.scrapers.wedmegood -   Page 62 -> 20 venues
+15:22:15  INFO      src.scrapers.wedmegood -   Page 63 -> 20 venues
+15:22:18  INFO      src.scrapers.wedmegood -   Page 64 -> 20 venues
+15:22:21  INFO      src.scrapers.wedmegood -   Page 65 -> 20 venues
+15:22:25  INFO      src.scrapers.wedmegood -   Page 66 -> 20 venues
+15:22:29  INFO      src.scrapers.wedmegood -   Page 67 -> 20 venues
+15:22:33  INFO      src.scrapers.wedmegood -   Page 68 -> 20 venues
+15:22:36  INFO      src.scrapers.wedmegood -   Page 69 -> 20 venues
+15:22:39  INFO      src.scrapers.wedmegood -   Page 70 -> 20 venues
+15:22:43  INFO      src.scrapers.wedmegood -   Page 71 -> 20 venues
+15:22:46  INFO      src.scrapers.wedmegood -   Page 72 -> 20 venues
+15:22:49  INFO      src.scrapers.wedmegood -   Page 73 -> 20 venues
+15:22:52  INFO      src.scrapers.wedmegood -   Page 74 -> 20 venues
+15:22:56  INFO      src.scrapers.wedmegood -   Page 75 -> 20 venues
+15:23:00  INFO      src.scrapers.wedmegood -   Page 76 -> 20 venues
+15:23:03  INFO      src.scrapers.wedmegood -   Page 77 -> 20 venues
+15:23:07  INFO      src.scrapers.wedmegood -   Page 78 -> 20 venues
+15:23:10  INFO      src.scrapers.wedmegood -   Page 79 -> 20 venues
+15:23:13  INFO      src.scrapers.wedmegood -   Page 80 -> 20 venues
+15:23:17  INFO      src.scrapers.wedmegood -   Page 81 -> 17 venues
+15:23:17  INFO      src.scrapers.wedmegood - [WedMeGood] Chennai -> 1617 total venues
+15:23:17  INFO      pipeline -   OK Tamil Nadu / Chennai -> 1617 venues
+15:23:17  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Mahabalipuram (Tamil Nadu)
+15:23:21  INFO      src.scrapers.wedmegood -   Mahabalipuram: 26 total venues across 2 pages
+15:23:24  INFO      src.scrapers.wedmegood -   Page 2 -> 6 venues
+15:23:24  INFO      src.scrapers.wedmegood - [WedMeGood] Mahabalipuram -> 26 total venues
+15:23:24  INFO      pipeline -   OK Tamil Nadu / Mahabalipuram -> 26 venues
+15:23:24  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Pondicherry (Tamil Nadu)
+15:23:28  INFO      src.scrapers.wedmegood -   Pondicherry: 41 total venues across 3 pages
+15:23:32  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:23:35  INFO      src.scrapers.wedmegood -   Page 3 -> 1 venues
+15:23:35  INFO      src.scrapers.wedmegood - [WedMeGood] Pondicherry -> 41 total venues
+15:23:35  INFO      pipeline -   OK Tamil Nadu / Pondicherry -> 41 venues
+15:23:35  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Shimla (Himachal Pradesh)
+15:23:38  INFO      src.scrapers.wedmegood -   Shimla: 148 total venues across 8 pages
+15:23:42  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:23:45  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+15:23:48  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+15:23:52  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+15:23:55  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+15:23:58  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+15:24:01  INFO      src.scrapers.wedmegood -   Page 8 -> 8 venues
+15:24:01  INFO      src.scrapers.wedmegood - [WedMeGood] Shimla -> 148 total venues
+15:24:01  INFO      pipeline -   OK Himachal Pradesh / Shimla -> 148 venues
+15:24:01  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Manali (Himachal Pradesh)
+15:24:04  INFO      src.scrapers.wedmegood -   Manali: 96 total venues across 5 pages
+15:24:07  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:24:11  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+15:24:14  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+15:24:18  INFO      src.scrapers.wedmegood -   Page 5 -> 16 venues
+15:24:18  INFO      src.scrapers.wedmegood - [WedMeGood] Manali -> 96 total venues
+15:24:18  INFO      pipeline -   OK Himachal Pradesh / Manali -> 96 venues
+15:24:18  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Dharamshala (Himachal Pradesh)
+15:24:22  INFO      src.scrapers.wedmegood -   Dharamshala: 59 total venues across 3 pages
+15:24:25  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:24:29  INFO      src.scrapers.wedmegood -   Page 3 -> 19 venues
+15:24:29  INFO      src.scrapers.wedmegood - [WedMeGood] Dharamshala -> 59 total venues
+15:24:29  INFO      pipeline -   OK Himachal Pradesh / Dharamshala -> 59 venues
+15:24:29  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Gurgaon (Delhi NCR)
+15:24:33  INFO      src.scrapers.wedmegood -   Gurgaon: 732 total venues across 34 pages
+15:24:36  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:24:39  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+15:24:42  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+15:24:46  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+15:24:49  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+15:24:53  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+15:24:57  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+15:25:01  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+15:25:04  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+15:25:08  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+15:25:11  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+15:25:15  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+15:25:18  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+15:25:22  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+15:25:25  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+15:25:29  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+15:25:33  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+15:25:36  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+15:25:39  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+15:25:42  INFO      src.scrapers.wedmegood -   Page 21 -> 20 venues
+15:25:46  INFO      src.scrapers.wedmegood -   Page 22 -> 20 venues
+15:25:50  INFO      src.scrapers.wedmegood -   Page 23 -> 20 venues
+15:25:53  INFO      src.scrapers.wedmegood -   Page 24 -> 20 venues
+15:25:57  INFO      src.scrapers.wedmegood -   Page 25 -> 20 venues
+15:26:00  INFO      src.scrapers.wedmegood -   Page 26 -> 20 venues
+15:26:04  INFO      src.scrapers.wedmegood -   Page 27 -> 20 venues
+15:26:07  INFO      src.scrapers.wedmegood -   Page 28 -> 20 venues
+15:26:11  INFO      src.scrapers.wedmegood -   Page 29 -> 20 venues
+15:26:14  INFO      src.scrapers.wedmegood -   Page 30 -> 20 venues
+15:26:17  INFO      src.scrapers.wedmegood -   Page 31 -> 20 venues
+15:26:21  INFO      src.scrapers.wedmegood -   Page 32 -> 20 venues
+15:26:25  INFO      src.scrapers.wedmegood -   Page 33 -> 20 venues
+15:26:28  INFO      src.scrapers.wedmegood -   Page 34 -> 12 venues
+15:26:28  INFO      src.scrapers.wedmegood - [WedMeGood] Gurgaon -> 672 total venues
+15:26:28  INFO      pipeline -   OK Delhi NCR / Gurgaon -> 672 venues
+15:26:28  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Noida (Delhi NCR)
+15:26:31  INFO      src.scrapers.wedmegood -   Noida: 451 total venues across 21 pages
+15:26:34  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:26:37  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+15:26:41  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+15:26:45  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+15:26:49  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+15:26:52  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+15:26:56  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+15:27:00  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+15:27:06  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+15:27:10  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+15:27:13  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+15:27:16  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+15:27:20  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+15:27:22  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+15:27:26  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+15:27:29  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+15:27:33  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+15:27:36  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+15:27:40  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+15:27:42  INFO      src.scrapers.wedmegood -   Page 21 -> 11 venues
+15:27:42  INFO      src.scrapers.wedmegood - [WedMeGood] Noida -> 411 total venues
+15:27:42  INFO      pipeline -   OK Delhi NCR / Noida -> 411 venues
+15:27:42  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Delhi (Delhi NCR)
+15:27:44  ERROR     src.scrapers.base - Unexpected status 404 for https://www.wedmegood.com/vendors/delhi/wedding-venues/
+15:27:44  WARNING   src.scrapers.wedmegood - [WedMeGood] No response for https://www.wedmegood.com/vendors/delhi/wedding-venues/
+15:27:44  INFO      pipeline -   OK Delhi NCR / Delhi -> 0 venues
+15:27:44  INFO      src.scrapers.wedmegood - [WedMeGood] Scraping city: Kolkata (West Bengal)
+15:27:48  INFO      src.scrapers.wedmegood -   Kolkata: 1246 total venues across 62 pages
+15:27:51  INFO      src.scrapers.wedmegood -   Page 2 -> 20 venues
+15:27:55  INFO      src.scrapers.wedmegood -   Page 3 -> 20 venues
+15:27:59  INFO      src.scrapers.wedmegood -   Page 4 -> 20 venues
+15:28:03  INFO      src.scrapers.wedmegood -   Page 5 -> 20 venues
+15:28:05  INFO      src.scrapers.wedmegood -   Page 6 -> 20 venues
+15:28:09  INFO      src.scrapers.wedmegood -   Page 7 -> 20 venues
+15:28:12  INFO      src.scrapers.wedmegood -   Page 8 -> 20 venues
+15:28:15  INFO      src.scrapers.wedmegood -   Page 9 -> 20 venues
+15:28:19  INFO      src.scrapers.wedmegood -   Page 10 -> 20 venues
+15:28:22  INFO      src.scrapers.wedmegood -   Page 11 -> 20 venues
+15:28:28  INFO      src.scrapers.wedmegood -   Page 12 -> 20 venues
+15:28:31  INFO      src.scrapers.wedmegood -   Page 13 -> 20 venues
+15:28:34  INFO      src.scrapers.wedmegood -   Page 14 -> 20 venues
+15:28:37  INFO      src.scrapers.wedmegood -   Page 15 -> 20 venues
+15:28:40  INFO      src.scrapers.wedmegood -   Page 16 -> 20 venues
+15:28:44  INFO      src.scrapers.wedmegood -   Page 17 -> 20 venues
+15:28:47  INFO      src.scrapers.wedmegood -   Page 18 -> 20 venues
+15:28:51  INFO      src.scrapers.wedmegood -   Page 19 -> 20 venues
+15:28:55  INFO      src.scrapers.wedmegood -   Page 20 -> 20 venues
+15:28:59  INFO      src.scrapers.wedmegood -   Page 21 -> 20 venues
+15:29:03  INFO      src.scrapers.wedmegood -   Page 22 -> 20 venues
+15:29:07  INFO      src.scrapers.wedmegood -   Page 23 -> 20 venues
+15:29:10  INFO      src.scrapers.wedmegood -   Page 24 -> 20 venues
+15:29:14  INFO      src.scrapers.wedmegood -   Page 25 -> 20 venues
+15:29:17  INFO      src.scrapers.wedmegood -   Page 26 -> 20 venues
+15:29:21  INFO      src.scrapers.wedmegood -   Page 27 -> 20 venues
+15:29:24  INFO      src.scrapers.wedmegood -   Page 28 -> 20 venues
+15:29:28  INFO      src.scrapers.wedmegood -   Page 29 -> 20 venues
+15:29:31  INFO      src.scrapers.wedmegood -   Page 30 -> 20 venues
+15:29:35  INFO      src.scrapers.wedmegood -   Page 31 -> 20 venues
+15:29:39  INFO      src.scrapers.wedmegood -   Page 32 -> 20 venues
+15:29:42  INFO      src.scrapers.wedmegood -   Page 33 -> 20 venues
+15:29:46  INFO      src.scrapers.wedmegood -   Page 34 -> 20 venues
+15:29:49  INFO      src.scrapers.wedmegood -   Page 35 -> 20 venues
+15:29:52  INFO      src.scrapers.wedmegood -   Page 36 -> 20 venues
+15:29:56  INFO      src.scrapers.wedmegood -   Page 37 -> 20 venues
+15:30:00  INFO      src.scrapers.wedmegood -   Page 38 -> 20 venues
+15:30:04  INFO      src.scrapers.wedmegood -   Page 39 -> 20 venues
+15:30:07  INFO      src.scrapers.wedmegood -   Page 40 -> 20 venues
+15:30:11  INFO      src.scrapers.wedmegood -   Page 41 -> 20 venues
+15:30:15  INFO      src.scrapers.wedmegood -   Page 42 -> 20 venues
+15:30:18  INFO      src.scrapers.wedmegood -   Page 43 -> 20 venues
+15:30:21  INFO      src.scrapers.wedmegood -   Page 44 -> 20 venues
+15:30:25  INFO      src.scrapers.wedmegood -   Page 45 -> 20 venues
+15:30:29  INFO      src.scrapers.wedmegood -   Page 46 -> 20 venues
+15:30:33  INFO      src.scrapers.wedmegood -   Page 47 -> 20 venues
+15:30:37  INFO      src.scrapers.wedmegood -   Page 48 -> 20 venues
+15:30:40  INFO      src.scrapers.wedmegood -   Page 49 -> 20 venues
+15:30:43  INFO      src.scrapers.wedmegood -   Page 50 -> 20 venues
+15:30:45  INFO      src.scrapers.wedmegood -   Page 51 -> 20 venues
+15:30:48  INFO      src.scrapers.wedmegood -   Page 52 -> 20 venues
+15:30:51  INFO      src.scrapers.wedmegood -   Page 53 -> 20 venues
+15:30:54  INFO      src.scrapers.wedmegood -   Page 54 -> 20 venues
+15:30:59  INFO      src.scrapers.wedmegood -   Page 55 -> 20 venues
+15:31:02  INFO      src.scrapers.wedmegood -   Page 56 -> 20 venues
+15:31:05  INFO      src.scrapers.wedmegood -   Page 57 -> 20 venues
+15:31:08  INFO      src.scrapers.wedmegood -   Page 58 -> 20 venues
+15:31:12  INFO      src.scrapers.wedmegood -   Page 59 -> 20 venues
+15:31:16  INFO      src.scrapers.wedmegood -   Page 60 -> 20 venues
+15:31:21  INFO      src.scrapers.wedmegood -   Page 61 -> 20 venues
+15:31:26  INFO      src.scrapers.wedmegood -   Page 62 -> 6 venues
+15:31:26  INFO      src.scrapers.wedmegood - [WedMeGood] Kolkata -> 1226 total venues
+15:31:26  INFO      pipeline -   OK West Bengal / Kolkata -> 1226 venues
+15:31:26  INFO      pipeline - Raw dump saved → D:\oe-2\wedding-venue-scraper\data\raw\wedmegood_raw.csv (15699 records)
+15:31:26  INFO      pipeline - === Scraping source: venuelook ===
+15:31:26  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Udaipur (Rajasthan)
+15:31:27  INFO      src.scrapers.venuelook -   Udaipur: 5 pages
+15:31:27  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:31:28  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:31:28  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:31:29  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:31:29  INFO      src.scrapers.venuelook - [VenueLook] Udaipur -> 150 total venues
+15:31:29  INFO      pipeline -   OK Rajasthan / Udaipur -> 150 venues
+15:31:29  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Jaipur (Rajasthan)
+15:31:29  INFO      src.scrapers.venuelook -   Jaipur: 25 pages
+15:31:30  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:31:30  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:31:30  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:31:31  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:31:32  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+15:31:32  INFO      src.scrapers.venuelook -   Page 7 -> 30 venues
+15:31:33  INFO      src.scrapers.venuelook -   Page 8 -> 30 venues
+15:31:34  INFO      src.scrapers.venuelook -   Page 9 -> 30 venues
+15:31:35  INFO      src.scrapers.venuelook -   Page 10 -> 30 venues
+15:31:35  INFO      src.scrapers.venuelook -   Page 11 -> 30 venues
+15:31:36  INFO      src.scrapers.venuelook -   Page 12 -> 30 venues
+15:31:36  INFO      src.scrapers.venuelook -   Page 13 -> 30 venues
+15:31:37  INFO      src.scrapers.venuelook -   Page 14 -> 30 venues
+15:31:37  INFO      src.scrapers.venuelook -   Page 15 -> 30 venues
+15:31:38  INFO      src.scrapers.venuelook -   Page 16 -> 30 venues
+15:31:38  INFO      src.scrapers.venuelook -   Page 17 -> 30 venues
+15:31:39  INFO      src.scrapers.venuelook -   Page 18 -> 30 venues
+15:31:39  INFO      src.scrapers.venuelook -   Page 19 -> 30 venues
+15:31:40  INFO      src.scrapers.venuelook -   Page 20 -> 30 venues
+15:31:40  INFO      src.scrapers.venuelook -   Page 21 -> 30 venues
+15:31:41  INFO      src.scrapers.venuelook -   Page 22 -> 30 venues
+15:31:41  INFO      src.scrapers.venuelook -   Page 23 -> 30 venues
+15:31:42  INFO      src.scrapers.venuelook -   Page 24 -> 30 venues
+15:31:42  INFO      src.scrapers.venuelook -   Page 25 -> 30 venues
+15:31:42  INFO      src.scrapers.venuelook - [VenueLook] Jaipur -> 750 total venues
+15:31:42  INFO      pipeline -   OK Rajasthan / Jaipur -> 750 venues
+15:31:42  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Jodhpur (Rajasthan)
+15:31:43  INFO      src.scrapers.venuelook -   Jodhpur: 5 pages
+15:31:43  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:31:44  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:31:45  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:31:45  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:31:45  INFO      src.scrapers.venuelook - [VenueLook] Jodhpur -> 150 total venues
+15:31:45  INFO      pipeline -   OK Rajasthan / Jodhpur -> 150 venues
+15:31:45  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Jaisalmer (Rajasthan)
+15:31:45  INFO      src.scrapers.venuelook -   Jaisalmer: 3 pages
+15:31:46  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:31:47  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:31:47  INFO      src.scrapers.venuelook - [VenueLook] Jaisalmer -> 90 total venues
+15:31:47  INFO      pipeline -   OK Rajasthan / Jaisalmer -> 90 venues
+15:31:47  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Pushkar (Rajasthan)
+15:31:47  INFO      src.scrapers.venuelook -   Pushkar: 4 pages
+15:31:48  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:31:48  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:31:49  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:31:49  INFO      src.scrapers.venuelook - [VenueLook] Pushkar -> 120 total venues
+15:31:49  INFO      pipeline -   OK Rajasthan / Pushkar -> 120 venues
+15:31:49  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Goa (Goa)
+15:31:52  INFO      src.scrapers.venuelook -   Goa: 6 pages
+15:31:56  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:32:00  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:32:04  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:32:08  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:32:11  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+15:32:11  INFO      src.scrapers.venuelook - [VenueLook] Goa -> 180 total venues
+15:32:11  INFO      pipeline -   OK Goa / Goa -> 180 venues
+15:32:11  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Kochi (Kerala)
+15:32:14  INFO      src.scrapers.venuelook -   Kochi: 7 pages
+15:32:17  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:32:20  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:32:22  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:32:26  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:32:29  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+15:32:32  INFO      src.scrapers.venuelook -   Page 7 -> 30 venues
+15:32:32  INFO      src.scrapers.venuelook - [VenueLook] Kochi -> 210 total venues
+15:32:32  INFO      pipeline -   OK Kerala / Kochi -> 210 venues
+15:32:32  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Kovalam (Kerala)
+15:32:33  ERROR     src.scrapers.base - Unexpected status 404 for https://www.venuelook.com/wedding-venues-in-kovalam
+15:32:33  WARNING   src.scrapers.venuelook - [VenueLook] No response for https://www.venuelook.com/wedding-venues-in-kovalam
+15:32:33  INFO      pipeline -   OK Kerala / Kovalam -> 0 venues
+15:32:33  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Mumbai (Maharashtra)
+15:32:36  INFO      src.scrapers.venuelook -   Mumbai: 51 pages
+15:32:40  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:32:44  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:32:47  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:32:51  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:32:54  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+15:32:57  INFO      src.scrapers.venuelook -   Page 7 -> 30 venues
+15:33:00  INFO      src.scrapers.venuelook -   Page 8 -> 30 venues
+15:33:03  INFO      src.scrapers.venuelook -   Page 9 -> 30 venues
+15:33:06  INFO      src.scrapers.venuelook -   Page 10 -> 30 venues
+15:33:09  INFO      src.scrapers.venuelook -   Page 11 -> 30 venues
+15:33:11  INFO      src.scrapers.venuelook -   Page 12 -> 30 venues
+15:33:14  INFO      src.scrapers.venuelook -   Page 13 -> 30 venues
+15:33:18  INFO      src.scrapers.venuelook -   Page 14 -> 30 venues
+15:33:21  INFO      src.scrapers.venuelook -   Page 15 -> 30 venues
+15:33:25  INFO      src.scrapers.venuelook -   Page 16 -> 30 venues
+15:33:28  INFO      src.scrapers.venuelook -   Page 17 -> 30 venues
+15:33:31  INFO      src.scrapers.venuelook -   Page 18 -> 30 venues
+15:33:34  INFO      src.scrapers.venuelook -   Page 19 -> 30 venues
+15:33:38  INFO      src.scrapers.venuelook -   Page 20 -> 30 venues
+15:33:41  INFO      src.scrapers.venuelook -   Page 21 -> 30 venues
+15:33:44  INFO      src.scrapers.venuelook -   Page 22 -> 30 venues
+15:33:47  INFO      src.scrapers.venuelook -   Page 23 -> 30 venues
+15:33:50  INFO      src.scrapers.venuelook -   Page 24 -> 30 venues
+15:33:54  INFO      src.scrapers.venuelook -   Page 25 -> 30 venues
+15:33:57  INFO      src.scrapers.venuelook -   Page 26 -> 30 venues
+15:33:59  INFO      src.scrapers.venuelook -   Page 27 -> 30 venues
+15:34:03  INFO      src.scrapers.venuelook -   Page 28 -> 30 venues
+15:34:07  INFO      src.scrapers.venuelook -   Page 29 -> 30 venues
+15:34:09  INFO      src.scrapers.venuelook -   Page 30 -> 30 venues
+15:34:13  INFO      src.scrapers.venuelook -   Page 31 -> 30 venues
+15:34:16  INFO      src.scrapers.venuelook -   Page 32 -> 30 venues
+15:34:20  INFO      src.scrapers.venuelook -   Page 33 -> 30 venues
+15:34:23  INFO      src.scrapers.venuelook -   Page 34 -> 30 venues
+15:34:25  INFO      src.scrapers.venuelook -   Page 35 -> 30 venues
+15:34:28  INFO      src.scrapers.venuelook -   Page 36 -> 30 venues
+15:34:32  INFO      src.scrapers.venuelook -   Page 37 -> 30 venues
+15:34:36  INFO      src.scrapers.venuelook -   Page 38 -> 30 venues
+15:34:39  INFO      src.scrapers.venuelook -   Page 39 -> 30 venues
+15:34:42  INFO      src.scrapers.venuelook -   Page 40 -> 30 venues
+15:34:46  INFO      src.scrapers.venuelook -   Page 41 -> 30 venues
+15:34:48  INFO      src.scrapers.venuelook -   Page 42 -> 30 venues
+15:34:52  INFO      src.scrapers.venuelook -   Page 43 -> 30 venues
+15:34:55  INFO      src.scrapers.venuelook -   Page 44 -> 30 venues
+15:34:59  INFO      src.scrapers.venuelook -   Page 45 -> 30 venues
+15:35:02  INFO      src.scrapers.venuelook -   Page 46 -> 30 venues
+15:35:06  INFO      src.scrapers.venuelook -   Page 47 -> 30 venues
+15:35:09  INFO      src.scrapers.venuelook -   Page 48 -> 30 venues
+15:35:12  INFO      src.scrapers.venuelook -   Page 49 -> 30 venues
+15:35:15  INFO      src.scrapers.venuelook -   Page 50 -> 30 venues
+15:35:19  INFO      src.scrapers.venuelook -   Page 51 -> 30 venues
+15:35:19  INFO      src.scrapers.venuelook - [VenueLook] Mumbai -> 1530 total venues
+15:35:19  INFO      pipeline -   OK Maharashtra / Mumbai -> 1530 venues
+15:35:19  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Pune (Maharashtra)
+15:35:22  INFO      src.scrapers.venuelook -   Pune: 34 pages
+15:35:26  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:35:29  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:35:31  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:35:34  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:35:38  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+15:35:41  INFO      src.scrapers.venuelook -   Page 7 -> 30 venues
+15:35:45  INFO      src.scrapers.venuelook -   Page 8 -> 30 venues
+15:35:47  INFO      src.scrapers.venuelook -   Page 9 -> 30 venues
+15:35:51  INFO      src.scrapers.venuelook -   Page 10 -> 30 venues
+15:35:55  INFO      src.scrapers.venuelook -   Page 11 -> 30 venues
+15:35:59  INFO      src.scrapers.venuelook -   Page 12 -> 30 venues
+15:36:02  INFO      src.scrapers.venuelook -   Page 13 -> 30 venues
+15:36:05  INFO      src.scrapers.venuelook -   Page 14 -> 30 venues
+15:36:08  INFO      src.scrapers.venuelook -   Page 15 -> 30 venues
+15:36:11  INFO      src.scrapers.venuelook -   Page 16 -> 30 venues
+15:36:15  INFO      src.scrapers.venuelook -   Page 17 -> 30 venues
+15:36:17  INFO      src.scrapers.venuelook -   Page 18 -> 30 venues
+15:36:20  INFO      src.scrapers.venuelook -   Page 19 -> 30 venues
+15:36:24  INFO      src.scrapers.venuelook -   Page 20 -> 30 venues
+15:36:28  INFO      src.scrapers.venuelook -   Page 21 -> 30 venues
+15:36:31  INFO      src.scrapers.venuelook -   Page 22 -> 30 venues
+15:36:33  INFO      src.scrapers.venuelook -   Page 23 -> 30 venues
+15:36:37  INFO      src.scrapers.venuelook -   Page 24 -> 30 venues
+15:36:40  INFO      src.scrapers.venuelook -   Page 25 -> 30 venues
+15:36:44  INFO      src.scrapers.venuelook -   Page 26 -> 30 venues
+15:36:48  INFO      src.scrapers.venuelook -   Page 27 -> 30 venues
+15:36:51  INFO      src.scrapers.venuelook -   Page 28 -> 30 venues
+15:36:54  INFO      src.scrapers.venuelook -   Page 29 -> 30 venues
+15:36:57  INFO      src.scrapers.venuelook -   Page 30 -> 30 venues
+15:37:00  INFO      src.scrapers.venuelook -   Page 31 -> 30 venues
+15:37:03  INFO      src.scrapers.venuelook -   Page 32 -> 30 venues
+15:37:07  INFO      src.scrapers.venuelook -   Page 33 -> 30 venues
+15:37:10  INFO      src.scrapers.venuelook -   Page 34 -> 30 venues
+15:37:10  INFO      src.scrapers.venuelook - [VenueLook] Pune -> 1020 total venues
+15:37:10  INFO      pipeline -   OK Maharashtra / Pune -> 1020 venues
+15:37:10  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Lonavala (Maharashtra)
+15:37:13  INFO      src.scrapers.venuelook -   Lonavala: 3 pages
+15:37:18  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:37:21  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:37:21  INFO      src.scrapers.venuelook - [VenueLook] Lonavala -> 90 total venues
+15:37:21  INFO      pipeline -   OK Maharashtra / Lonavala -> 90 venues
+15:37:21  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Mahabaleshwar (Maharashtra)
+15:37:24  INFO      src.scrapers.venuelook -   Mahabaleshwar: 2 pages
+15:37:27  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:37:27  INFO      src.scrapers.venuelook - [VenueLook] Mahabaleshwar -> 60 total venues
+15:37:27  INFO      pipeline -   OK Maharashtra / Mahabaleshwar -> 60 venues
+15:37:27  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Bangalore (Karnataka)
+15:37:30  INFO      src.scrapers.venuelook -   Bangalore: 57 pages
+15:37:34  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:37:36  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:37:39  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:37:42  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:37:45  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+15:37:48  INFO      src.scrapers.venuelook -   Page 7 -> 30 venues
+15:37:50  INFO      src.scrapers.venuelook -   Page 8 -> 30 venues
+15:37:53  INFO      src.scrapers.venuelook -   Page 9 -> 30 venues
+15:37:56  INFO      src.scrapers.venuelook -   Page 10 -> 30 venues
+15:37:59  INFO      src.scrapers.venuelook -   Page 11 -> 30 venues
+15:38:02  INFO      src.scrapers.venuelook -   Page 12 -> 30 venues
+15:38:05  INFO      src.scrapers.venuelook -   Page 13 -> 30 venues
+15:38:09  INFO      src.scrapers.venuelook -   Page 14 -> 30 venues
+15:38:12  INFO      src.scrapers.venuelook -   Page 15 -> 30 venues
+15:38:15  INFO      src.scrapers.venuelook -   Page 16 -> 30 venues
+15:38:18  INFO      src.scrapers.venuelook -   Page 17 -> 30 venues
+15:38:21  INFO      src.scrapers.venuelook -   Page 18 -> 30 venues
+15:38:25  INFO      src.scrapers.venuelook -   Page 19 -> 30 venues
+15:38:28  INFO      src.scrapers.venuelook -   Page 20 -> 30 venues
+15:38:31  INFO      src.scrapers.venuelook -   Page 21 -> 30 venues
+15:38:35  INFO      src.scrapers.venuelook -   Page 22 -> 30 venues
+15:38:38  INFO      src.scrapers.venuelook -   Page 23 -> 30 venues
+15:38:41  INFO      src.scrapers.venuelook -   Page 24 -> 30 venues
+15:38:44  INFO      src.scrapers.venuelook -   Page 25 -> 30 venues
+15:38:48  INFO      src.scrapers.venuelook -   Page 26 -> 30 venues
+15:38:51  INFO      src.scrapers.venuelook -   Page 27 -> 30 venues
+15:38:54  INFO      src.scrapers.venuelook -   Page 28 -> 30 venues
+15:38:59  INFO      src.scrapers.venuelook -   Page 29 -> 30 venues
+15:39:02  INFO      src.scrapers.venuelook -   Page 30 -> 30 venues
+15:39:05  INFO      src.scrapers.venuelook -   Page 31 -> 30 venues
+15:39:09  INFO      src.scrapers.venuelook -   Page 32 -> 30 venues
+15:39:12  INFO      src.scrapers.venuelook -   Page 33 -> 30 venues
+15:39:15  INFO      src.scrapers.venuelook -   Page 34 -> 30 venues
+15:39:20  INFO      src.scrapers.venuelook -   Page 35 -> 30 venues
+15:39:23  INFO      src.scrapers.venuelook -   Page 36 -> 30 venues
+15:39:26  INFO      src.scrapers.venuelook -   Page 37 -> 30 venues
+15:39:29  INFO      src.scrapers.venuelook -   Page 38 -> 30 venues
+15:39:33  INFO      src.scrapers.venuelook -   Page 39 -> 30 venues
+15:39:36  INFO      src.scrapers.venuelook -   Page 40 -> 30 venues
+15:39:38  INFO      src.scrapers.venuelook -   Page 41 -> 30 venues
+15:39:42  INFO      src.scrapers.venuelook -   Page 42 -> 30 venues
+15:39:45  INFO      src.scrapers.venuelook -   Page 43 -> 30 venues
+15:39:48  INFO      src.scrapers.venuelook -   Page 44 -> 30 venues
+15:39:52  INFO      src.scrapers.venuelook -   Page 45 -> 30 venues
+15:39:55  INFO      src.scrapers.venuelook -   Page 46 -> 30 venues
+15:39:59  INFO      src.scrapers.venuelook -   Page 47 -> 30 venues
+15:40:02  INFO      src.scrapers.venuelook -   Page 48 -> 30 venues
+15:40:05  INFO      src.scrapers.venuelook -   Page 49 -> 30 venues
+15:40:08  INFO      src.scrapers.venuelook -   Page 50 -> 30 venues
+15:40:11  INFO      src.scrapers.venuelook -   Page 51 -> 30 venues
+15:40:14  INFO      src.scrapers.venuelook -   Page 52 -> 30 venues
+15:40:18  INFO      src.scrapers.venuelook -   Page 53 -> 30 venues
+15:40:21  INFO      src.scrapers.venuelook -   Page 54 -> 30 venues
+15:40:25  INFO      src.scrapers.venuelook -   Page 55 -> 30 venues
+15:40:28  INFO      src.scrapers.venuelook -   Page 56 -> 30 venues
+15:40:32  INFO      src.scrapers.venuelook -   Page 57 -> 30 venues
+15:40:32  INFO      src.scrapers.venuelook - [VenueLook] Bangalore -> 1710 total venues
+15:40:32  INFO      pipeline -   OK Karnataka / Bangalore -> 1710 venues
+15:40:32  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Mysore (Karnataka)
+15:40:36  INFO      src.scrapers.venuelook -   Mysore: 4 pages
+15:40:41  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:40:46  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:40:50  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:40:50  INFO      src.scrapers.venuelook - [VenueLook] Mysore -> 120 total venues
+15:40:50  INFO      pipeline -   OK Karnataka / Mysore -> 120 venues
+15:40:50  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Coorg (Karnataka)
+15:40:53  ERROR     src.scrapers.base - Unexpected status 404 for https://www.venuelook.com/wedding-venues-in-coorg
+15:40:53  WARNING   src.scrapers.venuelook - [VenueLook] No response for https://www.venuelook.com/wedding-venues-in-coorg
+15:40:53  INFO      pipeline -   OK Karnataka / Coorg -> 0 venues
+15:40:53  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Dehradun (Uttarakhand)
+15:40:56  INFO      src.scrapers.venuelook -   Dehradun: 7 pages
+15:41:00  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:41:02  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:41:06  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:41:09  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:41:12  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+15:41:15  INFO      src.scrapers.venuelook -   Page 7 -> 30 venues
+15:41:15  INFO      src.scrapers.venuelook - [VenueLook] Dehradun -> 210 total venues
+15:41:15  INFO      pipeline -   OK Uttarakhand / Dehradun -> 210 venues
+15:41:15  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Mussoorie (Uttarakhand)
+15:41:17  INFO      src.scrapers.venuelook -   Mussoorie: 2 pages
+15:41:20  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:41:20  INFO      src.scrapers.venuelook - [VenueLook] Mussoorie -> 60 total venues
+15:41:20  INFO      pipeline -   OK Uttarakhand / Mussoorie -> 60 venues
+15:41:20  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Rishikesh (Uttarakhand)
+15:41:23  INFO      src.scrapers.venuelook -   Rishikesh: 3 pages
+15:41:26  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:41:30  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:41:30  INFO      src.scrapers.venuelook - [VenueLook] Rishikesh -> 90 total venues
+15:41:30  INFO      pipeline -   OK Uttarakhand / Rishikesh -> 90 venues
+15:41:30  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Jim Corbett (Uttarakhand)
+15:41:32  INFO      src.scrapers.venuelook -   Jim Corbett: 3 pages
+15:41:36  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:41:39  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:41:39  INFO      src.scrapers.venuelook - [VenueLook] Jim Corbett -> 90 total venues
+15:41:39  INFO      pipeline -   OK Uttarakhand / Jim Corbett -> 90 venues
+15:41:39  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Chennai (Tamil Nadu)
+15:41:42  INFO      src.scrapers.venuelook -   Chennai: 24 pages
+15:41:46  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:41:48  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:41:52  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:41:56  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:41:59  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+15:42:02  INFO      src.scrapers.venuelook -   Page 7 -> 30 venues
+15:42:06  INFO      src.scrapers.venuelook -   Page 8 -> 30 venues
+15:42:09  INFO      src.scrapers.venuelook -   Page 9 -> 30 venues
+15:42:12  INFO      src.scrapers.venuelook -   Page 10 -> 30 venues
+15:42:15  INFO      src.scrapers.venuelook -   Page 11 -> 30 venues
+15:42:19  INFO      src.scrapers.venuelook -   Page 12 -> 30 venues
+15:42:23  INFO      src.scrapers.venuelook -   Page 13 -> 30 venues
+15:42:26  INFO      src.scrapers.venuelook -   Page 14 -> 30 venues
+15:42:29  INFO      src.scrapers.venuelook -   Page 15 -> 30 venues
+15:42:33  INFO      src.scrapers.venuelook -   Page 16 -> 30 venues
+15:42:37  INFO      src.scrapers.venuelook -   Page 17 -> 30 venues
+15:42:39  INFO      src.scrapers.venuelook -   Page 18 -> 30 venues
+15:42:42  INFO      src.scrapers.venuelook -   Page 19 -> 30 venues
+15:42:46  INFO      src.scrapers.venuelook -   Page 20 -> 30 venues
+15:42:49  INFO      src.scrapers.venuelook -   Page 21 -> 30 venues
+15:42:52  INFO      src.scrapers.venuelook -   Page 22 -> 30 venues
+15:42:55  INFO      src.scrapers.venuelook -   Page 23 -> 30 venues
+15:42:59  INFO      src.scrapers.venuelook -   Page 24 -> 30 venues
+15:42:59  INFO      src.scrapers.venuelook - [VenueLook] Chennai -> 720 total venues
+15:42:59  INFO      pipeline -   OK Tamil Nadu / Chennai -> 720 venues
+15:42:59  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Mahabalipuram (Tamil Nadu)
+15:43:02  ERROR     src.scrapers.base - Unexpected status 404 for https://www.venuelook.com/wedding-venues-in-mahabalipuram
+15:43:02  WARNING   src.scrapers.venuelook - [VenueLook] No response for https://www.venuelook.com/wedding-venues-in-mahabalipuram
+15:43:02  INFO      pipeline -   OK Tamil Nadu / Mahabalipuram -> 0 venues
+15:43:02  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Pondicherry (Tamil Nadu)
+15:43:04  ERROR     src.scrapers.base - Unexpected status 404 for https://www.venuelook.com/wedding-venues-in-pondicherry
+15:43:04  WARNING   src.scrapers.venuelook - [VenueLook] No response for https://www.venuelook.com/wedding-venues-in-pondicherry
+15:43:04  INFO      pipeline -   OK Tamil Nadu / Pondicherry -> 0 venues
+15:43:04  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Shimla (Himachal Pradesh)
+15:43:07  INFO      src.scrapers.venuelook -   Shimla: 1 pages
+15:43:07  INFO      src.scrapers.venuelook - [VenueLook] Shimla -> 13 total venues
+15:43:07  INFO      pipeline -   OK Himachal Pradesh / Shimla -> 13 venues
+15:43:07  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Manali (Himachal Pradesh)
+15:43:10  ERROR     src.scrapers.base - Unexpected status 404 for https://www.venuelook.com/wedding-venues-in-manali
+15:43:10  WARNING   src.scrapers.venuelook - [VenueLook] No response for https://www.venuelook.com/wedding-venues-in-manali
+15:43:10  INFO      pipeline -   OK Himachal Pradesh / Manali -> 0 venues
+15:43:10  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Dharamshala (Himachal Pradesh)
+15:43:13  INFO      src.scrapers.venuelook -   Dharamshala: 1 pages
+15:43:14  INFO      src.scrapers.venuelook - [VenueLook] Dharamshala -> 20 total venues
+15:43:14  INFO      pipeline -   OK Himachal Pradesh / Dharamshala -> 20 venues
+15:43:14  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Gurgaon (Delhi NCR)
+15:43:17  INFO      src.scrapers.venuelook -   Gurgaon: 26 pages
+15:43:20  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:43:23  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:43:26  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:43:29  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:43:33  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+15:43:36  INFO      src.scrapers.venuelook -   Page 7 -> 30 venues
+15:43:40  INFO      src.scrapers.venuelook -   Page 8 -> 30 venues
+15:43:44  INFO      src.scrapers.venuelook -   Page 9 -> 30 venues
+15:43:48  INFO      src.scrapers.venuelook -   Page 10 -> 30 venues
+15:43:51  INFO      src.scrapers.venuelook -   Page 11 -> 30 venues
+15:43:54  INFO      src.scrapers.venuelook -   Page 12 -> 30 venues
+15:43:58  INFO      src.scrapers.venuelook -   Page 13 -> 30 venues
+15:44:01  INFO      src.scrapers.venuelook -   Page 14 -> 30 venues
+15:44:04  INFO      src.scrapers.venuelook -   Page 15 -> 30 venues
+15:44:08  INFO      src.scrapers.venuelook -   Page 16 -> 30 venues
+15:44:11  INFO      src.scrapers.venuelook -   Page 17 -> 30 venues
+15:44:14  INFO      src.scrapers.venuelook -   Page 18 -> 30 venues
+15:44:17  INFO      src.scrapers.venuelook -   Page 19 -> 30 venues
+15:44:20  INFO      src.scrapers.venuelook -   Page 20 -> 30 venues
+15:44:23  INFO      src.scrapers.venuelook -   Page 21 -> 30 venues
+15:44:27  INFO      src.scrapers.venuelook -   Page 22 -> 30 venues
+15:44:30  INFO      src.scrapers.venuelook -   Page 23 -> 30 venues
+15:44:34  INFO      src.scrapers.venuelook -   Page 24 -> 30 venues
+15:44:36  INFO      src.scrapers.venuelook -   Page 25 -> 30 venues
+15:44:39  INFO      src.scrapers.venuelook -   Page 26 -> 30 venues
+15:44:39  INFO      src.scrapers.venuelook - [VenueLook] Gurgaon -> 780 total venues
+15:44:39  INFO      pipeline -   OK Delhi NCR / Gurgaon -> 780 venues
+15:44:39  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Noida (Delhi NCR)
+15:44:43  INFO      src.scrapers.venuelook -   Noida: 17 pages
+15:44:46  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:44:50  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:44:54  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:44:57  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:44:59  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+15:45:02  INFO      src.scrapers.venuelook -   Page 7 -> 30 venues
+15:45:05  INFO      src.scrapers.venuelook -   Page 8 -> 30 venues
+15:45:09  INFO      src.scrapers.venuelook -   Page 9 -> 30 venues
+15:45:12  INFO      src.scrapers.venuelook -   Page 10 -> 30 venues
+15:45:15  INFO      src.scrapers.venuelook -   Page 11 -> 30 venues
+15:45:18  INFO      src.scrapers.venuelook -   Page 12 -> 30 venues
+15:45:25  INFO      src.scrapers.venuelook -   Page 13 -> 30 venues
+15:45:30  INFO      src.scrapers.venuelook -   Page 14 -> 30 venues
+15:45:34  INFO      src.scrapers.venuelook -   Page 15 -> 30 venues
+15:45:38  INFO      src.scrapers.venuelook -   Page 16 -> 30 venues
+15:45:41  INFO      src.scrapers.venuelook -   Page 17 -> 30 venues
+15:45:41  INFO      src.scrapers.venuelook - [VenueLook] Noida -> 510 total venues
+15:45:41  INFO      pipeline -   OK Delhi NCR / Noida -> 510 venues
+15:45:41  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Delhi (Delhi NCR)
+15:45:44  INFO      src.scrapers.venuelook -   Delhi: 56 pages
+15:45:48  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+15:45:52  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+15:45:56  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+15:45:59  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+15:46:02  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+15:46:05  INFO      src.scrapers.venuelook -   Page 7 -> 30 venues
+15:46:09  INFO      src.scrapers.venuelook -   Page 8 -> 30 venues
+15:46:12  INFO      src.scrapers.venuelook -   Page 9 -> 30 venues
+15:46:16  INFO      src.scrapers.venuelook -   Page 10 -> 30 venues
+15:46:18  INFO      src.scrapers.venuelook -   Page 11 -> 30 venues
+15:51:51  ERROR     src.scrapers.base - Request failed for https://www.venuelook.com/wedding-venues-in-delhi?page=12 (attempt 1): HTTPSConnectionPool(host='www.venuelook.com', port=443): Max retries exceeded with url: /wedding-venues-in-delhi?page=12 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E542361510>: Failed to resolve 'www.venuelook.com' ([Errno 11001] getaddrinfo failed)"))
+18:57:26  ERROR     src.scrapers.base - Request failed for https://www.venuelook.com/wedding-venues-in-delhi?page=12 (attempt 2): HTTPSConnectionPool(host='www.venuelook.com', port=443): Max retries exceeded with url: /wedding-venues-in-delhi?page=12 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001E543C90210>: Failed to resolve 'www.venuelook.com' ([Errno 11001] getaddrinfo failed)"))
+18:58:29  INFO      src.scrapers.venuelook -   Page 12 -> 30 venues
+18:58:31  INFO      src.scrapers.venuelook -   Page 13 -> 30 venues
+18:58:35  INFO      src.scrapers.venuelook -   Page 14 -> 30 venues
+18:58:40  INFO      src.scrapers.venuelook -   Page 15 -> 30 venues
+18:58:44  INFO      src.scrapers.venuelook -   Page 16 -> 30 venues
+18:58:49  INFO      src.scrapers.venuelook -   Page 17 -> 30 venues
+18:58:54  INFO      src.scrapers.venuelook -   Page 18 -> 30 venues
+18:58:57  INFO      src.scrapers.venuelook -   Page 19 -> 30 venues
+18:59:00  INFO      src.scrapers.venuelook -   Page 20 -> 30 venues
+18:59:05  INFO      src.scrapers.venuelook -   Page 21 -> 30 venues
+18:59:08  INFO      src.scrapers.venuelook -   Page 22 -> 30 venues
+18:59:12  INFO      src.scrapers.venuelook -   Page 23 -> 30 venues
+18:59:15  INFO      src.scrapers.venuelook -   Page 24 -> 30 venues
+18:59:21  INFO      src.scrapers.venuelook -   Page 25 -> 30 venues
+18:59:24  INFO      src.scrapers.venuelook -   Page 26 -> 30 venues
+18:59:29  INFO      src.scrapers.venuelook -   Page 27 -> 30 venues
+18:59:33  INFO      src.scrapers.venuelook -   Page 28 -> 30 venues
+18:59:37  INFO      src.scrapers.venuelook -   Page 29 -> 30 venues
+18:59:41  INFO      src.scrapers.venuelook -   Page 30 -> 30 venues
+18:59:44  INFO      src.scrapers.venuelook -   Page 31 -> 30 venues
+18:59:49  INFO      src.scrapers.venuelook -   Page 32 -> 30 venues
+18:59:54  INFO      src.scrapers.venuelook -   Page 33 -> 30 venues
+18:59:58  INFO      src.scrapers.venuelook -   Page 34 -> 30 venues
+19:00:01  INFO      src.scrapers.venuelook -   Page 35 -> 30 venues
+19:00:04  INFO      src.scrapers.venuelook -   Page 36 -> 30 venues
+19:00:08  INFO      src.scrapers.venuelook -   Page 37 -> 30 venues
+19:00:11  INFO      src.scrapers.venuelook -   Page 38 -> 30 venues
+19:00:14  INFO      src.scrapers.venuelook -   Page 39 -> 30 venues
+19:00:18  INFO      src.scrapers.venuelook -   Page 40 -> 30 venues
+19:00:21  INFO      src.scrapers.venuelook -   Page 41 -> 30 venues
+19:00:25  INFO      src.scrapers.venuelook -   Page 42 -> 30 venues
+19:00:28  INFO      src.scrapers.venuelook -   Page 43 -> 30 venues
+19:00:32  INFO      src.scrapers.venuelook -   Page 44 -> 30 venues
+19:00:36  INFO      src.scrapers.venuelook -   Page 45 -> 30 venues
+19:00:39  INFO      src.scrapers.venuelook -   Page 46 -> 30 venues
+19:00:43  INFO      src.scrapers.venuelook -   Page 47 -> 30 venues
+19:00:46  INFO      src.scrapers.venuelook -   Page 48 -> 30 venues
+19:00:50  INFO      src.scrapers.venuelook -   Page 49 -> 30 venues
+19:00:53  INFO      src.scrapers.venuelook -   Page 50 -> 30 venues
+19:00:56  INFO      src.scrapers.venuelook -   Page 51 -> 30 venues
+19:00:59  INFO      src.scrapers.venuelook -   Page 52 -> 30 venues
+19:01:02  INFO      src.scrapers.venuelook -   Page 53 -> 30 venues
+19:01:05  INFO      src.scrapers.venuelook -   Page 54 -> 30 venues
+19:01:09  INFO      src.scrapers.venuelook -   Page 55 -> 30 venues
+19:01:13  INFO      src.scrapers.venuelook -   Page 56 -> 30 venues
+19:01:13  INFO      src.scrapers.venuelook - [VenueLook] Delhi -> 1680 total venues
+19:01:13  INFO      pipeline -   OK Delhi NCR / Delhi -> 1680 venues
+19:01:13  INFO      src.scrapers.venuelook - [VenueLook] Scraping city: Kolkata (West Bengal)
+19:01:15  INFO      src.scrapers.venuelook -   Kolkata: 31 pages
+19:01:20  INFO      src.scrapers.venuelook -   Page 2 -> 30 venues
+19:01:22  INFO      src.scrapers.venuelook -   Page 3 -> 30 venues
+19:01:25  INFO      src.scrapers.venuelook -   Page 4 -> 30 venues
+19:01:28  INFO      src.scrapers.venuelook -   Page 5 -> 30 venues
+19:01:31  INFO      src.scrapers.venuelook -   Page 6 -> 30 venues
+19:01:34  INFO      src.scrapers.venuelook -   Page 7 -> 30 venues
+19:01:37  INFO      src.scrapers.venuelook -   Page 8 -> 30 venues
+19:01:40  INFO      src.scrapers.venuelook -   Page 9 -> 30 venues
+19:01:43  INFO      src.scrapers.venuelook -   Page 10 -> 30 venues
+19:01:47  INFO      src.scrapers.venuelook -   Page 11 -> 30 venues
+19:01:50  INFO      src.scrapers.venuelook -   Page 12 -> 30 venues
+19:01:53  INFO      src.scrapers.venuelook -   Page 13 -> 30 venues
+19:01:57  INFO      src.scrapers.venuelook -   Page 14 -> 30 venues
+19:02:00  INFO      src.scrapers.venuelook -   Page 15 -> 30 venues
+19:02:04  INFO      src.scrapers.venuelook -   Page 16 -> 30 venues
+19:02:08  INFO      src.scrapers.venuelook -   Page 17 -> 30 venues
+19:02:12  INFO      src.scrapers.venuelook -   Page 18 -> 30 venues
+19:02:15  INFO      src.scrapers.venuelook -   Page 19 -> 30 venues
+19:02:19  INFO      src.scrapers.venuelook -   Page 20 -> 30 venues
+19:02:22  INFO      src.scrapers.venuelook -   Page 21 -> 30 venues
+19:02:26  INFO      src.scrapers.venuelook -   Page 22 -> 30 venues
+19:02:30  INFO      src.scrapers.venuelook -   Page 23 -> 30 venues
+19:02:33  INFO      src.scrapers.venuelook -   Page 24 -> 30 venues
+19:02:36  INFO      src.scrapers.venuelook -   Page 25 -> 30 venues
+19:02:39  INFO      src.scrapers.venuelook -   Page 26 -> 30 venues
+19:02:42  INFO      src.scrapers.venuelook -   Page 27 -> 30 venues
+19:02:45  INFO      src.scrapers.venuelook -   Page 28 -> 30 venues
+19:02:47  INFO      src.scrapers.venuelook -   Page 29 -> 30 venues
+19:02:50  INFO      src.scrapers.venuelook -   Page 30 -> 30 venues
+19:02:54  INFO      src.scrapers.venuelook -   Page 31 -> 30 venues
+19:02:54  INFO      src.scrapers.venuelook - [VenueLook] Kolkata -> 930 total venues
+19:02:54  INFO      pipeline -   OK West Bengal / Kolkata -> 930 venues
+19:02:54  INFO      pipeline - Raw dump saved → D:\oe-2\wedding-venue-scraper\data\raw\venuelook_raw.csv (26982 records)
+19:02:54  INFO      pipeline - Normalizing 26982 raw records…
+19:02:56  INFO      pipeline - After within-source dedup: 15619 records
+19:02:57  INFO      pipeline - Validation: 15619 valid, 0 flagged, 0 dropped
+20:01:56  INFO      src.cleaning.deduplicator - Deduplication: 15619 → 13211 records (removed 2408, 15.4%)
+20:01:56  INFO      pipeline - Cross-source dedup: removed 2408 duplicates (15.4%)
+20:01:57  INFO      pipeline - Cleaned dataset saved → D:\oe-2\wedding-venue-scraper\data\processed\venues_clean.csv (13211 records)
+20:01:57  INFO      pipeline - Final CSV → D:\oe-2\wedding-venue-scraper\output\dataset\wedding_venues_india.csv
+10:40:54  INFO      pipeline - Loading existing cleaned dataset from D:\oe-2\wedding-venue-scraper\data\processed\venues_clean.csv
+10:40:54  INFO      pipeline - Dataset loaded: 13211 venues across 10 states
+10:40:54  INFO      pipeline - === Generating charts ===
+10:40:55  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\01_state_ranking.png
+10:40:55  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\02_city_heatmap.png
+10:40:56  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\03_cost_distribution.png
+10:40:56  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\04_venue_type_pie.png
+10:40:56  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\05_capacity_histogram.png
+10:40:57  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\06_price_vs_rating.png
+10:40:57  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\07_luxury_segmentation.png
+10:40:58  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\08_micro_hotspots.png
+10:40:58  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\09_cost_location_matrix.png
+10:40:58  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\10_source_coverage.png
+10:40:58  INFO      pipeline - Generated 10 / 10 charts
+10:40:58  INFO      pipeline - === Building interactive dashboard ===
+10:41:11  INFO      src.analytics.dashboard - Dashboard saved → D:\oe-2\wedding-venue-scraper\output\dashboard\wedding_venues_dashboard.html
+10:41:11  INFO      pipeline - Dashboard → D:\oe-2\wedding-venue-scraper\output\dashboard\wedding_venues_dashboard.html
+10:41:11  INFO      pipeline - === Generating summary report ===
+10:41:11  INFO      src.analytics.report - Summary report saved → D:\oe-2\wedding-venue-scraper\output\report\wedding_venues_summary.md
+10:41:11  INFO      pipeline - Report → D:\oe-2\wedding-venue-scraper\output\report\wedding_venues_summary.md
+10:41:11  INFO      pipeline - Pipeline complete.
+12:26:08  INFO      pipeline - Loading existing cleaned dataset from D:\oe-2\wedding-venue-scraper\data\processed\venues_clean.csv
+12:26:08  INFO      pipeline - Dataset loaded: 13211 venues across 10 states
+12:26:08  INFO      pipeline - === Generating charts ===
+12:26:09  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\01_state_ranking.png
+12:26:09  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\02_city_heatmap.png
+12:26:10  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\03_cost_distribution.png
+12:26:10  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\04_venue_type_pie.png
+12:26:10  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\05_capacity_histogram.png
+12:26:11  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\06_price_vs_rating.png
+12:26:11  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\07_luxury_segmentation.png
+12:26:12  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\08_micro_hotspots.png
+12:26:12  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\09_cost_location_matrix.png
+12:26:12  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\10_source_coverage.png
+12:26:12  INFO      pipeline - Generated 10 / 10 charts
+12:26:12  INFO      pipeline - === Building interactive dashboard ===
+12:26:14  INFO      src.analytics.dashboard - Dashboard saved → D:\oe-2\wedding-venue-scraper\output\dashboard\wedding_venues_dashboard.html
+12:26:14  INFO      pipeline - Dashboard → D:\oe-2\wedding-venue-scraper\output\dashboard\wedding_venues_dashboard.html
+12:26:14  INFO      pipeline - === Generating summary report ===
+12:26:14  INFO      src.analytics.report - Summary report saved → D:\oe-2\wedding-venue-scraper\output\report\wedding_venues_summary.md
+12:26:14  INFO      pipeline - Report → D:\oe-2\wedding-venue-scraper\output\report\wedding_venues_summary.md
+12:26:14  INFO      pipeline - Pipeline complete.
+12:30:11  INFO      pipeline - Loading existing cleaned dataset from D:\oe-2\wedding-venue-scraper\data\processed\venues_clean.csv
+12:30:11  INFO      pipeline - Filtering dataset for states: Rajasthan
+12:30:11  INFO      pipeline - Dataset loaded: 2036 venues across 1 states
+12:30:11  INFO      pipeline - === Generating charts ===
+12:30:11  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\01_state_ranking.png
+12:30:11  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\02_city_heatmap.png
+12:30:11  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\03_cost_distribution.png
+12:30:12  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\04_venue_type_pie.png
+12:30:12  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\05_capacity_histogram.png
+12:30:12  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\06_price_vs_rating.png
+12:30:12  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\07_luxury_segmentation.png
+12:30:13  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\08_micro_hotspots.png
+12:30:13  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\09_cost_location_matrix.png
+12:30:13  INFO      src.analytics.charts - Saved chart → D:\oe-2\wedding-venue-scraper\output\charts\10_source_coverage.png
+12:30:13  INFO      pipeline - Generated 10 / 10 charts
+12:30:13  INFO      pipeline - === Building interactive dashboard ===
+12:30:14  INFO      src.analytics.dashboard - Dashboard saved → D:\oe-2\wedding-venue-scraper\output\dashboard\wedding_venues_dashboard.html
+12:30:14  INFO      pipeline - Dashboard → D:\oe-2\wedding-venue-scraper\output\dashboard\wedding_venues_dashboard.html
+12:30:14  INFO      pipeline - === Generating summary report ===
+12:30:14  INFO      src.analytics.report - Summary report saved → D:\oe-2\wedding-venue-scraper\output\report\wedding_venues_summary.md
+12:30:14  INFO      pipeline - Report → D:\oe-2\wedding-venue-scraper\output\report\wedding_venues_summary.md
+12:30:14  INFO      pipeline - Pipeline complete.
