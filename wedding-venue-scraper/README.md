@@ -1,6 +1,6 @@
 # Indian Wedding Destination Intelligence Dataset
-
-A web scraping, data engineering, and analytics pipeline that builds a structured dataset of wedding venues across India and transforms it into actionable intelligence through visualisations and reports.
+ 
+A web scraping, data engineering, and analytics pipeline that builds a structured dataset of wedding venues across India and transforms it into actionable intelligence through visualisations and reports effect.
 
 ---
 
