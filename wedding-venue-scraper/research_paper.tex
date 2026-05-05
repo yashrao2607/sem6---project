@@ -56,7 +56,7 @@ email address or ORCID}
 \maketitle
 
 \begin{abstract}
-India's wedding economy is large, around 3.75 lakh crore INR or about USD 45 billion in KPMG's 2023 estimate \cite{b1}. On November 26, 2023, in Mann Ki Baat Episode 107, Prime Minister Modi pushed a simple line: stop exporting weddings, keep that spending inside India \cite{b22}. Soon after, ``Wed in India'' got formal push from government channels plus FICCI. Big policy push. Thin data.
+India's wedding economy is large, around 3.75 lakh crore INR or about USD 45 billion in KPMG's 2023 estimate \cite{b1}. On November 26, 2023, in Mann Ki Baat Episode 107, Prime Minister Modi pushed a simple line: stop exporting weddings, keep that spending inside India \\cite{b9}. Soon after, ``Wed in India'' got formal push from government channels plus FICCI. Big policy push. Thin data.
 
 The venue data exists, but in private silos. WedMeGood, VenueLook, ShaadiSaga, each with different field styles; pricing text shifts from per-plate to Lakh ranges to messy free text. Cross-platform comparison gets noisy quickly; sometimes impossible without normalization.
 
@@ -71,15 +71,15 @@ data engineering, web scraping, information extraction, price normalization, rec
 
 \subsection{The Wedding Economy and National Policy Context}
 
-India sees around 10 million weddings yearly; about 2.5 million are destination-style events \cite{b1}. KPMG's 2023 view keeps sector value at 3.75 lakh crore INR and projects destination growth near 25\% CAGR through 2028 \cite{b1}. FICCI and the Ministry of Tourism have been aligning wedding tourism with hospitality growth plans \cite{b23}.
+India sees around 10 million weddings yearly; about 2.5 million are destination-style events \cite{b1}. KPMG's 2023 view keeps sector value at 3.75 lakh crore INR and projects destination growth near 25\% CAGR through 2028 \cite{b1}. FICCI and the Ministry of Tourism have been aligning wedding tourism with hospitality growth plans \\cite{b10}.
 
-Then politics became explicit. In Mann Ki Baat Episode 107 on November 26, 2023, PM Modi questioned the habit of hosting weddings abroad and argued the money should stay domestic \cite{b22}. In January 2024 he repeated the line as ``Wed in India.'' Campaigns followed -- ``India Says I Do,'' destination pushes, expo activity, GITB Jaipur linkage in May 2024 \cite{b23} \cite{b24}.
+Then politics became explicit. In Mann Ki Baat Episode 107 on November 26, 2023, PM Modi questioned the habit of hosting weddings abroad and argued the money should stay domestic \\cite{b9}. In January 2024 he repeated the line as ``Wed in India.'' Campaigns followed -- ``India Says I Do,'' destination pushes, expo activity, GITB Jaipur linkage in May 2024 \\cite{b10} \\cite{b11}.
 
 But the data layer still lags behind the messaging. tourism.gov.in has destination pages, yet no machine-readable venue index, no robust price field, no capacity-based search. Social pages are active. Queryable infrastructure is not.
 
 \subsection{Weddings as Soft Power}
 
-Destination weddings are not only tourism business, they also function as soft-power events. Culture gets exported through setting, visuals, rituals, plus social media circulation \cite{b21}. A palace wedding clip from Rajasthan or a Kerala backwater ceremony travels global in hours; perception shifts, brand value shifts too. Measurement remains weak, mostly anecdotal.
+Destination weddings are not only tourism business, they also function as soft-power events. Culture gets exported through setting, visuals, rituals, plus social media circulation \\cite{b8}. A palace wedding clip from Rajasthan or a Kerala backwater ceremony travels global in hours; perception shifts, brand value shifts too. Measurement remains weak, mostly anecdotal.
 
 \subsection{What Has Been Done and What Is Lagging}
 
@@ -150,25 +150,19 @@ This work provides a validated Rajasthan venue dataset with 2,036 unique records
 
 \subsection{Web Scraping and Data Extraction}
 
-Selector-based extraction is well known \cite{b3}, but modern listing sites render heavily with JavaScript so static parsing often returns near-empty shells. Selenium \cite{b4} and Playwright \cite{b5} solve rendering but add runtime and failure points. Anti-bot constraints force practical controls -- user-agent rotation, delay jitter, 429 backoff \cite{b6}.
-
-Schema.org JSON-LD should have reduced parser fragility \cite{b7}. In this domain it did not. Our audit found complete markup on fewer than 30\% listings \cite{b8}. So hybrid extraction is required: JSON-LD where available; HTML fallback otherwise.
+Selector-based extraction is well known \cite{b2}, but modern listing sites render heavily with JavaScript so static parsing often returns near-empty shells. Selenium \cite{b3} solves rendering but adds runtime and failure points. Anti-bot constraints force practical controls -- user-agent rotation, delay jitter, 429 backoff. Our audit found complete Schema.org markup on fewer than 30\% of Indian wedding platform listings, so hybrid extraction is required: JSON-LD where available, HTML fallback otherwise.
 
 \subsection{Record Linkage}
 
-Cross-source duplicate detection is a core integration problem \cite{b9}. Fellegi-Sunter gives the probabilistic foundation \cite{b10}; Levenshtein and token-set similarity remain practical in real systems \cite{b11} \cite{b12}. City-based blocking reduces full $O(N^2)$ growth to grouped comparisons \cite{b13}. ML and deep matching alternatives exist \cite{b14} \cite{b15}, yet they need labeled pairs that were not available in this project.
+Cross-source duplicate detection is a core integration problem \cite{b4}. Fellegi-Sunter gives the probabilistic foundation \cite{b5}; Levenshtein and token-set similarity remain practical in real systems \cite{b6}. City-based blocking reduces full $O(N^2)$ growth to grouped comparisons. ML and deep matching alternatives exist but need labeled pairs that were not available in this project.
 
 \subsection{Price Normalization}
 
-Free-text price extraction stays messy \cite{b16}. Regex pipelines work when pattern families are bounded, but Indian venue pricing adds Lakhs, Crores, per-plate notation, mixed-unit ranges, and loose rupee syntax. Off-the-shelf parsers fail on strings like ``2.5L -- 10L'' and ``Rs 800/plate.'' No focused method was found for Indian wedding venue pricing.
+Free-text price extraction stays messy \cite{b7}. Regex pipelines work when pattern families are bounded, but Indian venue pricing adds Lakhs, Crores, per-plate notation, mixed-unit ranges, and loose rupee syntax. Off-the-shelf parsers fail on strings like ``2.5L -- 10L'' and ``Rs 800/plate.'' No focused method was found for Indian wedding venue pricing.
 
-\subsection{Hospitality Analytics}
+\subsection{Hospitality Analytics and Indian Wedding Research}
 
-Hotel analytics is mature; STR-style benchmarking is normal \cite{b17}. Wedding venue analytics is not at that level. Existing work touches event capacity \cite{b18}; tourism clustering like DBSCAN appears in adjacent studies \cite{b19}; hotel price-density analysis exists \cite{b20}. Comparable venue-level wedding intelligence is still thin.
-
-\subsection{Indian Wedding Research}
-
-Published work on Indian weddings is mostly aggregate economics, including KPMG-type estimates \cite{b1}. Public venue-level structured data is absent. Academic attention has mostly stayed sociological and cultural \cite{b21}. Data-engineering pipeline work for this sector is still missing.
+Published work on Indian weddings is mostly aggregate economics, including KPMG-type estimates \cite{b1}. Public venue-level structured data is absent. Academic attention has mostly stayed sociological and cultural \\cite{b8}. Data-engineering pipeline work for this sector is still missing.
 
 \section{Research Gaps}
 
@@ -477,11 +471,11 @@ This endpoint returns matching venues as normalized JSON. A companion Streamlit 
 
 \section{Conclusion}
 
-WedVenueIQ shows that structured intelligence can be extracted from a fragmented market that policy has already marked as strategic through ``Wed in India'' messaging \cite{b22}. Market size is large at 3.75 lakh crore INR \cite{b1}. Campaign spending and promotion exist \cite{b23} \cite{b24}. Data infrastructure was the missing layer.
+WedVenueIQ shows that structured intelligence can be extracted from a fragmented market that policy has already marked as strategic through ``Wed in India'' messaging \\cite{b9}. Market size is large at 3.75 lakh crore INR \cite{b1}. Campaign spending and promotion exist \\cite{b10} \\cite{b11}. Data infrastructure was the missing layer.
 
 Pilot evidence is direct. From 5,942 raw records across three heterogeneous sources, city-gated fuzzy matching removed 16.3\% cross-source duplicates; six-pass normalization handled Indian pricing with 94\% accuracy; final output reached 2,036 clean analytics-ready records in roughly 10 minutes. These are operational numbers, not theory.
 
-Framework outputs made hidden patterns visible: Udaipur luxury corridors, undervalued locations like Pushkar and Kumbhalgarh, and high-value micro-areas in Jaipur and Jodhpur. NRI-focused analysis also links to soft-power economics \cite{b21}.
+Framework outputs made hidden patterns visible: Udaipur luxury corridors, undervalued locations like Pushkar and Kumbhalgarh, and high-value micro-areas in Jaipur and Jodhpur. NRI-focused analysis also links to soft-power economics \\cite{b8}.
 
 This work is not a consumer portal by itself. It is the underlying data layer -- modular, reproducible, configuration-driven -- on top of which campaign systems, planners, researchers, and decision tools can be built.
 
@@ -491,29 +485,16 @@ The authors thank the Department of Computer Science faculty for guidance during
 
 \begin{thebibliography}{00}
 \bibitem{b1} KPMG India, ``Indian Wedding Industry Report 2023,'' KPMG LLP, New Delhi, 2023.
-\bibitem{b2} A. Doan, A. Halevy, and Z. Ives, \textit{Principles of Data Integration}. Morgan Kaufmann, 2012.
-\bibitem{b3} Y. Zhai and B. Liu, ``Web data extraction based on partial tree alignment,'' in \textit{Proc. WWW}, 2005, pp. 76--85.
-\bibitem{b4} Selenium Project, ``Selenium WebDriver Documentation,'' 2024.
-\bibitem{b5} Microsoft, ``Playwright for Python Documentation,'' 2024.
-\bibitem{b6} F. Nwanganga and M. Chapple, \textit{Practical Machine Learning in Python}. Apress, 2020.
-\bibitem{b7} C. Bizer, M. Hepp, and A. Harth, ``Schema.org as a foundation for web-scale data integration,'' \textit{J. Web Semantics}, vol. 65, 2021.
-\bibitem{b8} Preliminary audit of Indian wedding platform structured data coverage, October 2024 (unpublished).
-\bibitem{b9} P. Christen, \textit{Data Matching}. Springer, 2012.
-\bibitem{b10} I. P. Fellegi and A. B. Sunter, ``A theory for record linkage,'' \textit{J. Amer. Stat. Assoc.}, vol. 64, no. 328, pp. 1183--1210, 1969.
-\bibitem{b11} V. I. Levenshtein, ``Binary codes capable of correcting deletions, insertions, and reversals,'' \textit{Soviet Physics Doklady}, vol. 10, no. 8, pp. 707--710, 1966.
-\bibitem{b12} W. Cohen, P. Ravikumar, and S. Fienberg, ``A comparison of string metrics for matching names and records,'' in \textit{Proc. KDD Workshop}, 2003.
-\bibitem{b13} R. C. Steorts, R. Hall, and S. E. Fienberg, ``A Bayesian approach to graphical record linkage,'' \textit{J. Amer. Stat. Assoc.}, vol. 111, no. 516, pp. 1660--1672, 2016.
-\bibitem{b14} G. Papadakis et al., ``Meta-blocking: Taking entity resolution to the next level,'' \textit{IEEE Trans. Knowl. Data Eng.}, vol. 26, no. 8, pp. 1946--1960, 2014.
-\bibitem{b15} S. Mudgal et al., ``Deep learning for entity matching,'' in \textit{Proc. ACM SIGMOD}, 2018, pp. 19--34.
-\bibitem{b16} M. J. Cafarella et al., ``WebTables: Exploring the power of tables on the web,'' \textit{Proc. VLDB Endowment}, vol. 1, no. 1, pp. 538--549, 2008.
-\bibitem{b17} STR Global, ``Hotel Performance Data and Benchmarking,'' 2024.
-\bibitem{b18} T. D. Andersson and D. Getz, ``Festival and event management in Nordic countries,'' \textit{Tourism Management}, vol. 30, no. 6, pp. 872--880, 2009.
-\bibitem{b19} M. Ester et al., ``A density-based algorithm for discovering clusters,'' in \textit{Proc. KDD}, 1996, pp. 226--231.
-\bibitem{b20} K. L. Xie, Z. Zhang, and Z. Zhang, ``Business value of online consumer reviews,'' \textit{Int. J. Hospitality Management}, vol. 43, pp. 1--12, 2014.
-\bibitem{b21} S. Banerjee, \textit{Make Me Indian: Wedding Mandap Design and Cultural Identity}. Routledge India, 2021.
-\bibitem{b22} Prime Minister's Office, ``Mann Ki Baat, Episode 107,'' November 26, 2023. Available: pmindia.gov.in
-\bibitem{b23} FICCI and Ministry of Tourism, ``Wed in India Expo,'' Great India Travel Bazaar, Jaipur, May 2024.
-\bibitem{b24} Ministry of Tourism, Government of India, ``India Says I Do -- Wedding Destination Campaign,'' tourism.gov.in, 2024.
+\bibitem{b2} Y. Zhai and B. Liu, ``Web data extraction based on partial tree alignment,'' in \textit{Proc. WWW}, 2005, pp. 76--85.
+\bibitem{b3} Selenium Project, ``Selenium WebDriver Documentation,'' 2024. [Online]. Available: https://selenium.dev
+\bibitem{b4} P. Christen, \textit{Data Matching: Concepts and Techniques for Record Linkage, Entity Resolution, and Duplicate Detection}. Springer, 2012.
+\bibitem{b5} I. P. Fellegi and A. B. Sunter, ``A theory for record linkage,'' \textit{J. Amer. Stat. Assoc.}, vol. 64, no. 328, pp. 1183--1210, 1969.
+\bibitem{b6} V. I. Levenshtein, ``Binary codes capable of correcting deletions, insertions, and reversals,'' \textit{Soviet Physics Doklady}, vol. 10, no. 8, pp. 707--710, 1966.
+\bibitem{b7} M. J. Cafarella et al., ``WebTables: Exploring the power of tables on the web,'' \textit{Proc. VLDB Endowment}, vol. 1, no. 1, pp. 538--549, 2008.
+\bibitem{b8} S. Banerjee, \textit{Make Me Indian: Wedding Mandap Design and Cultural Identity}. Routledge India, 2021.
+\bibitem{b9} Prime Minister's Office, ``Mann Ki Baat, Episode 107,'' November 26, 2023. [Online]. Available: https://www.pmindia.gov.in/en/mann-ki-baat/
+\bibitem{b10} FICCI and Ministry of Tourism, ``Wed in India Expo,'' Great India Travel Bazaar, Jaipur, May 2024.
+\bibitem{b11} Ministry of Tourism, Government of India, ``India Says I Do -- Wedding Destination Campaign,'' 2024. [Online]. Available: https://tourism.gov.in
 \end{thebibliography}
 
 \end{document}
