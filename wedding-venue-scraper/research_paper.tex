@@ -56,9 +56,11 @@ email address or ORCID}
 \maketitle
 
 \begin{abstract}
-India's wedding market sits at roughly 3.75 lakh crore rupees -- about USD 45 billion according to the KPMG 2023 report \cite{b1}. Prime Minister Modi, during the 107th episode of Mann Ki Baat in November 2023, urged families to stop going abroad for weddings and instead celebrate on Indian soil so that ``the country's money stays in the country'' \cite{b22}. The Government followed up with the ``Wed in India'' campaign along with FICCI, positioning India as a global wedding destination. But here is the disconnect -- despite all the policy push, there is no publicly available structured dataset of Indian wedding venues. Not one. Platforms like WedMeGood, VenueLook, ShaadiSaga hold all the data behind proprietary walls; prices show up in six or more text formats ranging from per-plate rates to Lakh ranges. Cross-platform comparison without automated tools is basically impossible.
+India's wedding economy is large, around 3.75 lakh crore INR or about USD 45 billion in KPMG's 2023 estimate \cite{b1}. On November 26, 2023, in Mann Ki Baat Episode 107, Prime Minister Modi pushed a simple line: stop exporting weddings, keep that spending inside India \cite{b22}. Soon after, ``Wed in India'' got formal push from government channels plus FICCI. Big policy push. Thin data.
 
-This paper presents WedVenueIQ, a five-phase pipeline that scrapes venue listings from three major sources, normalizes messy Indian price strings through a six-pass regex cascade, deduplicates cross-source records using city-gated fuzzy matching, validates everything against a schema, then generates market intelligence on top. The Rajasthan pilot produced 2,036 unique cleaned venues from 5,942 raw records. Price coverage hit 99.9 percent post-imputation. We also introduce three original frameworks -- the Wedding Venue Value Index, Cost-Popularity Z-score Classification, and Micro-Location Composite Score -- plus a specialized analysis of the NRI overseas wedding segment worth an estimated USD 5 billion.
+The venue data exists, but in private silos. WedMeGood, VenueLook, ShaadiSaga, each with different field styles; pricing text shifts from per-plate to Lakh ranges to messy free text. Cross-platform comparison gets noisy quickly; sometimes impossible without normalization.
+
+This paper presents WedVenueIQ, a five-phase data pipeline that scrapes, cleans, links duplicates, validates, then produces analytics. Rajasthan pilot: 5,942 raw records reduced to 2,036 unique clean venues. Post-imputation price coverage reached 99.9\%. We also propose three frameworks -- Wedding Venue Value Index, Cost-Popularity Z-score Classification, Micro-Location Composite Score -- and connect findings to the USD 5 billion NRI overseas wedding segment.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -69,23 +71,23 @@ data engineering, web scraping, information extraction, price normalization, rec
 
 \subsection{The Wedding Economy and National Policy Context}
 
-India sees around 10 million weddings a year. Of those, an estimated 2.5 million qualify as destination events -- held at heritage palaces, lakeside resorts, beach properties, farmhouses \cite{b1}. The KPMG 2023 report pegs the overall market at 3.75 lakh crore INR with destination weddings growing at 25 percent CAGR through 2028. FICCI, in collaboration with the Ministry of Tourism, has been pushing wedding tourism as a pillar of India's hospitality strategy \cite{b23}.
+India sees around 10 million weddings yearly; about 2.5 million are destination-style events \cite{b1}. KPMG's 2023 view keeps sector value at 3.75 lakh crore INR and projects destination growth near 25\% CAGR through 2028 \cite{b1}. FICCI and the Ministry of Tourism have been aligning wedding tourism with hospitality growth plans \cite{b23}.
 
-The political push started getting serious in late 2023. On November 26, during Mann Ki Baat Episode 107, PM Modi said -- ``these days a new milieu is being created by some families to go abroad and conduct weddings. Is this at all necessary? If we celebrate the festivities of marriages on Indian soil, the country's money will remain in the country'' \cite{b22}. He later framed it as ``Wed in India, like Made in India, Marry in India'' at a Gujarat event in January 2024. The Ministry of Tourism responded with the ``India Says I Do'' campaign -- a 360-degree digital and offline initiative profiling about 25 key destinations across states including Rajasthan, Goa, Kerala, and Uttarakhand \cite{b24}. FICCI co-organized the ``Wed in India'' expo alongside the Great India Travel Bazaar (GITB) in Jaipur, May 2024, bringing together planners, state tourism boards, and operators.
+Then politics became explicit. In Mann Ki Baat Episode 107 on November 26, 2023, PM Modi questioned the habit of hosting weddings abroad and argued the money should stay domestic \cite{b22}. In January 2024 he repeated the line as ``Wed in India.'' Campaigns followed -- ``India Says I Do,'' destination pushes, expo activity, GITB Jaipur linkage in May 2024 \cite{b23} \cite{b24}.
 
-But the gap between policy ambition and data infrastructure is wide. None of these campaigns are backed by a structured, queryable database of venues. The tourism.gov.in website lists destinations but provides no machine-readable venue data -- no prices, no capacities, no ratings. State tourism boards promote their heritage properties through brochures and Instagram posts but offer nothing a researcher or planner can query programmatically. The data simply does not exist in structured form.
+But the data layer still lags behind the messaging. tourism.gov.in has destination pages, yet no machine-readable venue index, no robust price field, no capacity-based search. Social pages are active. Queryable infrastructure is not.
 
 \subsection{Weddings as Soft Power}
 
-There is a broader angle here worth noting. Destination weddings are increasingly recognized as instruments of cultural soft power -- when you sell your culture through celebrations, you reshape how the world perceives India \cite{b21}. The optics of a royal wedding at a Rajasthani palace or a backwater ceremony in Kerala circulate globally through social media. This is not just tourism; it is cultural diplomacy. Yet the infrastructure to measure, benchmark, or optimize this soft power asset remains non-existent from a data perspective.
+Destination weddings are not only tourism business, they also function as soft-power events. Culture gets exported through setting, visuals, rituals, plus social media circulation \cite{b21}. A palace wedding clip from Rajasthan or a Kerala backwater ceremony travels global in hours; perception shifts, brand value shifts too. Measurement remains weak, mostly anecdotal.
 
 \subsection{What Has Been Done and What Is Lagging}
 
-The Government of India and state tourism departments have taken concrete steps. Rajasthan aggressively markets its palace circuit. Kerala positions itself for eco-luxury weddings. Goa leverages its beach infrastructure. Uttarakhand promotes Himalayan backdrops. The Ministry runs digital campaigns, collaborates with influencers, participates in global travel expos.
+Work has been done. Rajasthan markets palace circuits, Goa pushes beach inventory, Kerala frames eco-luxury, Uttarakhand highlights Himalayan backdrops. Campaigns run on portals, expos, and influencer loops.
 
-What is lagging: the digital backbone. The tourism.gov.in portal has no venue search functionality beyond basic destination pages. No filtering by price, capacity, or type. No comparison tools. No structured data exports. Instagram campaigns generate engagement but zero queryable intelligence. A wedding planner trying to find all palace venues in Rajasthan under 15 lakhs with capacity above 300 guests has to manually visit three or four separate websites, copy data into spreadsheets, and eyeball duplicates. That is the state of things in 2024.
+What is lagging is basic data plumbing. No dependable venue-level search on the national portal; no normalized cost layer; no standard capacity metadata; almost no export-ready dataset. Planners still scrape by hand from multiple sites and reconcile duplicates by eye.
 
-Our suggestion -- and what this paper demonstrates -- is that a data engineering pipeline can bridge this gap. WedVenueIQ is not a replacement for government campaigns; it is the missing data layer underneath them.
+WedVenueIQ sits exactly in that gap. Data backbone first.
 
 \begin{table}[htbp]
 \caption{State-Wise ``Wed in India'' Campaign Activities}
@@ -112,7 +114,7 @@ Karnataka & Heritage, hill stations & State board brochures \\
 \end{table}
 
 \begin{table}[htbp]
-\caption{``India Says I Do'' Campaign -- Digital Presence Audit (2024)}
+\caption{``India Says I Do'' Campaign -- Website and Social Presence Audit (2024)}
 \begin{center}
 \begin{tabular}{|l|l|l|}
 \hline
@@ -138,80 +140,80 @@ FICCI/GITB Expos & Offline B2B matchmaking & Annual, Jaipur-based \\
 
 \subsection{Problem Statement}
 
-Despite the economic scale, the venue discovery landscape is fragmented badly. WedMeGood, VenueLook, ShaadiSaga operate as closed silos. Data quality varies wildly across listings. Pricing for the same venue might show as a ``starting price'' on one platform and a ``per-plate rate'' on another. Without normalization, cross-platform comparison is computationally impossible for any consumer. This creates measurable inefficiency -- venues in low-competition areas keep prices high because there is no benchmark; couples overspend without knowing about comparable alternatives in smaller cities.
+The market is big; discovery is fragmented. Major platforms act like separate silos with incompatible fields and uneven completeness. Same venue appears with different names, price notation, and review metadata. Without normalization plus record linkage, cross-platform analytics becomes unstable and often misleading.
 
 \subsection{Contributions}
 
-This work contributes the following. A validated dataset of 2,036 unique Indian wedding venues from the Rajasthan pilot -- the first publicly constructed dataset of its kind. A six-pass normalization algorithm for Indian currency units achieving 94 percent coverage. A city-gated deduplication engine removing 16.3 percent cross-source duplicates. Three original market intelligence frameworks. Plus an analysis of the NRI overseas wedding market segment. The pipeline is modular and configuration-driven; extending it to a new state requires editing a JSON file, not code.
+This work provides a validated Rajasthan venue dataset with 2,036 unique records, a six-pass Indian price normalization routine reaching 94\% coverage, and city-gated fuzzy deduplication removing 16.3\% cross-source duplicates. It introduces three analytical frameworks plus an NRI segment read. The pipeline is modular and configuration-driven; state expansion mostly needs \texttt{cities.json} updates.
 
 \section{Literature Review}
 
 \subsection{Web Scraping and Data Extraction}
 
-Pulling structured data from web pages through CSS selectors and XPath is well-documented \cite{b3}. But modern sites run on JavaScript SPAs -- they render content client-side, which means static HTTP parsing returns empty shells. Headless browsers like Selenium \cite{b4} and Playwright \cite{b5} solve this but introduce latency and complexity. Anti-bot countermeasures including rate limiting, IP fingerprinting, JS-based detection get handled via User-Agent rotation, random delays, exponential backoff on HTTP 429 \cite{b6}.
+Selector-based extraction is well known \cite{b3}, but modern listing sites render heavily with JavaScript so static parsing often returns near-empty shells. Selenium \cite{b4} and Playwright \cite{b5} solve rendering but add runtime and failure points. Anti-bot constraints force practical controls -- user-agent rotation, delay jitter, 429 backoff \cite{b6}.
 
-Schema.org JSON-LD was supposed to make things easier by embedding machine-readable metadata in HTML \cite{b7}. In practice, our audit of Indian wedding platforms found fewer than 30 percent of listings had complete Schema.org markup \cite{b8}. So multi-strategy extraction -- JSON-LD where available, HTML fallback otherwise -- is unavoidable.
+Schema.org JSON-LD should have reduced parser fragility \cite{b7}. In this domain it did not. Our audit found complete markup on fewer than 30\% listings \cite{b8}. So hybrid extraction is required: JSON-LD where available; HTML fallback otherwise.
 
 \subsection{Record Linkage}
 
-Identifying duplicate records across heterogeneous sources is a foundational data integration problem \cite{b9}. The Fellegi-Sunter model \cite{b10} gives the probabilistic basis. String similarity via Levenshtein distance \cite{b11} and token-set variants \cite{b12} are standard practice. Blocking strategies that restrict comparisons to records sharing a key attribute (like city) reduce complexity from $O(N^2)$ to something manageable \cite{b13}. ML-based entity matching \cite{b14} and deep approaches like DeepMatcher \cite{b15} exist but need labeled training data. We do not have that here, so threshold-based fuzzy matching was the right call.
+Cross-source duplicate detection is a core integration problem \cite{b9}. Fellegi-Sunter gives the probabilistic foundation \cite{b10}; Levenshtein and token-set similarity remain practical in real systems \cite{b11} \cite{b12}. City-based blocking reduces full $O(N^2)$ growth to grouped comparisons \cite{b13}. ML and deep matching alternatives exist \cite{b14} \cite{b15}, yet they need labeled pairs that were not available in this project.
 
 \subsection{Price Normalization}
 
-Extracting numbers from free-text price strings is an active problem \cite{b16}. Rule-based regex works when the vocabulary is finite. Indian pricing is a special case -- Lakh ($10^5$), Crore ($10^7$), per-plate conventions, range expressions crossing units, multiple rupee symbols. No published library handles all of these. Standard tools like Python's price-parser fail on ``2.5L -- 10L'' or ``Rs 800/plate.'' We found nothing in the literature addressing Indian wedding price normalization specifically.
+Free-text price extraction stays messy \cite{b16}. Regex pipelines work when pattern families are bounded, but Indian venue pricing adds Lakhs, Crores, per-plate notation, mixed-unit ranges, and loose rupee syntax. Off-the-shelf parsers fail on strings like ``2.5L -- 10L'' and ``Rs 800/plate.'' No focused method was found for Indian wedding venue pricing.
 
 \subsection{Hospitality Analytics}
 
-Hotel analytics is mature -- STR Global \cite{b17} enables ADR and RevPAR benchmarking worldwide. Event venue analytics is far behind. Andersson and Getz \cite{b18} discuss capacity utilization but not pricing. DBSCAN-based spatial clustering has been used in tourism research \cite{b19} but never for Indian wedding venues. Luxury corridor detection through price-density mapping exists for hotels \cite{b20} -- nothing equivalent for weddings.
+Hotel analytics is mature; STR-style benchmarking is normal \cite{b17}. Wedding venue analytics is not at that level. Existing work touches event capacity \cite{b18}; tourism clustering like DBSCAN appears in adjacent studies \cite{b19}; hotel price-density analysis exists \cite{b20}. Comparable venue-level wedding intelligence is still thin.
 
 \subsection{Indian Wedding Research}
 
-Published data on the Indian wedding industry is almost entirely aggregate-level -- KPMG numbers \cite{b1}, BCG estimates. Venue-level data does not exist publicly. Academic work on Indian weddings is overwhelmingly sociological and cultural \cite{b21}. No prior data engineering, information extraction, or market analytics paper exists for this sector. That gap is what this work addresses.
+Published work on Indian weddings is mostly aggregate economics, including KPMG-type estimates \cite{b1}. Public venue-level structured data is absent. Academic attention has mostly stayed sociological and cultural \cite{b21}. Data-engineering pipeline work for this sector is still missing.
 
 \section{Research Gaps}
 
 \subsection{Gap 1: No Structured Dataset Exists}
 
-Zero. We checked Kaggle, Google Dataset Search, data.gov.in, Zenodo, Harvard Dataverse, IEEE DataPort as of October 2024. Nothing.
+No public venue-level dataset was found across Kaggle, Google Dataset Search, data.gov.in, Zenodo, Harvard Dataverse, and IEEE DataPort as of October 2024. Gap is direct.
 
 \subsection{Gap 2: No Normalization Algorithm for Indian Venue Prices}
 
-Libraries like price-parser are built for Western e-commerce. They choke on Lakhs, Crores, range expressions, per-plate formats. Our pilot found six distinct price format families. No existing tool handles all six.
+Mainstream parsers are tuned for Western e-commerce text. They break on Lakhs, Crores, mixed-unit ranges, plus per-plate conventions. Our pilot observed six recurring format families; no single existing parser handled all.
 
 \subsection{Gap 3: Unquantified Cross-Source Duplication}
 
-Each platform maintains venues independently. Same venue, different spelling, different price, different review count. Nobody has measured the overlap rate. We found 16.3 percent -- enough to badly distort any naive count-based analysis.
+Cross-source overlap had not been quantified in this market. We measured 16.3\% duplicate records in the pilot, enough to bias naive counts and city-level comparisons.
 
 \subsection{Gap 4: No Analytical Layer}
 
-No luxury corridor detection. No cost-popularity classification. No micro-location scoring. Cannot build these without Gap 1 being solved first.
+No open analytical layer existed for luxury corridor detection, cost-popularity typing, or micro-location scoring. These require Gap 1 to be solved first.
 
 \subsection{Gap 5: No Reproducible Collection Method}
 
-Ad-hoc scraping scripts are brittle, undocumented, source-coupled. No published methodology for systematic multi-source Indian hospitality data collection. Our pipeline uses a cities.json config that decouples geography from source logic.
+Most scripts in this area are ad-hoc, tightly coupled to source markup, and hard to reproduce. A configuration-driven method for systematic multi-source Indian wedding venue collection was missing.
 
 
 \section{System Architecture}
 
-WedVenueIQ runs as a five-phase linear pipeline. Each phase is its own Python module with defined input and output schemas -- you can swap or rewrite any phase without breaking the others.
+WedVenueIQ runs as a linear five-phase pipeline with phase-level module boundaries and fixed schema contracts between stages. The point is containment; a stage can change without forcing rewrite of the others.
 
-The phases: (1) multi-source scraping, (2) cleaning and normalization, (3) schema validation plus imputation, (4) structured export, (5) analytical intelligence. Phases 1 through 4 are the data engineering core. Phase 5 is the application layer sitting on top.
+Flow is simple: multi-source scraping, cleaning with normalization, schema validation plus imputation, structured export, then analytical inference. Engineering core is the first four stages. Analytics sits on top, loosely coupled.
 
-Geographic config lives in a cities.json file outside the code. Want to add a new state? Edit the JSON. No code changes needed. Currently supports 25 cities across 10 Indian states.
+Geography is externalized through \texttt{cities.json}. New state onboarding is config edit work, not core-code surgery. Current configuration covers 25 cities across 10 Indian states.
 
 \section{Methodology}
 
 \subsection{Data Collection}
 
-Three Tier-1 sources were picked based on coverage of Rajasthan venues, field richness, and accessibility without login.
+Three high-coverage sources were selected for Rajasthan, with field richness and no mandatory login wall.
 
-WedMeGood -- largest platform by listing count. Uses server-side rendered React with a \texttt{window.\_\_INITIAL\_STATE\_\_} JSON blob embedded in page source. We extract name, pricing, capacity, rating, address directly from that object. No HTML parsing needed.
+WedMeGood has the largest listing volume in our sample. It exposes a server-rendered React payload through \texttt{window.\_\_INITIAL\_STATE\_\_}; key fields were parsed directly from that JSON blob. Less brittle than scraping visible HTML.
 
-VenueLook -- second-largest. Has Schema.org JSON-LD tags for name, rating, address. Capacity and pricing sit in HTML comparison tables; extracted via CSS selector alignment.
+VenueLook includes partial Schema.org JSON-LD for identity fields. Capacity and price are still inside HTML comparison tables, so CSS selector extraction was used there.
 
-ShaadiSaga -- React SPA, JavaScript-rendered. Requires headless Chrome via Selenium. Fields come from DOM class selectors after a wait for page load.
+ShaadiSaga behaves like a JavaScript SPA; Selenium with headless Chrome was needed after controlled page-wait logic.
 
-All sources share one protocol: check SQLite cache first (7-day TTL), then HTTP GET or browser load, parse, extract to memory, apply random delay (1.5--3.0s), rotate User-Agent every 50 requests, exponential backoff on 429 errors (30s initial, doubles up to 120s).
+Fetch protocol stayed common across sources: SQLite cache check first with 7-day TTL, then network fetch, parse, field extraction; delay jitter from 1.5 to 3.0 seconds, user-agent rotation every 50 requests, and exponential backoff for HTTP 429 at 30s then 60s then 120s.
 
 \begin{table}[htbp]
 \caption{Field Extraction Methods by Source}
@@ -239,21 +241,11 @@ Address & JSON state & JSON-LD & DOM class \\
 
 \subsection{Six-Pass Price Normalization}
 
-Raw prices come in at least six format families. The engine runs each string through a regex cascade -- first match wins, processing stops.
+Raw price strings fell into six recurring families. We used a regex cascade; first valid match wins and processing stops.
 
-Pass 1 catches per-plate patterns -- ``800/plate,'' ``Rs 1,200 per plate,'' ``900 pp.'' Extracted value goes to price\_per\_plate; a 300-guest assumption generates a floor estimate for comparison.
+Pass 1 targets per-plate strings such as ``800/plate,'' ``Rs 1,200 per plate,'' ``900 pp.'' Parsed value is mapped to \texttt{price\_per\_plate}; a 300-guest assumption gives a conservative minimum-event estimate for rough comparability. Pass 2 captures Lakh ranges like ``2.5 Lakhs -- 10 Lakhs'' or ``2L to 10L'' and scales endpoints by $10^5$. Pass 3 handles single Lakh variants (Lakh, Lakhs, Lac, Lacs). Pass 4 handles Crore notation and scales by $10^7$. Pass 5 maps K notation to $10^3$. Pass 6 is fallback numeric cleanup with comma tolerance.
 
-Pass 2 handles Lakh ranges. ``2.5 Lakhs -- 10 Lakhs'' or ``2L to 10L'' -- both endpoints extracted, multiplied by $10^5$.
-
-Pass 3 picks up single Lakh values with all spelling variants -- Lakh, Lakhs, Lac, Lacs. Multiply by $10^5$.
-
-Pass 4 is for Crore values. Palace listings sometimes hit ``1.5 Cr'' territory. Multiply by $10^7$.
-
-Pass 5 handles K-denomination. ``50K -- 80K'' -- multiply both by $10^3$.
-
-Pass 6 is the fallback. Raw numbers, with or without commas. If nothing above matched -- this catches whatever is left.
-
-Validation rejects records where min\_price is zero or negative, max\_price falls below min\_price, or price\_per\_plate exceeds 50,000.
+Validation then rejects impossible rows: non-positive \texttt{min\_price}, \texttt{max\_price} lower than \texttt{min\_price}, or extreme \texttt{price\_per\_plate} above 50,000.
 
 \begin{table}[htbp]
 \caption{Normalization Examples: Raw Input to Canonical INR}
@@ -279,83 +271,83 @@ Validation rejects records where min\_price is zero or negative, max\_price fall
 
 \subsection{Venue Type Classification}
 
-Two-pass classifier. Six categories: palace, resort, beach, farmhouse, hotel, banquet hall.
+Venue type classification runs in two passes over six labels: palace, resort, beach, farmhouse, hotel, banquet hall.
 
-Pass 1 checks the first token of the raw type label against a keyword dictionary. Quick match returns immediately. Pass 2 concatenates name plus type label, lowercases it, scans for keywords in priority order. Indian heritage terms -- mahal, haveli, garh, kothi -- map to palace. Chain names like Marriott, Oberoi, Taj, Leela map to hotel. First hit wins.
+Pass 1 checks the leading token of raw type text against a keyword dictionary. If no hit, Pass 2 scans merged lowercase text built from venue name plus type label using priority-ordered terms. Heritage words like mahal, haveli, garh, kothi are mapped to palace; chain identifiers like Marriott, Oberoi, Taj, Leela are mapped to hotel. First confident hit is kept.
 
-Records matching neither pass get flagged for manual review. About 16.8 percent fell into this bucket in the pilot.
+Unmatched records are flagged for manual review. Pilot unmatched share was 16.8\%.
 
 \subsection{City-Gated Deduplication}
 
-Two stages. Stage 1 is within-source: identical URLs removed, identical (name, city) pairs collapsed. Stage 2 is cross-source fuzzy matching with city-gated blocking.
+Deduplication has two stages. Stage one removes within-source duplicates using identical URLs and exact \texttt{(name, city)} collapsing. Stage two performs cross-source fuzzy matching inside city blocks.
 
-Records grouped by city. Within each group, incoming records compared against all accepted records using token\_set\_ratio from fuzzywuzzy. This algorithm sorts tokens before comparing -- critical for Indian naming conventions where ``Taj Lake Palace'' and ``Lake Palace Taj Resort'' should match. Threshold: 85. Primary record kept is the one with higher rating; null fields filled from the secondary before discarding.
+Inside each city group, incoming rows are compared with accepted rows via \texttt{token\_set\_ratio} (fuzzywuzzy). Token sorting helps with reordered Indian naming patterns; ``Taj Lake Palace'' and ``Lake Palace Taj Resort'' should converge. Match threshold is 85. Primary record is chosen by higher rating, and null fields are backfilled from the secondary record before discard.
 
-City-gating cuts pairwise comparisons from $N^2 / 2$ globally to $\sum_i n_i^2 / 2$ per city. For 2,036 records that is roughly 13x reduction. No recall loss -- venues in different cities cannot be duplicates.
+City blocking reduces comparisons from global $N^2 / 2$ to grouped $\sum_i n_i^2 / 2$. At 2,036 records this gave around 13x fewer comparisons with no expected recall loss, since cross-city duplicate probability is negligible for this use case.
 
-The 85 threshold was picked empirically from 200 labeled pairs. ``Taj Lake Palace'' vs ``Lake Palace by Taj Hotels'' scores 92 (correct match). ``Taj Hotel Jaipur'' vs ``Hotel Taj Mahal Palace'' scores 78 (correctly kept separate).
+Threshold 85 was selected from 200 labeled pairs. Example scores: true match at 92 (``Taj Lake Palace'' vs ``Lake Palace by Taj Hotels''), true non-match at 78 (``Taj Hotel Jaipur'' vs ``Hotel Taj Mahal Palace'').
 
 \subsection{Schema Validation and Imputation}
 
-Hard rules: name non-empty, city matches cities.json, capacity positive, min\_price non-negative, max\_price at least equal to min\_price, rating between 0.0 and 5.0. Fail any hard rule -- record dropped with reason code logged.
+Hard checks enforce non-empty name, city membership in \texttt{cities.json}, positive capacity, non-negative \texttt{min\_price}, \texttt{max\_price} not below \texttt{min\_price}, and rating inside 0.0--5.0. Any hard failure drops the row; reason code is logged.
 
-Soft rules flag but do not drop: review count below 5, price above 1 crore, rating missing with 50+ reviews. For missing prices after normalization -- city-level median imputation applied. Imputed records flagged with a boolean for transparency.
+Soft checks only flag: very low review count, extreme price above 1 crore, missing rating despite high review volume. Missing post-normalization price is imputed with city median and explicitly marked for traceability.
 
 \section{Analytical Frameworks}
 
 \subsection{Wedding Venue Value Index}
 
-WVVI ranks venues by consumer utility -- quality, social proof, affordability combined. For venue $v$:
+WVVI is a utility score for venue selection. It mixes quality signal, social signal, and affordability into one number. For venue $v$:
 
 \begin{equation}
 WVVI(v) = 0.4 \cdot \hat{r}_v + 0.3 \cdot \hat{c}_v + 0.3 \cdot (1 - \hat{p}_v) \label{eq:wvvi}
 \end{equation}
 
-$\hat{r}_v$, $\hat{c}_v$, $\hat{p}_v$ are min-max normalized rating, review count, price. Rating gets 0.4 weight because it is the strongest quality signal. Price is inverted -- lower price means higher value score.
+$\hat{r}_v$, $\hat{c}_v$, $\hat{p}_v$ are min-max normalized rating, review count, and price. Rating gets 0.4 weight because it carried the strongest quality signal in this setting. Price is inverted; cheaper venues score higher on value.
 
 \subsection{Z-Score Classification}
 
-Cities classified as Overpriced, Undervalued, or Balanced using two-dimensional Z-scores:
+Cities are tagged as Overpriced, Undervalued, or Balanced from two-dimensional Z-scores:
 
 \begin{equation}
 z_p(c) = \frac{\tilde{p}(c) - \mu_p}{\sigma_p}, \quad z_r(c) = \frac{\tilde{r}(c) - \mu_r}{\sigma_r} \label{eq:zscore}
 \end{equation}
 
-Overpriced if $z_p > 0.5$ and $z_r < -0.5$. Undervalued if $z_p < -0.5$ and $z_r > 0.5$. Everything else is Balanced.
+Overpriced when $z_p > 0.5$ and $z_r < -0.5$. Undervalued when $z_p < -0.5$ and $z_r > 0.5$. All remaining cases are Balanced.
 
 \subsection{Micro-Location Composite Score}
 
-MLS ranks neighborhoods within a city by multi-factor desirability:
+MLS ranks neighborhoods inside a city through a compact desirability score:
 
 \begin{equation}
 MLS(a) = 0.4 \cdot \hat{d}_a + 0.3 \cdot \hat{q}_a + 0.3 \cdot \hat{v}_a \label{eq:mls}
 \end{equation}
 
-Density (venue count), average rating, price diversity (range width as budget variety proxy). Density at 0.4 because having options nearby matters practically.
+Inputs are density, average rating, plus price diversity measured through range width as a budget-variety proxy. Density kept the 0.4 weight because option concentration matters on ground.
 
 \section{Implementation}
 
 \subsection{Technology Stack}
 
-The full pipeline is built on Python 3.10. For HTTP, we use the requests library (v2.31+) with connection pooling across sessions. HTML gets parsed by BeautifulSoup4 backed by the lxml engine -- faster than the default html.parser by a noticeable margin on large pages. JavaScript-heavy sites require Selenium 4.18+ driving a headless Chrome instance; ChromeDriver versioning is handled automatically by webdriver-manager so the pipeline does not break when Chrome updates.
+The pipeline runs on Python 3.10. HTTP fetches use requests (v2.31+) with pooled sessions. HTML parsing is BeautifulSoup4 on lxml; faster than html.parser for heavier pages. JavaScript-first pages are rendered through Selenium 4.18+ with headless Chrome, while webdriver-manager keeps driver versioning from breaking on Chrome updates.
 
-Data wrangling happens in pandas 2.2+ with numpy underneath. Fuzzy matching runs through fuzzywuzzy, but we compile it with the python-Levenshtein C extension -- without that, token\_set\_ratio is painfully slow on thousands of comparisons. Visualization splits between matplotlib plus seaborn for static publication figures and plotly for the interactive dashboard that ships as a standalone HTML file. Caching uses Python's built-in sqlite3 module. Excel export via openpyxl. Testing with pytest and pytest-cov for coverage tracking.
+Data wrangling uses pandas 2.2+ over numpy. Fuzzy matching uses fuzzywuzzy, plus python-Levenshtein C extension because token\_set\_ratio gets slow at scale without it. Figures are made with matplotlib and seaborn for static output; plotly is used for the standalone interactive dashboard HTML. Caching is sqlite3. Excel export is openpyxl. Tests run with pytest and pytest-cov.
 
 \subsection{Key Design Decisions}
 
-SQLite was chosen over Redis for the scraping cache. Redis needs a running server process and cannot be distributed as a single portable file. SQLite has zero dependencies, stores everything in one .db file, and handles our write pattern -- batch inserts once a week, reads on every subsequent run -- without issue. A 7-day TTL is implemented as a simple timestamp check on cached responses.
+SQLite was used over Redis for cache. Redis needs a live server process and hurts portability. SQLite is dependency-light, single-file, and it fits our read-heavy pattern after batch inserts. TTL is seven days via timestamp check.
 
-City-gated blocking was chosen over global all-pairs comparison. For 2,036 records, naive all-pairs would mean roughly 2.07 million fuzzy string comparisons. City-gated blocking drops that to about 150,000. A 13x reduction. And the cost is zero -- venues in Jaipur and Udaipur cannot possibly be duplicates of each other, so restricting comparisons within cities loses nothing.
+City-gated blocking was preferred over global all-pairs matching. At 2,036 records, naive all-pairs means about 2.07 million fuzzy comparisons. City-gated flow drops this near 150,000 -- around 13x lower. No practical recall loss here; Jaipur and Udaipur rows are not real duplicate candidates.
 
-We tested GPT-4 prompt-based price extraction against our rule-based cascade on 100 held-out price strings. The cascade hit 94 percent accuracy at roughly 10 milliseconds per record, no API dependency, no cost. GPT-4 got 89 percent on the same set, at 800ms per record and about USD 0.002 each. For 2,036 records the rule-based approach is faster by two orders of magnitude and free. The choice is obvious.
+We also compared GPT-4 prompt extraction with the rule cascade on 100 held-out price strings. Cascade: 94\% accuracy, about 10 ms per record, no API cost. GPT-4: 89\%, around 800 ms per record, about USD 0.002 each. For 2,036 records, rule-based parsing is roughly two orders faster and free.
 
-The scraper architecture uses inheritance. All three source scrapers extend a common BaseScraper class that provides caching, delay logic, and backoff handling. Adding a fourth source -- say Sulekha or Weddingz.in -- means writing one new file with a single scrape\_city() method. Everything else is inherited. This was tested by adding a mock source in under 15 minutes during development.
+Scraper design uses inheritance through a shared BaseScraper for cache, delays, and backoff logic. New source onboarding mostly means one new file implementing \texttt{scrape\_city()}. A mock source was added in under 15 minutes during development.
 
 \section{Results}
 
 \subsection{Pilot Statistics}
 
-Rajasthan pilot covered five cities -- Jaipur, Udaipur, Jodhpur, Pushkar, Jaisalmer. Three sources. 5,942 raw records collected. Within-source dedup brought it to 2,433. Cross-source fuzzy dedup produced 2,036 unique venues. 397 duplicates removed -- 16.3 percent rate. Total runtime about 10 minutes from cold cache.
+Rajasthan pilot covered Jaipur, Udaipur, Jodhpur, Pushkar, and Jaisalmer. Three sources were scraped. Raw count reached 5,942. Within-source dedup reduced that to 2,433; cross-source fuzzy dedup yielded 2,036 unique venues. Removed duplicates were 397, equal to 16.3\%. Cold-cache runtime stayed near 10 minutes.
 
 \begin{table}[htbp]
 \caption{Pilot Volume Metrics}
@@ -381,39 +373,39 @@ Runtime & ~10 min \\
 
 \subsection{Field Coverage}
 
-Name and city hit 100 percent -- every record has both. Rating coverage sits at 94.4 percent; we deliberately chose not to impute missing ratings because median-filling a quality signal would inject noise rather than information. Price coverage was 83.8 percent after the six-pass normalization; city-level median imputation pushed that to 99.9 percent. The remaining 0.1 percent are edge cases where even the city median was unavailable (very small cities with fewer than 3 priced listings). Venue type coverage reached 83.2 percent through the two-pass keyword classifier. Area or micro-location data was available for only 62 percent of records -- many listings simply do not include neighborhood-level location.
+Name and city coverage is 100\%. Rating coverage is 94.4\%; missing ratings were not imputed because median-filling a quality signal adds noise. Price coverage after six-pass normalization was 83.8\%, then city-median imputation pushed it to 99.9\%. Remaining 0.1\% cases are small-city edge cases with too few priced rows. Venue type coverage reached 83.2\% from the two-pass classifier. Area-level or micro-location fields were available in 62\% records only.
 
 \subsection{Geographic and Type Distribution}
 
-Jaipur dominates the dataset at 1,085 of 2,036 records -- 53.3 percent. Not surprising; it is the state capital with the densest commercial hospitality infrastructure. Udaipur follows at 431, which reflects its position as the go-to luxury destination wedding city in Rajasthan. Jodhpur contributes 290 records. Pushkar at 121 and Jaisalmer at 92 round out the top five.
+Jaipur dominates at 1,085 of 2,036 records (53.3\%). Udaipur follows with 431, then Jodhpur with 290. Pushkar contributes 121; Jaisalmer contributes 92.
 
-By venue type: banquet halls account for 36 percent, the bread-and-butter of Indian wedding hosting. Hotels at 24.8 percent. Resorts at 20.5. Palace venues are only 12.4 percent by count but punch far above their weight in price tier -- the average palace minimum price is more than 3x the average banquet hall price. Farmhouses at 6.1 percent. Beach properties basically do not exist in Rajasthan, at 0.2 percent.
+Type split shows banquet halls at 36\%, hotels at 24.8\%, resorts at 20.5\%, palace venues at 12.4\%, farmhouses at 6.1\%, and beach properties at 0.2\%. Palace share by count is modest, yet price tier is high; average palace minimum price is over 3x banquet hall average.
 
 \subsection{Price Intelligence}
 
-The cheapest listing in the dataset was Rs. 175. Almost certainly a data entry error on the source platform -- our soft rules flagged it automatically. The most expensive was Rs. 95 Lakhs for a heritage palace in the City Palace area of Udaipur. Median across all 2,036 venues: Rs. 8.5 Lakhs. That number gives you a reasonable baseline for what a destination wedding venue costs in Rajasthan.
+Lowest listed price was Rs. 175, likely a source-side entry mistake and flagged by soft rules. Highest was Rs. 95 Lakhs for a heritage palace near City Palace, Udaipur. Median across 2,036 venues was Rs. 8.5 Lakhs.
 
-Per-plate pricing ranged from Rs. 400 to Rs. 4,500. The distribution was right-skewed as expected -- a small number of high-end venues pull the mean well above the median.
+Per-plate values ranged from Rs. 400 to Rs. 4,500. Distribution is right-skewed; a small premium tail pulls mean above median.
 
 \subsection{Analytical Results}
 
-The luxury corridor detection algorithm identified Badi Lake and City Palace micro-areas in Udaipur as the densest concentration of premium venues anywhere in the dataset. Seven or more venues with average minimum price above Rs. 10 Lakhs and average rating above 4.6 out of 5.0 sit within a 3-kilometer radius there. That is not a coincidence -- it is a genuine luxury cluster.
+Luxury corridor detection placed Badi Lake and City Palace micro-areas in Udaipur at the top of premium concentration. In that zone, seven or more venues within roughly 3 km hold average minimum price above Rs. 10 Lakhs plus average rating above 4.6/5.0.
 
-Z-score classification flagged Pushkar and Kumbhalgarh as Undervalued. Both show below-median price Z-scores combined with above-median review engagement Z-scores. Meaning: strong customer interest at prices well below the Rajasthan average. For couples on a budget who still want a destination wedding, these cities offer real value. And for tourism boards -- Pushkar in particular deserves more promotion spend than it currently receives.
+Z-score classification flagged Pushkar and Kumbhalgarh as Undervalued. Price Z-scores were below median while review-engagement Z-scores were above median. Practical meaning is simple: demand looks strong while price remains lower than state baseline.
 
-MLS ranked City Palace area in Udaipur first across all micro-locations. It combines the highest venue density, above-average quality scores, and the widest price range diversity -- meaning couples at every budget level can find something there. But the metric also surfaced micro-locations in Jaipur (Amer area, Mansarovar) and Jodhpur (Umaid zone) as serious alternatives that nobody talks about. That is the value of quantitative ranking over brand-driven perception.
+MLS ranked City Palace area highest among micro-locations. High density, stronger quality signals, wider budget spread. Yet other options surfaced too -- Amer and Mansarovar in Jaipur, Umaid zone in Jodhpur.
 
 \subsection{State-Wise Campaign Alignment}
 
-Our structured data maps directly onto the Government's ``Wed in India'' state promotions and exposes alignment gaps. Rajasthan's palace circuit promotion is strongly backed by our Udaipur and Jaipur data -- those cities genuinely have the density and quality to justify the marketing spend. But Pushkar, which our Z-score analysis flags as undervalued with strong consumer engagement, gets almost zero campaign visibility despite being a FICCI-recognized wedding destination. This is the kind of misalignment that shows up only when you have structured data to compare against campaign investment.
+Structured results map cleanly to ``Wed in India'' promotions and expose misalignment. Rajasthan's palace-push is supported by Udaipur and Jaipur density-quality signals. But Pushkar, flagged as undervalued with good engagement, receives low campaign visibility despite FICCI recognition.
 
-A similar pattern likely exists in other states. Kerala promotes backwater weddings generically, but without venue-level price and capacity data, there is no way to know which specific micro-locations are underserved or overpriced. Our pipeline, extended to Kerala, would answer that question quantitatively.
+The same mismatch may exist in other states. Kerala promotes backwater weddings broadly, yet without venue-level price and capacity layers, micro-location overpricing or under-service cannot be measured properly. Pipeline extension can quantify that.
 
 \subsection{Overseas and NRI Market Report}
 
-The NRI overseas wedding segment is estimated at USD 5 billion and growing. These clients have specific requirements: heritage aesthetics that photograph well for international social media audiences, high-capacity logistics (NRI weddings tend to be larger), transparent vendor contracting, and -- critically -- value for money. Many NRI families are price-sensitive despite high incomes because they compare Indian venue costs against international alternatives in Bali, Dubai, or Italy.
+The NRI overseas wedding segment is estimated near USD 5 billion and still growing. This buyer group usually wants heritage visual appeal, high-capacity execution, cleaner vendor trust, and strong value-for-money because comparison is made against Bali, Dubai, and Italy options.
 
-WedVenueIQ surfaced what we call ``Heritage-Value'' clusters -- venues in Pushkar and the outskirts of Jodhpur that offer palace-grade architectural aesthetics, 4.5+ ratings, and capacities above 300 guests, but at 30 to 40 percent lower prices than Udaipur's Tier-1 corridor. This is the exact intelligence that destination wedding planners working with NRI clients need. Currently, they operate on reputation and word-of-mouth; our dataset gives them data.
+WedVenueIQ surfaced ``Heritage-Value'' clusters around Pushkar and outer Jodhpur -- palace-like aesthetics, 4.5+ ratings, capacities above 300, but 30--40\% cheaper than Udaipur Tier-1 corridors. For NRI planners this is practical intelligence, not just reputation chatter.
 
 \subsection{Comparison with Existing Solutions}
 
@@ -451,23 +443,25 @@ NRI market intelligence & No & Yes \\
 
 \subsection{Machine Learning for Classification and Imputation}
 
-The keyword-based venue type classifier leaves 16.8 percent of records unclassified. But here is the thing -- the 83.2 percent that it did classify correctly now form a labeled training set. A TF-IDF logistic regression trained on that set should push coverage above 95 percent with about 92 percent accuracy on held-out data. If we want to go further, fine-tuning a BERT model on Indian hospitality text (venue names, descriptions, type labels) could plausibly exceed 97 percent accuracy, though inference cost goes up.
+The keyword classifier leaves 16.8\% rows unclassified. Yet the 83.2\% classified portion can become labeled training data. A TF-IDF plus logistic regression baseline should push coverage beyond 95\% with around 92\% held-out accuracy. Further lift may come from BERT fine-tuning on Indian hospitality text, likely above 97\% accuracy but at higher inference cost.
 
-On the imputation side, city-level median is crude. A RandomForestRegressor taking venue type, capacity, rating, review count, and city as features would produce venue-specific price estimates that capture interactions between those variables. We plan to measure RMSE improvement on a 20 percent validation set with known prices.
+Imputation can also improve. City median is simple and stable, still coarse. A RandomForestRegressor using venue type, capacity, rating, review count, and city should produce venue-level estimates capturing interactions better. RMSE will be tested on a 20\% validation split with known prices.
 
 \subsection{Seasonal Pricing and Muhurat Integration}
 
-The pipeline was designed for repeated runs. Execute it weekly, timestamp each scrape, and you get longitudinal price data. Our working hypothesis: venue prices in Rajasthan inflate by 15 to 25 percent during the November-to-February peak season when Muhurat dates cluster heavily. Nobody has tested this quantitatively. Integrating the Hindu Panchanga calendar to compute a weekly Muhurat density score would let us model auspicious-date effects on pricing explicitly. That intersection -- Indian cultural calendar data meets hospitality economics -- could be a genuinely novel contribution.
+The pipeline is built for repeated runs. Weekly execution with timestamped snapshots creates longitudinal price series. Working hypothesis: Rajasthan venue prices inflate 15--25\% during November to February when Muhurat dates cluster. This has not been quantified rigorously yet.
+
+Integrating Hindu Panchanga data to compute weekly Muhurat density can make auspicious-date price effects measurable. Cultural calendar meets market behavior.
 
 \subsection{Visual Feature Extraction}
 
-Venue photos contain information that text listings miss entirely. A pool. A garden. Heritage sandstone architecture. A modern glass banquet interior. CLIP-based zero-shot classification can extract these features from scraped images as binary flags -- has\_pool, has\_garden, heritage\_architecture. Combined with text-based features, this multimodal approach should improve both type classification accuracy and price prediction. We have not implemented this yet but the image URLs are already scraped and stored.
+Venue photos contain signals the text often misses. Pool presence, garden setting, sandstone heritage cues, modern glass interiors. CLIP-based zero-shot tagging can extract binary flags such as \texttt{has\_pool}, \texttt{has\_garden}, \texttt{heritage\_architecture}. Combined with text features, this multimodal setup should improve both type classification and price prediction. Image URLs are already captured; implementation is pending.
 
 \subsection{National Expansion}
 
-The cities.json config file already lists 25 cities across 10 states: Rajasthan, Goa, Kerala, Maharashtra, Karnataka, Uttarakhand, Tamil Nadu, Himachal Pradesh, Delhi NCR, West Bengal. Running the pipeline across all of them should yield between 15,000 and 25,000 unique venue records. That would make this the largest structured Indian wedding venue dataset in existence by a wide margin.
+The \texttt{cities.json} file already covers 25 cities in 10 states: Rajasthan, Goa, Kerala, Maharashtra, Karnataka, Uttarakhand, Tamil Nadu, Himachal Pradesh, Delhi NCR, and West Bengal. Full run across these geographies is expected to yield 15,000 to 25,000 unique venue records, likely the largest structured dataset in this segment.
 
-Geocoding through the Nominatim API would add latitude-longitude to each record, unlocking spatial analytics: DBSCAN clustering of venue distributions, drive-time analysis from major airports, distance-to-heritage-site scoring for tourism positioning.
+Nominatim geocoding can add latitude-longitude per record, opening spatial analytics such as DBSCAN distribution clusters, airport drive-time layers, and heritage-site distance scoring.
 
 \subsection{API and Dashboard Deployment}
 
@@ -479,21 +473,21 @@ GET /api/v1/venues?state=Rajasthan
   &min_capacity=200
 \end{verbatim}
 
-This returns a JSON array of matching venues with all normalized fields. A companion Streamlit web app would provide interactive map visualization, WVVI-ranked results, and city comparison dashboards. Together these would give the ``Wed in India'' campaign the kind of data backbone that tourism.gov.in currently lacks.
+This endpoint returns matching venues as normalized JSON. A companion Streamlit app can provide map interaction, WVVI-ranked outputs, plus city-level comparison views. Together these components provide the data backbone currently missing in tourism.gov.in workflows.
 
 \section{Conclusion}
 
-WedVenueIQ demonstrates that structured intelligence can be pulled from the fragmented Indian wedding market -- a sector the Prime Minister himself flagged as nationally important through the ``Wed in India'' call in Mann Ki Baat \cite{b22}. The market is worth 3.75 lakh crore INR \cite{b1}. The Government and FICCI have invested in campaigns, expos, influencer outreach \cite{b23} \cite{b24}. What was missing is data. Structured, normalized, deduplicated, queryable data.
+WedVenueIQ shows that structured intelligence can be extracted from a fragmented market that policy has already marked as strategic through ``Wed in India'' messaging \cite{b22}. Market size is large at 3.75 lakh crore INR \cite{b1}. Campaign spending and promotion exist \cite{b23} \cite{b24}. Data infrastructure was the missing layer.
 
-The Rajasthan pilot proves the pipeline works. 5,942 raw records scraped from three heterogeneous sources. 16.3 percent cross-source duplicates removed through city-gated fuzzy matching. Indian-specific pricing strings normalized at 94 percent accuracy via a six-pass regex cascade. 2,036 clean, analytics-ready records produced in about 10 minutes total. These are not theoretical numbers; the dataset exists and the code runs.
+Pilot evidence is direct. From 5,942 raw records across three heterogeneous sources, city-gated fuzzy matching removed 16.3\% cross-source duplicates; six-pass normalization handled Indian pricing with 94\% accuracy; final output reached 2,036 clean analytics-ready records in roughly 10 minutes. These are operational numbers, not theory.
 
-The analytical layer on top -- WVVI for venue ranking, Z-score classification for city-level market typing, MLS for micro-location scoring -- shows that the dataset enables insights that were previously out of reach. Luxury corridors in Udaipur, undervalued destinations in Pushkar and Kumbhalgarh, hidden high-value micro-locations in Jaipur and Jodhpur. The NRI overseas analysis connects directly to the Government's cultural soft power agenda \cite{b21}: Indian weddings are not just ceremonies, they are a globally visible expression of heritage, and the data infrastructure to optimize their economic impact should exist.
+Framework outputs made hidden patterns visible: Udaipur luxury corridors, undervalued locations like Pushkar and Kumbhalgarh, and high-value micro-areas in Jaipur and Jodhpur. NRI-focused analysis also links to soft-power economics \cite{b21}.
 
-What we have built is not a consumer app or a government portal. It is the data layer underneath both -- the structured foundation that campaigns, planners, researchers, and AI systems can build upon. The methodology is modular, reproducible, configuration-driven, and directly transferable to adjacent verticals: corporate events, banquet bookings, luxury domestic travel.
+This work is not a consumer portal by itself. It is the underlying data layer -- modular, reproducible, configuration-driven -- on top of which campaign systems, planners, researchers, and decision tools can be built.
 
 \section*{Acknowledgment}
 
-The authors thank the faculty of the Department of Computer Science for guidance through this project. Data was collected from publicly accessible web listings in accordance with platform terms of service.
+The authors thank the Department of Computer Science faculty for guidance during the project. Data collection used publicly accessible web listings, with scraping conducted in line with platform terms of service.
 
 \begin{thebibliography}{00}
 \bibitem{b1} KPMG India, ``Indian Wedding Industry Report 2023,'' KPMG LLP, New Delhi, 2023.
@@ -522,9 +516,4 @@ The authors thank the faculty of the Department of Computer Science for guidance
 \bibitem{b24} Ministry of Tourism, Government of India, ``India Says I Do -- Wedding Destination Campaign,'' tourism.gov.in, 2024.
 \end{thebibliography}
 
-\vspace{12pt}
-\color{red}
-IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
-
 \end{document}
-
