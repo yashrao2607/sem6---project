@@ -540,6 +540,18 @@ NRI market intelligence & No & Yes \\
 \end{center}
 \end{table}
 
+\section{Threats to Validity}
+
+First, platform markup changes can break selectors. The project reduces this risk through source-specific scraper modules, cached pages, and separate validation logs, but long-term reliability still requires periodic selector audits.
+
+Second, price fields are semantically mixed. Some platforms publish per-plate values, some publish package minimums, and some publish vague text. The six-pass parser normalizes currency representation, but it cannot always infer commercial meaning perfectly. This is why price is treated as a comparable listing signal unless the \texttt{price\_per\_plate} field is explicitly present.
+
+Third, source coverage is currently imbalanced in the national run, with WedMeGood contributing most records. This improves breadth, but it can bias style, price, and rating distributions toward one platform's inventory. The next collection cycle should expand VenueLook, WeddingWire, ShaadiSaga, tourism-board lists, and hotel-chain pages to improve triangulation.
+
+Fourth, micro-location analytics depend on area extraction. Area coverage is 19.5\%, so MLS rankings are useful for discovery but not yet strong enough for final investment decisions. Geocoding plus address parsing should be treated as the next critical accuracy upgrade.
+
+Finally, celebrity wedding cases are qualitative market signals, not training data. They validate venue archetypes and destination narratives, but they are intentionally separated from the statistical venue dataset to avoid contaminating the quantitative results.
+
 \section{Future Work}
 
 \subsection{Machine Learning for Classification and Imputation}
