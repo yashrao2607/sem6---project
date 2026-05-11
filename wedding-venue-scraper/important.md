@@ -199,5 +199,10 @@ Destination weddings function as **cultural soft power instruments**. When India
 | Nominatim Geocoder | https://nominatim.openstreetmap.org |
 
 ---
-
-*Last updated: May 5, 2026*
+https://time.com/6997573/india-anant-mukesh-ambani-wedding/
+https://www.moneycontrol.com/news/trends/entertainment/sidharth-malhotra-kiara-advani-get-married-in-jaisalmer-10024231.html
+https://www.moneycontrol.com/news/trends/entertainment/parineeti-chopra-ties-the-knot-with-raghav-chadha-in-intimate-udaipur-ceremony-see-first-pic-11419591.html
+https://www.moneycontrol.com/news/trends/entertainment/rakul-preet-jackky-bhagnani-wedding-couple-wore-custom-tarun-tahiliani-ensembles-12326451.html
+https://www.vogue.com/article/best-celebrity-weddings-2023
+https://www.vogue.com/article/kourtney-kardashian-wears-a-corseted-dolce-and-gabbana-gown-to-wed-travis-barker-in-italy
+https://www.latimes.com/entertainment-arts/tv/story/2024-08-26/ed-westwick-wedding-married-amy-jackson-italy
