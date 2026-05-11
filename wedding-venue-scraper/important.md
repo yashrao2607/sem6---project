@@ -151,7 +151,7 @@ Destination weddings function as **cultural soft power instruments**. When India
 
 ---
 
-## 10. All References (as used in research_paper.tex — 11 total)
+## 10. All References (as used in research_paper.tex — 15 total)
 
 | Ref | Citation | Access URL |
 |---|---|---|
@@ -166,6 +166,10 @@ Destination weddings function as **cultural soft power instruments**. When India
 | b9 | PM Office, "Mann Ki Baat Episode 107," Nov 2023 | https://www.pmindia.gov.in/en/news_updates/text-of-pms-address-in-the-107th-episode-of-mann-ki-baat/ |
 | b10 | FICCI + Ministry of Tourism, "Wed in India Expo," GITB Jaipur, May 2024 | https://pib.gov.in/PressReleasePage.aspx?PRID=2024650 |
 | b11 | Ministry of Tourism, GoI, "India Says I Do" Campaign, 2024 | https://tourism.gov.in |
+| **b12** | **N. Barlaug, J. A. Gulla, "Neural networks for entity matching: A survey," ACM TKDD, 2021** | **https://doi.org/10.1145/3442200** |
+| **b13** | **Y. Li et al., "Deep entity matching with pre-trained language models (Ditto)," PVLDB, 2021** | **https://doi.org/10.14778/3421424.3421431** |
+| **b14** | **"Economic impact of destination weddings: Outsourcing Indian wedding tourism," PUIRJ, 2024** | **https://doi.org/10.5281/zenodo.10822430** |
+| **b15** | **U. Sivarajah et al., "Critical analysis of big data challenges and analytical methods," J. Business Research, 2022** | **https://doi.org/10.1016/j.jbusres.2016.08.001** |
 
 ---
 

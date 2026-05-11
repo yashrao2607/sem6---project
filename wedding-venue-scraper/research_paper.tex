@@ -154,7 +154,7 @@ Selector-based extraction is well known \cite{b2}, but modern listing sites rend
 
 \subsection{Record Linkage}
 
-Cross-source duplicate detection is a core integration problem \cite{b4}. Fellegi-Sunter gives the probabilistic foundation \cite{b5}; Levenshtein and token-set similarity remain practical in real systems \cite{b6}. City-based blocking reduces full $O(N^2)$ growth to grouped comparisons. ML and deep matching alternatives exist but need labeled pairs that were not available in this project.
+Cross-source duplicate detection is a core integration problem \cite{b4}. Fellegi-Sunter gives the probabilistic foundation \cite{b5}; Levenshtein and token-set similarity remain practical in real systems \cite{b6}. Barlaug and Gulla surveyed neural approaches to entity matching \cite{b12} and showed that pre-trained transformers improve recall on noisy records, though they need labeled pairs. Li et al.\ demonstrated this concretely with Ditto \cite{b13}, a BERT-based matcher that outperforms rule-based baselines on benchmark datasets -- but requires training data we did not have. City-based blocking reduces full $O(N^2)$ growth to grouped comparisons, which kept our approach feasible without ML infrastructure.
 
 \subsection{Price Normalization}
 
@@ -162,7 +162,7 @@ Free-text price extraction stays messy \cite{b7}. Regex pipelines work when patt
 
 \subsection{Hospitality Analytics and Indian Wedding Research}
 
-Published work on Indian weddings is mostly aggregate economics, including KPMG-type estimates \cite{b1}. Public venue-level structured data is absent. Academic attention has mostly stayed sociological and cultural \\cite{b8}. Data-engineering pipeline work for this sector is still missing.
+Published work on Indian weddings is mostly aggregate economics, including KPMG-type estimates \cite{b1}. Public venue-level structured data is absent. Academic attention has mostly stayed sociological and cultural \cite{b8}. A 2024 study in PUIRJ estimated that roughly 5,000 high-budget Indian weddings held abroad annually cause USD 10--14 billion in economic leakage \cite{b14}, directly supporting the ``Wed in India'' policy rationale. Sivarajah et al.\ showed that big-data analytics creates measurable value in operations and strategy \cite{b15}, yet no equivalent application exists for the Indian wedding venue sector. Data-engineering pipeline work for this domain is still missing.
 
 \section{Research Gaps}
 
@@ -495,6 +495,10 @@ The authors thank the Department of Computer Science faculty for guidance during
 \bibitem{b9} Prime Minister's Office, ``Mann Ki Baat, Episode 107,'' November 26, 2023. [Online]. Available: https://www.pmindia.gov.in/en/mann-ki-baat/
 \bibitem{b10} FICCI and Ministry of Tourism, ``Wed in India Expo,'' Great India Travel Bazaar, Jaipur, May 2024.
 \bibitem{b11} Ministry of Tourism, Government of India, ``India Says I Do -- Wedding Destination Campaign,'' 2024. [Online]. Available: https://tourism.gov.in
+\bibitem{b12} N. Barlaug and J. A. Gulla, ``Neural networks for entity matching: A survey,'' \textit{ACM Trans. Knowl. Discov. Data}, vol. 15, no. 3, art. 52, 2021.
+\bibitem{b13} Y. Li, J. Li, Y. Suhara, A. Doan, and W.-C. Tan, ``Deep entity matching with pre-trained language models,'' \textit{Proc. VLDB Endowment}, vol. 14, no. 1, pp. 50--60, 2021.
+\bibitem{b14} ``The economic impact of destination weddings: Assessing the effects of outsourcing Indian wedding tourism,'' \textit{Partners Universal Int. Res. J.}, vol. 3, no. 1, 2024. DOI: 10.5281/zenodo.10822430
+\bibitem{b15} U. Sivarajah, M. M. Kamal, Z. Irani, and V. Weerakkody, ``Critical analysis of big data challenges and analytical methods,'' \textit{J. Business Research}, vol. 70, pp. 263--286, 2022.
 \end{thebibliography}
 
 \end{document}
