@@ -6,6 +6,8 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{url}
+\usepackage{array}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -56,11 +58,11 @@ email address or ORCID}
 \maketitle
 
 \begin{abstract}
-India's wedding economy is large, around 3.75 lakh crore INR or about USD 45 billion in KPMG's 2023 estimate \cite{b1}. On November 26, 2023, in Mann Ki Baat Episode 107, Prime Minister Modi pushed a simple line: stop exporting weddings, keep that spending inside India \\cite{b9}. Soon after, ``Wed in India'' got formal push from government channels plus FICCI. Big policy push. Thin data.
+India's wedding economy is large, around 3.75 lakh crore INR or about USD 45 billion in KPMG's 2023 estimate \cite{b1}. On November 26, 2023, in Mann Ki Baat Episode 107, Prime Minister Modi pushed a simple line: stop exporting weddings, keep that spending inside India \cite{b9}. Soon after, ``Wed in India'' got formal push from government channels plus FICCI. Big policy push. Thin data.
 
 The venue data exists, but in private silos. WedMeGood, VenueLook, ShaadiSaga, each with different field styles; pricing text shifts from per-plate to Lakh ranges to messy free text. Cross-platform comparison gets noisy quickly; sometimes impossible without normalization.
 
-This paper presents WedVenueIQ, a five-phase data pipeline that scrapes, cleans, links duplicates, validates, then produces analytics. Rajasthan pilot: 5,942 raw records reduced to 2,036 unique clean venues. Post-imputation price coverage reached 99.9\%. We also propose three frameworks -- Wedding Venue Value Index, Cost-Popularity Z-score Classification, Micro-Location Composite Score -- and connect findings to the USD 5 billion NRI overseas wedding segment.
+This paper presents WedVenueIQ, a five-phase data pipeline that scrapes, cleans, links duplicates, validates, then produces analytics. Rajasthan pilot: 5,942 raw records reduced to 2,036 unique clean venues. The expanded national output contains 13,211 venues across 10 states and 120 cities, with post-imputation price coverage of 99.9\%. We also propose three frameworks -- Wedding Venue Value Index, Cost-Popularity Z-score Classification, Micro-Location Composite Score -- and connect findings to the USD 5 billion NRI overseas wedding segment, recent Indian celebrity weddings, and international celebrity destination-wedding patterns.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -71,15 +73,15 @@ data engineering, web scraping, information extraction, price normalization, rec
 
 \subsection{The Wedding Economy and National Policy Context}
 
-India sees around 10 million weddings yearly; about 2.5 million are destination-style events \cite{b1}. KPMG's 2023 view keeps sector value at 3.75 lakh crore INR and projects destination growth near 25\% CAGR through 2028 \cite{b1}. FICCI and the Ministry of Tourism have been aligning wedding tourism with hospitality growth plans \\cite{b10}.
+India sees around 10 million weddings yearly; about 2.5 million are destination-style events \cite{b1}. KPMG's 2023 view keeps sector value at 3.75 lakh crore INR and projects destination growth near 25\% CAGR through 2028 \cite{b1}. FICCI and the Ministry of Tourism have been aligning wedding tourism with hospitality growth plans \cite{b10}.
 
-Then politics became explicit. In Mann Ki Baat Episode 107 on November 26, 2023, PM Modi questioned the habit of hosting weddings abroad and argued the money should stay domestic \\cite{b9}. In January 2024 he repeated the line as ``Wed in India.'' Campaigns followed -- ``India Says I Do,'' destination pushes, expo activity, GITB Jaipur linkage in May 2024 \\cite{b10} \\cite{b11}.
+Then politics became explicit. In Mann Ki Baat Episode 107 on November 26, 2023, PM Modi questioned the habit of hosting weddings abroad and argued the money should stay domestic \cite{b9}. In January 2024 he repeated the line as ``Wed in India.'' Campaigns followed -- ``India Says I Do,'' destination pushes, expo activity, GITB Jaipur linkage in May 2024 \cite{b10} \cite{b11}.
 
 But the data layer still lags behind the messaging. tourism.gov.in has destination pages, yet no machine-readable venue index, no robust price field, no capacity-based search. Social pages are active. Queryable infrastructure is not.
 
 \subsection{Weddings as Soft Power}
 
-Destination weddings are not only tourism business, they also function as soft-power events. Culture gets exported through setting, visuals, rituals, plus social media circulation \\cite{b8}. A palace wedding clip from Rajasthan or a Kerala backwater ceremony travels global in hours; perception shifts, brand value shifts too. Measurement remains weak, mostly anecdotal.
+Destination weddings are not only tourism business, they also function as soft-power events. Culture gets exported through setting, visuals, rituals, plus social media circulation \cite{b8}. A palace wedding clip from Rajasthan or a Kerala backwater ceremony travels global in hours; perception shifts, brand value shifts too. Measurement remains weak, mostly anecdotal.
 
 \subsection{What Has Been Done and What Is Lagging}
 
@@ -144,7 +146,7 @@ The market is big; discovery is fragmented. Major platforms act like separate si
 
 \subsection{Contributions}
 
-This work provides a validated Rajasthan venue dataset with 2,036 unique records, a six-pass Indian price normalization routine reaching 94\% coverage, and city-gated fuzzy deduplication removing 16.3\% cross-source duplicates. It introduces three analytical frameworks plus an NRI segment read. The pipeline is modular and configuration-driven; state expansion mostly needs \texttt{cities.json} updates.
+This work provides a validated Rajasthan venue dataset with 2,036 unique records, an all-India analytical extension with 13,211 records, a six-pass Indian price normalization routine reaching 94\% parser accuracy on held-out strings, and city-gated fuzzy deduplication removing 16.3\% cross-source duplicates in the pilot. It introduces three analytical frameworks plus an NRI and celebrity-market benchmarking layer. The pipeline is modular and configuration-driven; state expansion mostly needs \texttt{cities.json} updates and source-specific selector checks.
 
 \section{Literature Review}
 
