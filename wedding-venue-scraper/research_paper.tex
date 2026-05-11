@@ -369,27 +369,101 @@ Runtime & ~10 min \\
 
 \subsection{Field Coverage}
 
-Name and city coverage is 100\%. Rating coverage is 94.4\%; missing ratings were not imputed because median-filling a quality signal adds noise. Price coverage after six-pass normalization was 83.8\%, then city-median imputation pushed it to 99.9\%. Remaining 0.1\% cases are small-city edge cases with too few priced rows. Venue type coverage reached 83.2\% from the two-pass classifier. Area-level or micro-location fields were available in 62\% records only.
+Name and city coverage is 100\%. In the all-India output, rating coverage is 97.7\%; missing ratings were not imputed because median-filling a quality signal adds noise. Price coverage after six-pass normalization and city-level imputation is 99.9\%, with only eight records still missing a usable low-end price. Venue type coverage reached 89.5\% after the two-pass classifier. Capacity coverage is 99.9\%, while area-level or micro-location fields are present in 19.5\% of records. This last number is important: neighborhood-level conclusions are useful, but they should be interpreted as exploratory until area extraction improves.
+
+\subsection{All-India Extension Snapshot}
+
+The cleaned national dataset now contains 13,211 venues across 10 states and 120 cities. Maharashtra contributes the largest count with 3,692 venues, followed by Rajasthan at 2,036, Karnataka at 1,749, Tamil Nadu at 1,244, West Bengal at 1,053, Delhi NCR at 1,046, Uttarakhand at 949, Goa at 774, Kerala at 368, and Himachal Pradesh at 300. The top city clusters are Bangalore (1,520), Mumbai (1,418), Chennai (1,144), Jaipur (1,085), Kolkata (913), Pune (895), Goa (774), Gurgaon (585), Udaipur (431), and Dehradun (321).
+
+The national type mix is dominated by banquet halls (6,437 venues), hotels (2,436), resorts (1,738), farmhouses (778), palaces (356), and beach venues (83). This distribution is useful for campaign planning because it separates destination branding from actual supply. Rajasthan owns the strongest palace inventory in the dataset, but Maharashtra, Karnataka, Tamil Nadu, and Delhi NCR provide much denser banquet-hotel supply for high-volume urban weddings.
+
+\begin{figure*}[htbp]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth]{output/charts/all_india/01_state_ranking.png}
+\caption{State-wise venue concentration in the cleaned all-India dataset. The figure validates that the current output is no longer limited to Rajasthan.}
+\label{fig:state-ranking}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth]{output/charts/all_india/02_city_heatmap.png}
+\caption{City-level concentration heatmap. Dense clusters show where venue discovery and planner search demand are likely to be highest.}
+\label{fig:city-heatmap}
+\end{minipage}
+\end{figure*}
+
+\begin{figure*}[htbp]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth]{output/charts/all_india/04_venue_type_pie.png}
+\caption{Venue-type composition after rule-based classification. The mix shows the gap between heritage branding and actual venue supply.}
+\label{fig:type-pie}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth]{output/charts/all_india/05_capacity_histogram.png}
+\caption{Maximum guest-capacity distribution. Large venues with 500 or more guests form 40.3\% of the dataset.}
+\label{fig:capacity-histogram}
+\end{minipage}
+\end{figure*}
 
 \subsection{Geographic and Type Distribution}
 
-Jaipur dominates at 1,085 of 2,036 records (53.3\%). Udaipur follows with 431, then Jodhpur with 290. Pushkar contributes 121; Jaisalmer contributes 92.
+Within Rajasthan, Jaipur dominates at 1,085 of 2,036 records (53.3\%). Udaipur follows with 431, then Jodhpur with 290. Pushkar contributes 121; Jaisalmer contributes 92. This is why Rajasthan remains the best pilot state: it contains both dense urban supply and high-symbolic-value heritage destinations.
 
 Type split shows banquet halls at 36\%, hotels at 24.8\%, resorts at 20.5\%, palace venues at 12.4\%, farmhouses at 6.1\%, and beach properties at 0.2\%. Palace share by count is modest, yet price tier is high; average palace minimum price is over 3x banquet hall average.
 
 \subsection{Price Intelligence}
 
-Lowest listed price was Rs. 175, likely a source-side entry mistake and flagged by soft rules. Highest was Rs. 95 Lakhs for a heritage palace near City Palace, Udaipur. Median across 2,036 venues was Rs. 8.5 Lakhs.
+The current schema stores the canonical low-end price from each listing. In many records this is a per-plate amount; in others it is a package or minimum-event quote. Because of this mixed source convention, price is interpreted as a normalized listing signal, not always as a full wedding budget.
 
-Per-plate values ranged from Rs. 400 to Rs. 4,500. Distribution is right-skewed; a small premium tail pulls mean above median.
+In the national dataset, the median normalized low-end listing value is Rs. 699, while the maximum package-like value is Rs. 95 Lakhs. Per-plate values cluster heavily in the Rs. 400--4,500 range, although raw platform outliers reach lower and upper soft-rule limits. Distribution is strongly right-skewed; a small luxury tail pulls the mean above the median.
+
+\begin{figure*}[htbp]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth]{output/charts/all_india/03_cost_distribution.png}
+\caption{Cost distribution after normalization. The skew confirms why medians and percentile bands are more stable than simple averages.}
+\label{fig:cost-distribution}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth]{output/charts/all_india/06_price_vs_rating.png}
+\caption{Price-rating scatter used for identifying expensive weak performers and high-rated value venues.}
+\label{fig:price-rating}
+\end{minipage}
+\end{figure*}
 
 \subsection{Analytical Results}
 
-Luxury corridor detection placed Badi Lake and City Palace micro-areas in Udaipur at the top of premium concentration. In that zone, seven or more venues within roughly 3 km hold average minimum price above Rs. 10 Lakhs plus average rating above 4.6/5.0.
+Luxury segmentation shows a visible premium tail: palace, resort, and high-capacity hotel properties separate from ordinary banquet supply. In Rajasthan, Udaipur and Jaipur remain the strongest heritage-luxury destinations. At the national level, Goa and Lonavala strengthen the resort-style destination cluster, while Delhi NCR, Mumbai, Bangalore, and Chennai dominate dense banquet and hotel inventory.
 
-Z-score classification flagged Pushkar and Kumbhalgarh as Undervalued. Price Z-scores were below median while review-engagement Z-scores were above median. Practical meaning is simple: demand looks strong while price remains lower than state baseline.
+Z-score classification flagged Neemrana and Kumbhalgarh as undervalued in the current run: price signals sit below the broader state baseline while review engagement remains comparatively strong. Practical meaning is simple: demand looks healthy while listed price remains lower than better-known premium destinations.
 
-MLS ranked City Palace area highest among micro-locations. High density, stronger quality signals, wider budget spread. Yet other options surfaced too -- Amer and Mansarovar in Jaipur, Umaid zone in Jodhpur.
+MLS ranked Mansarovar, Amer, Vaishali Nagar, Pushkar Lake, and Bani Park among the most versatile extracted micro-locations. These rankings mix density, rating, and price variety. Because area coverage is only 19.5\%, the MLS output should be treated as a decision-support layer rather than a final market truth.
+
+\begin{figure*}[htbp]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth]{output/charts/all_india/07_luxury_segmentation.png}
+\caption{Luxury segmentation of venues by type, price, and quality signals. This supports high-value destination targeting.}
+\label{fig:luxury-segmentation}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth]{output/charts/all_india/08_micro_hotspots.png}
+\caption{Micro-location hotspot ranking from available area fields. This is useful but still limited by neighborhood extraction coverage.}
+\label{fig:micro-hotspots}
+\end{minipage}
+\end{figure*}
 
 \subsection{State-Wise Campaign Alignment}
 
@@ -402,6 +476,39 @@ The same mismatch may exist in other states. Kerala promotes backwater weddings 
 The NRI overseas wedding segment is estimated near USD 5 billion and still growing. This buyer group usually wants heritage visual appeal, high-capacity execution, cleaner vendor trust, and strong value-for-money because comparison is made against Bali, Dubai, and Italy options.
 
 WedVenueIQ surfaced ``Heritage-Value'' clusters around Pushkar and outer Jodhpur -- palace-like aesthetics, 4.5+ ratings, capacities above 300, but 30--40\% cheaper than Udaipur Tier-1 corridors. For NRI planners this is practical intelligence, not just reputation chatter.
+
+\subsection{Celebrity Destination Wedding Benchmarking}
+
+Celebrity weddings act as high-visibility demand signals for destination-wedding markets. They are not statistically representative, but they reveal the venue archetypes that shape aspirational demand: palace hotels, lakefront luxury, beach resorts, convention-scale urban venues, and European heritage estates. For this reason, recent Indian and international cases were coded as qualitative benchmarks and compared against the WedVenueIQ taxonomy.
+
+\begin{table*}[htbp]
+\caption{Recent Celebrity and High-Profile Destination Wedding Benchmarks}
+\begin{center}
+\scriptsize
+\begin{tabular}{|p{0.18\textwidth}|p{0.18\textwidth}|p{0.25\textwidth}|p{0.29\textwidth}|}
+\hline
+\textbf{Couple / Event} & \textbf{Destination and Venue} & \textbf{Observed Event Pattern} & \textbf{Relevance to WedVenueIQ} \\
+\hline
+Anant Ambani and Radhika Merchant, 2024 & Jamnagar pre-wedding; Jio World Convention Centre, Mumbai wedding & Multi-month celebration: Jamnagar, European cruise events, Mumbai ceremonies, global guest list, major performers, and strong media circulation \cite{b16}. & Validates ``Wed in India'' at the ultra-luxury scale. It shows that India can host global-attention events when venue capacity, airport logistics, security, hospitality, and media management are aligned. \\
+\hline
+Sidharth Malhotra and Kiara Advani, 2023 & Suryagarh Palace, Jaisalmer & Private royal-desert wedding with close family and celebrity guests \cite{b17}. & Directly maps to Rajasthan's palace/resort category. It supports Jaisalmer as a heritage-luxury destination beyond Jaipur and Udaipur. \\
+\hline
+Parineeti Chopra and Raghav Chadha, 2023 & The Leela Palace, Udaipur & Lake-city ceremony attended by political and entertainment guests \cite{b18}. & Reinforces Udaipur's lake-palace positioning and explains why Udaipur commands premium destination value despite lower venue count than Jaipur. \\
+\hline
+Rakul Preet Singh and Jackky Bhagnani, 2024 & ITC Grand South Goa & Beach-resort destination wedding with Anand Karaj and Sindhi ceremonies at the same property \cite{b19}. & Demonstrates multi-ritual resort suitability. This supports Goa's beach-resort segment and the need to capture ceremony flexibility, not only price and capacity. \\
+\hline
+Sofia Richie and Elliot Grainge, 2023 & Hotel du Cap-Eden-Roc, Antibes, French Riviera & Three-day French Riviera wedding that became a global fashion and social-media reference point \cite{b20}. & International benchmark for luxury hotel-as-destination branding. It shows how one venue can become a global wedding-search keyword after a celebrity event. \\
+\hline
+Kourtney Kardashian and Travis Barker, 2022 & Portofino, Italy & Italian Riviera ceremony with strong fashion-house association and global media coverage \cite{b21}. & Benchmark for heritage coastal towns. Comparable Indian categories include Goa beach resorts and Kerala backwater luxury if supported by better structured venue data. \\
+\hline
+Ed Westwick and Amy Jackson, 2024 & Giardini del Fuenti, Salerno, Amalfi Coast & Multi-day Italian destination wedding with welcome events, sailing, and ceremony programming \cite{b22}. & Shows that destination value comes from the surrounding itinerary, not only the wedding venue. WedVenueIQ can extend into airport distance, tourist circuit, and vendor ecosystem scoring. \\
+\hline
+\end{tabular}
+\label{tab:celebrity-benchmarks}
+\end{center}
+\end{table*}
+
+Three patterns emerge from Table \ref{tab:celebrity-benchmarks}. First, Indian celebrity weddings strongly favor Rajasthan heritage venues and Goa-style resort properties, which aligns with the pipeline's palace, resort, hotel, and beach classes. Second, foreign celebrity weddings often sell a full destination narrative: Riviera, Amalfi, Portofino, Antibes. Indian locations need the same metadata layer -- nearby airport, lake/fort/beach proximity, guest capacity, privacy, and multi-day event suitability -- to compete internationally. Third, social-media visibility converts one private event into public destination advertising. That makes structured venue intelligence commercially useful: a planner should be able to find ``Suryagarh-like desert palace,'' ``Leela-like lake palace,'' or ``Goa multi-ritual resort'' using normalized fields instead of manually reading hundreds of listings.
 
 \subsection{Comparison with Existing Solutions}
 
@@ -455,7 +562,7 @@ Venue photos contain signals the text often misses. Pool presence, garden settin
 
 \subsection{National Expansion}
 
-The \texttt{cities.json} file already covers 25 cities in 10 states: Rajasthan, Goa, Kerala, Maharashtra, Karnataka, Uttarakhand, Tamil Nadu, Himachal Pradesh, Delhi NCR, and West Bengal. Full run across these geographies is expected to yield 15,000 to 25,000 unique venue records, likely the largest structured dataset in this segment.
+The current all-India run covers 13,211 venues across 10 states: Rajasthan, Goa, Kerala, Maharashtra, Karnataka, Uttarakhand, Tamil Nadu, Himachal Pradesh, Delhi NCR, and West Bengal. The next expansion target is not only more rows, but better source balance. WedMeGood currently contributes most records; VenueLook and other sources should be expanded so duplicate detection, price validation, and missing-field backfilling become stronger.
 
 Nominatim geocoding can add latitude-longitude per record, opening spatial analytics such as DBSCAN distribution clusters, airport drive-time layers, and heritage-site distance scoring.
 
@@ -473,11 +580,11 @@ This endpoint returns matching venues as normalized JSON. A companion Streamlit 
 
 \section{Conclusion}
 
-WedVenueIQ shows that structured intelligence can be extracted from a fragmented market that policy has already marked as strategic through ``Wed in India'' messaging \\cite{b9}. Market size is large at 3.75 lakh crore INR \cite{b1}. Campaign spending and promotion exist \\cite{b10} \\cite{b11}. Data infrastructure was the missing layer.
+WedVenueIQ shows that structured intelligence can be extracted from a fragmented market that policy has already marked as strategic through ``Wed in India'' messaging \cite{b9}. Market size is large at 3.75 lakh crore INR \cite{b1}. Campaign spending and promotion exist \cite{b10} \cite{b11}. Data infrastructure was the missing layer.
 
-Pilot evidence is direct. From 5,942 raw records across three heterogeneous sources, city-gated fuzzy matching removed 16.3\% cross-source duplicates; six-pass normalization handled Indian pricing with 94\% accuracy; final output reached 2,036 clean analytics-ready records in roughly 10 minutes. These are operational numbers, not theory.
+Pilot evidence is direct. From 5,942 raw Rajasthan records across three heterogeneous sources, city-gated fuzzy matching removed 16.3\% cross-source duplicates; six-pass normalization handled Indian pricing with 94\% accuracy; the validated pilot reached 2,036 clean analytics-ready records in roughly 10 minutes. The later national output extends this to 13,211 venues across 10 states and 120 cities. These are operational numbers, not theory.
 
-Framework outputs made hidden patterns visible: Udaipur luxury corridors, undervalued locations like Pushkar and Kumbhalgarh, and high-value micro-areas in Jaipur and Jodhpur. NRI-focused analysis also links to soft-power economics \\cite{b8}.
+Framework outputs made hidden patterns visible: Rajasthan's palace-led luxury positioning, undervalued destinations such as Neemrana and Kumbhalgarh, and versatile micro-areas such as Mansarovar, Amer, Vaishali Nagar, Pushkar Lake, and Bani Park. NRI-focused and celebrity-wedding analysis also links the pipeline to soft-power economics \cite{b8}.
 
 This work is not a consumer portal by itself. It is the underlying data layer -- modular, reproducible, configuration-driven -- on top of which campaign systems, planners, researchers, and decision tools can be built.
 
@@ -501,6 +608,13 @@ The authors thank the Department of Computer Science faculty for guidance during
 \bibitem{b13} Y. Li, J. Li, Y. Suhara, A. Doan, and W.-C. Tan, ``Deep entity matching with pre-trained language models,'' \textit{Proc. VLDB Endowment}, vol. 14, no. 1, pp. 50--60, 2021.
 \bibitem{b14} ``The economic impact of destination weddings: Assessing the effects of outsourcing Indian wedding tourism,'' \textit{Partners Universal Int. Res. J.}, vol. 3, no. 1, 2024. DOI: 10.5281/zenodo.10822430
 \bibitem{b15} U. Sivarajah, M. M. Kamal, Z. Irani, and V. Weerakkody, ``Critical analysis of big data challenges and analytical methods,'' \textit{J. Business Research}, vol. 70, pp. 263--286, 2022.
+\bibitem{b16} A. Rajvanshi, ``The Jarring Opulence of Anant Ambani's Big Fat Indian Wedding,'' \textit{TIME}, July 12, 2024. [Online]. Available: https://time.com/6997573/india-anant-mukesh-ambani-wedding/
+\bibitem{b17} Moneycontrol News, ``Sidharth Malhotra, Kiara Advani get married in Jaisalmer,'' \textit{Moneycontrol}, February 7, 2023. [Online]. Available: https://www.moneycontrol.com/news/trends/entertainment/sidharth-malhotra-kiara-advani-get-married-in-jaisalmer-10024231.html
+\bibitem{b18} Moneycontrol News, ``Parineeti Chopra ties the knot with Raghav Chadha in intimate Udaipur ceremony,'' \textit{Moneycontrol}, September 25, 2023. [Online]. Available: https://www.moneycontrol.com/news/trends/entertainment/parineeti-chopra-ties-the-knot-with-raghav-chadha-in-intimate-udaipur-ceremony-see-first-pic-11419591.html
+\bibitem{b19} Moneycontrol Features, ``Rakul Preet and Jackky Bhagnani wedding: Couple wore custom Tarun Tahiliani ensembles,'' \textit{Moneycontrol}, February 21, 2024. [Online]. Available: https://www.moneycontrol.com/news/trends/entertainment/rakul-preet-jackky-bhagnani-wedding-couple-wore-custom-tarun-tahiliani-ensembles-12326451.html
+\bibitem{b20} E. Spedding, ``2023 in 11 Celebrity Weddings,'' \textit{Vogue}, December 27, 2023. [Online]. Available: https://www.vogue.com/article/best-celebrity-weddings-2023
+\bibitem{b21} E. Taylor, ``Kourtney Kardashian Wears a Corseted Dolce and Gabbana Dress to Wed Travis Barker in Italy,'' \textit{Vogue}, May 22, 2022. [Online]. Available: https://www.vogue.com/article/kourtney-kardashian-wears-a-corseted-dolce-and-gabbana-gown-to-wed-travis-barker-in-italy
+\bibitem{b22} N. Saad, ``Gossip Girl alum Ed Westwick marries Amy Jackson in Italian destination wedding,'' \textit{Los Angeles Times}, August 26, 2024. [Online]. Available: https://www.latimes.com/entertainment-arts/tv/story/2024-08-26/ed-westwick-wedding-married-amy-jackson-italy
 \end{thebibliography}
 
 \end{document}
