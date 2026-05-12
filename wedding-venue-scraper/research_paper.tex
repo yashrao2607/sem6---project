@@ -8,6 +8,8 @@
 \usepackage{xcolor}
 \usepackage{url}
 \usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -91,51 +93,43 @@ WedVenueIQ sits exactly in that gap. Data backbone first.
 
 \begin{table}[htbp]
 \caption{State-Wise ``Wed in India'' Campaign Activities}
-\begin{center}
-\begin{tabular}{|l|l|l|}
-\hline
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\columnwidth}{@{}l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
 \textbf{State} & \textbf{Focus} & \textbf{Promotion Channel} \\
-\hline
-Rajasthan & Palace circuit, forts & GITB Expo, Insta, YT \\
-\hline
-Goa & Beach resorts & Digital ads, influencers \\
-\hline
+\midrule
+Rajasthan & Palace circuit, forts & GITB Expo, Instagram, YouTube \\
+Goa & Beach resorts & Digital ads, influencer campaigns \\
 Kerala & Backwaters, eco-luxury & State tourism portal \\
-\hline
 Uttarakhand & Himalayan backdrops & PM quote, digital push \\
-\hline
 Maharashtra & Urban luxury venues & Event expos \\
-\hline
-Karnataka & Heritage, hill stations & State board brochures \\
-\hline
-\end{tabular}
+Karnataka & Heritage, hill stations & State-board brochures \\
+\bottomrule
+\end{tabularx}
 \label{tab:statewise}
-\end{center}
 \end{table}
 
-\begin{table}[htbp]
+\begin{table*}[htbp]
 \caption{``India Says I Do'' Campaign -- Website and Social Presence Audit (2024)}
-\begin{center}
-\begin{tabular}{|l|l|l|}
-\hline
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.23\textwidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{0.24\textwidth}@{}}
+\toprule
 \textbf{Platform} & \textbf{Content Type} & \textbf{Status} \\
-\hline
-YouTube (MoT) & Destination reels & Active, low views \\
-\hline
-Instagram (Incredible India) & Wedding destination posts & Active, organic reach \\
-\hline
-tourism.gov.in & Static destination pages & No venue search/filter \\
-\hline
-PIB Press Releases & Expo coverage, policy & Regular updates \\
-\hline
-State Tourism Portals & Brochure PDFs, galleries & No structured data \\
-\hline
-FICCI/GITB Expos & Offline B2B matchmaking & Annual, Jaipur-based \\
-\hline
-\end{tabular}
+\midrule
+YouTube (MoT) & Destination reels and campaign videos & Active, but view counts remain modest \\
+Instagram (Incredible India) & Wedding-destination posts and short reels & Active, mostly organic reach \\
+tourism.gov.in & Static destination pages & No venue-level search or filtering \\
+PIB Press Releases & Expo coverage, policy announcements & Regular updates \\
+State Tourism Portals & Brochure PDFs, galleries, and landing pages & No structured venue data export \\
+FICCI / GITB Expos & Offline B2B matchmaking and tourism promotion & Annual, Jaipur-centered activity \\
+\bottomrule
+\end{tabularx}
 \label{tab:campaign}
-\end{center}
-\end{table}
+\end{table*}
 
 
 \subsection{Problem Statement}
@@ -417,30 +411,30 @@ Type split shows banquet halls at 36\%, hotels at 24.8\%, resorts at 20.5\%, pal
 
 \subsection{Price Intelligence}
 
-The current schema stores the canonical low-end price from each listing. In many records this is a per-plate amount; in others it is a package or minimum-event quote. Because of this mixed source convention, price is interpreted as a normalized listing signal, not always as a full wedding budget.
+The current schema stores the canonical low-end price from each listing. In many records this is a per-plate amount; in others it is a package or minimum-event quote. The earlier version of our visual layer mixed those two units in the same axes, which produced misleading medians, luxury buckets, and state comparisons. The revised price figures therefore split the schema into two analytical views: observed per-plate quotes and observed package or minimum-event quotes.
 
-In the national dataset, the median normalized low-end listing value is Rs. 699, while the maximum package-like value is Rs. 95 Lakhs. Per-plate values cluster heavily in the Rs. 400--4,500 range, although raw platform outliers reach lower and upper soft-rule limits. Distribution is strongly right-skewed; a small luxury tail pulls the mean above the median.
+Using that split, 9,917 venues provide a non-imputed observed per-plate quote with a national median of Rs. 600; the 95th percentile is Rs. 2,200 and the 99th percentile is Rs. 5,500. A separate set of 826 venues expose package-like minimum-event quotes, with a median of Rs. 1.2 Lakhs and an upper extreme of Rs. 95 Lakhs. About 15.9\% of all rows rely on imputed low-end prices and 72.9\% of all rows have no rating, so both groups are excluded where they would distort price-sensitive plots.
 
 \begin{figure*}[htbp]
 \centering
 \begin{minipage}{0.48\textwidth}
 \centering
 \includegraphics[width=\linewidth]{output/charts/all_india/03_cost_distribution.png}
-\caption{Cost distribution after normalization. The skew confirms why medians and percentile bands are more stable than simple averages.}
+\caption{Price distributions after separating observed per-plate quotes (left) from package or minimum-event quotes (right). Imputed prices are excluded to avoid mixed-unit distortion.}
 \label{fig:cost-distribution}
 \end{minipage}
 \hfill
 \begin{minipage}{0.48\textwidth}
 \centering
 \includegraphics[width=\linewidth]{output/charts/all_india/06_price_vs_rating.png}
-\caption{Price-rating scatter used for identifying expensive weak performers and high-rated value venues.}
+\caption{Price-rating scatter restricted to rated venues with observed per-plate quotes. Removing zero-rating rows restores a usable value signal.}
 \label{fig:price-rating}
 \end{minipage}
 \end{figure*}
 
 \subsection{Analytical Results}
 
-Luxury segmentation shows a visible premium tail: palace, resort, and high-capacity hotel properties separate from ordinary banquet supply. In Rajasthan, Udaipur and Jaipur remain the strongest heritage-luxury destinations. At the national level, Goa and Lonavala strengthen the resort-style destination cluster, while Delhi NCR, Mumbai, Bangalore, and Chennai dominate dense banquet and hotel inventory.
+When pricing models are separated, the national market looks much clearer. Observed per-plate supply is concentrated in the value and standard bands, while package-event quotes form a distinct premium tail led by Rajasthan, Karnataka, Maharashtra, and Uttarakhand. In Rajasthan, Udaipur and Jaipur remain the strongest heritage-luxury destinations. At the national level, Goa and Lonavala strengthen the resort-style destination cluster, while Delhi NCR, Mumbai, Bangalore, and Chennai dominate dense banquet and hotel inventory.
 
 Z-score classification flagged Neemrana and Kumbhalgarh as undervalued in the current run: price signals sit below the broader state baseline while review engagement remains comparatively strong. Practical meaning is simple: demand looks healthy while listed price remains lower than better-known premium destinations.
 
@@ -451,7 +445,7 @@ MLS ranked Mansarovar, Amer, Vaishali Nagar, Pushkar Lake, and Bani Park among t
 \begin{minipage}{0.48\textwidth}
 \centering
 \includegraphics[width=\linewidth]{output/charts/all_india/07_luxury_segmentation.png}
-\caption{Luxury segmentation of venues by type, price, and quality signals. This supports high-value destination targeting.}
+\caption{Observed per-plate price bands (left) and package-event quote bands by state (right). The split prevents mixed-unit prices from collapsing into a false ``budget'' majority.}
 \label{fig:luxury-segmentation}
 \end{minipage}
 \hfill
